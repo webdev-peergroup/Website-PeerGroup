@@ -1,0 +1,4 @@
+ekosmp1p = password admin
+
+*q@83hn82^$jVi?1 = database
+imadeeko = username database
