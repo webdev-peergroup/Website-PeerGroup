@@ -1,0 +1,146 @@
+.aboutcontent {
+    padding: 0 5%;
+    margin: 3rem 3rem;  
+}
+
+.abouttitle {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid rgb(182, 149, 41);
+    margin: 7rem 25% 5rem;
+}
+
+.descContent {
+    width: 50%;
+    float: left;
+    margin-bottom: 4rem;
+}
+
+.imgContent {
+    width: 50%;
+    float: right; 
+    margin-bottom: 2rem;
+}
+
+.imgsiapakita{
+    height: 27rem;
+    width: 40rem;
+}
+
+.valueContent {
+    margin: 0 7%;
+    width: 85%;
+    background-color: #BFCEF4;
+    padding: 1rem 2rem;
+    padding-bottom: 4rem;
+    border-radius: 10px; 
+}
+
+.valueContent.dark{
+    background-color: #344464;
+    color: #fff;
+}
+
+.vision {  
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* .mission {  } */
+
+.theader { 
+    text-align: center;
+    border-bottom: 2px solid #1E435B;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.theader.dark{
+    border-bottom: 2px solid #fff;
+}
+
+.aboutsiapa{
+    margin: 0 .5rem 1rem 0;
+    color: var(--primary-color);
+}
+
+.aboutkita{
+    margin: 0 0 1rem 0;
+}
+
+/* Small Phone */
+@media screen and (max-width:480px) {
+    
+}
+
+@media screen and (max-width:576px) {
+    .aboutcontent{
+        margin: 3rem 1rem;
+    }
+    .abouttitle{
+        margin-top: 4rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 15rem;
+        margin-bottom: 1rem;
+    }
+
+    .about-container{
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-auto-rows: 1fr; 
+        grid-template-rows: 0.6fr 1.4fr; 
+        gap: 0em 0em; 
+        height: 32rem;
+    }
+
+    .imgContent{
+        grid-row: 1;
+        width: 100%;
+        float: none;
+        margin-bottom: 0;
+        height: 18rem;
+    }
+
+    .imgsiapakita{
+        height: 100%;
+    }
+
+    .descContent{
+        grid-row: 2;
+        width: 100%;
+        float: none;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+
+    .valueContent{
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-auto-rows: 1fr; 
+        grid-template-rows: 0fr 1fr; 
+        gap: 0em 0em; 
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        padding: 1rem .5rem;
+    }
+
+    .vision, .mission{
+        font-size: .8rem;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 576px){
+    .valueContent{
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-auto-rows: 1fr; 
+        grid-template-columns: 1fr 1fr; 
+        gap: 0em 4em;
+    }
+}

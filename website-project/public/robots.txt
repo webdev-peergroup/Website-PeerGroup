@@ -1,0 +1,14 @@
+Sitemap: http://peergroup.id/sitemap.xml
+User-agent: *
+Allow: /
+Disallow: /login
+Disallow: /index.php/Login
+Disallow: /process
+Disallow: /logout
+Disallow: /artikel-admin
+Disallow: /admin-artikel
+Disallow: /kegiatan-admin
+Disallow: /tambah-data
+Disallow: /profile
+Disallow: /update/profile
+Disallow: /phpmyadmin

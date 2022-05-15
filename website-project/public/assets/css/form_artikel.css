@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body, div, p, h1 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  *:focus {
+    outline: none;
+  }
+  
+  .wrapper {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: PT Sans, sans-serif;
+  }
+  
+  .header {
+    grid-column: 1;
+    background-size: cover;
+    background-position: center top;
+    padding-top: 280px;
+    padding-left: 20px;
+    line-height: 4em;
+    background-color: #1E435B;
+  }
+
+  .img{
+    margin: auto 9rem;
+    width:20rem;
+    height:20rem;
+}
+  
+  .form {
+    grid-column: 2;
+  }
+  
+  form {
+    width: 85%;
+    margin: 10px auto 0 auto;
+    padding-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    padding: 10px 0;
+  }
+  
+  .form-input, textarea, select {
+    padding: 0;
+    width: 100%;
+    padding: 1% 0;
+  }
+  
+  .form-input {
+    border: none;
+    border-bottom: 2px solid #333;
+    transition: 0.4s;
+  }
+  
+  .form-input:focus {
+    border-color: #bbb;
+  }
+  
+  textarea {
+    border: 2px solid #333;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  
+  select {
+    border: 2px solid #333;
+  }
+  
+  input[type="submit"]
+  {
+    width: 100%;
+    margin-top: 10px;
+    height: 35px;
+    border: 2px solid #333;
+    background-color: #333;
+    color: #fff;
+    font-family: PT Sans, sans-serif;
+    font-weight: bold;
+    transition: 0.4s;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: white;
+    color: #333;
+  }
+  
+  .header {
+    color: white;
+  }
+  
+  span {
+    display: block;
+  }
+  
+  span#title {
+    font-size: 4vw;
+    font-weight: bold;
+  }
+  
+  span#desc {
+    font-size: 2vw;
+  }
+  
+  @media screen and (max-width : 960px) {
+    .wrapper {
+      display:block;
+      min-height : 100vh;
+    }
+  
+    .header {
+      min-height : 25vh;
+      text-align: center;
+      padding-top: 30px;
+      padding-left: 0;
+      line-height: 4em;
+    }
+  }
+  

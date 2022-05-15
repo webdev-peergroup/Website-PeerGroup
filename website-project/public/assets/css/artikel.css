@@ -1,0 +1,315 @@
+a{
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+a:hover{
+  color: #1E435B;
+}
+.l-main{
+  max-width: calc(100% - 10rem);
+  margin-left: auto;
+  margin-right: auto;
+}
+/*Artikel*/
+.container__artikel{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .5fr 1.5fr;
+    gap: 2rem 0em;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "title"
+      "konten";
+    justify-items: center;
+    align-items: center;
+}
+
+
+.konten { grid-area: konten; }
+.title {
+  width: max-content;
+}
+.judul-konten{
+  text-align: center;
+  font-size: var(--form-big-font-size);
+  border-bottom: 0.18rem solid var(--accent-color);
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+
+.box{
+  display: grid; 
+  grid-template-columns: .6fr 2.5fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 1em; 
+  grid-template-areas: 
+  "img-thumbnail text-list"; 
+  background: var(--f2f2);
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  transition: background 0.2s linear;
+  max-height: 8vw;
+}
+.img-thumbnail { 
+  grid-area: img-thumbnail; 
+}
+
+.img-thumbnail img { 
+  border-radius: 5px;
+  height: 8vw;
+  width: 100%;
+  object-fit: cover;
+}
+.text-list { 
+  grid-area: text-list; 
+  display: grid;
+  grid-template-rows: .5fr 0.5fr 1.5fr;
+  grid-auto-columns: 1fr;
+  gap: 0em 0em;
+  grid-auto-flow: row;
+  padding: 0 0.5rem 0 0;
+}
+
+.title-thumbnail { 
+  grid-area: 1 / 1 / 2 / 2; 
+  font-size: 1.3rem;
+  font-weight: var(--font-bold);
+  color: var(--primary-color);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.title-thumbnail.dark{
+  color: var(--white-color);
+}
+
+.penulis { grid-area: 2 / 1 / 3 / 2; }
+
+.thumbnail-description { 
+  grid-area: 3 / 1 / 4 / 2; 
+  color: #030402;
+  text-overflow: ellipsis;
+  font-size: .89em;
+  max-height: 2rem;
+  overflow: hidden;
+}
+
+.header-rekomendasi-home{
+  display: flex;
+  width: 100%;
+  color: var(--white-color);
+  height: 3rem;
+  background-color: #1E435B;
+  justify-content: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  align-items: center;
+}
+
+.penulis-artikel-home{
+  font-style: italic;
+  font-weight: var(--font-medium);
+  color: var(--penulis-artikel-home);
+  font-size: .89em;
+}
+
+.tanggal-artikel-home{
+  color: rgba(0, 0, 0, 0.5);
+} 
+
+/*Rekomendasi*/
+.Rekomendasi{
+  max-width: 100%;
+}
+.rekomendasi-container{
+    
+    height: 617px;
+    border-radius: 5px;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-rows: 0.2fr 2.8fr; 
+    gap: 0em 0em; 
+  }
+  
+  .header-rekomendasi{
+    display: flex;
+    width: 100%;
+    color: var(--white-color);
+    height: 3rem;
+    background-color: #1E435B;
+    justify-content: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    align-items: center;
+    margin-top: 9rem;
+  }
+  
+  .rekomen-fill {
+    margin-top: .5rem;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 0fr 0fr 0fr; 
+    gap: 0em 1em; 
+    grid-template-areas: 
+      ". ."
+      ". ."
+      ". ."; 
+    justify-items: center;
+  }
+  
+  /*Rekomendasi*/
+  
+  .rekomen-img {
+    width: 100%;
+    height: max-content;
+  }
+  .rekomen-img img{
+    height: 100%;
+  }
+  
+  .text-rekomen{
+    max-lines: 3;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 60px;
+  }
+
+.box.dark-box{
+    background: var(--primary-color);
+  }
+  
+  .penulis{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+/* Small Phone */
+@media screen and (max-width: 525px) {
+  .penulis{ 
+    display: none;
+  }
+
+  .text-list{
+    grid-template-rows: .5fr 0fr 1fr;
+  }
+}
+@media screen and (max-width: 576px){
+  .title{ 
+    margin-top: 2rem;
+  }
+  .l-main{
+    max-width: 100%;
+  }
+  .judul-konten{
+    font-size: 1.5rem;
+  }
+
+  .judul-konten::after{
+    top: 7.5rem;
+    width: 14rem;
+  }
+
+  .artikel{
+    grid-row: 1;
+  }
+
+  .Rekomendasi{
+    grid-row: 2;
+    padding: 0;
+  }
+
+  .container__artikel{
+    margin-left: .5rem;
+    margin-right: .5rem;
+    grid-template-rows: .1fr 1fr;
+    align-items: center;
+  }
+
+  .box{
+    max-height: 100%;
+    gap: 0 0.5em;
+    background: var(--f2f2);
+    padding: .5rem .5rem;
+  }
+
+  .img-thumbnail{
+    width: 8rem;
+    height: 6rem;
+  }
+
+  .img-thumbnail img{
+    height: 100%;
+  }
+
+  .title-thumbnail{
+    text-overflow: ellipsis;
+  }
+  
+  .title-thumbnail{
+    font-size: 1rem;
+  }
+  .penulis, .thumbnail-description {
+    font-size: .7rem;
+  } 
+
+  .thumbnail-description{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: justify;
+    max-height: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .l-main{
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .konten{
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0em 0em; 
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .konten{
+    display: grid;
+    grid-template-columns: 3fr 0.5fr;
+    grid-template-rows: 1fr;
+    gap: 0px 1.5rem;
+    grid-auto-flow: row;
+  }
+
+  .rekomen-img img{
+    height: 7vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .title-thumbnail{
+    font-size: .9em;
+  }
+
+  .penulis-artikel-home, .tanggal-artikel-home{
+    font-size: .5em;
+  }
+
+  .thumbnail-description{
+    font-size: .8em;
+    max-height: 3rem;
+  }
+}
