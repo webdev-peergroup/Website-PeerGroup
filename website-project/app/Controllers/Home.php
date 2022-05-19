@@ -38,7 +38,6 @@ class Home extends BaseController
         ];
         return view('Apps/index', $data);
     }
-
     //Detail Artikel
     public function detart($id){
         $list = $this->get->getartikel($id);

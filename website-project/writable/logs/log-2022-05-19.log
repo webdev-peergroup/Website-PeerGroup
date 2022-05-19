@@ -117,3 +117,6 @@ CRITICAL - 2022-05-19 08:18:52 --> Undefined variable $selfdev
 #8 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #9 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\tasya\\...')
 #10 {main}
+CRITICAL - 2022-05-19 10:00:56 --> Cannot redeclare App\Controllers\Home::landing()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
