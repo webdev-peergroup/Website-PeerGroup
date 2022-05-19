@@ -39,6 +39,7 @@
   
 .content{
     max-width: 388px;
+    margin-top: 4rem;
 }
   /* .home__button{
     display: inline-block;
@@ -53,7 +54,10 @@
     background-color: var(--hover-button);
   }
 
-  .title { grid-area: title; }
+  .title { 
+      grid-area: title;
+      margin-bottom: 0.5rem; 
+}
 
   .desc{
     color: #5F9695;
@@ -64,16 +68,23 @@
     margin: 1rem 1rem;
   }
   
+  .about-title{
+    position: relative;
+    font-weight: var(--font-bold);
+    margin-bottom: .75rem;
+    color: var(--accent-color);
+  }
+
   .section{
-    padding-top: 3rem;
+    /* padding-top: 3rem; */
     padding-bottom: 2rem;
   }
 
   .section-title{
     position: relative;
-    font-weight: var(--font-medium);
+    font-weight: var(--font-family);
     margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: .75rem;
     text-align: center;
   }
 
@@ -87,7 +98,7 @@
     background-color: var(--primary-color);
     height: 24rem;
     width: 20.2rem;
-    margin: 1rem 10px;
+    margin: 0.5rem 10px;
     border-radius: 10px;
     color: var(--white-color);
     overflow: hidden;
@@ -107,9 +118,9 @@
   }
 
   .selengkapnya-artikel{
-    font-size: 1.2rem;
-    font-family: Montserrat;
-    margin: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: var(--font-low-medium);
+    margin: 0rem 1.5rem;
     color: black;
   }
 
@@ -417,7 +428,7 @@
         height: fit-content;
     }
     .section-title{
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     .mobile-sosmed-container{
@@ -461,9 +472,9 @@
         height: 24rem;
     }
     
-    .siapa{
+    /* .siapa{
         margin-left: 2rem;
-    }
+    } */
 
     .artikel-mobile-container{
         display: none;

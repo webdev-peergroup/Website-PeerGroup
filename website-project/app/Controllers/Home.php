@@ -107,4 +107,15 @@ class Home extends BaseController
 
         return view('Apps/about', $data);
     }
+    
+    //Landing
+    public function landing(){
+        $data = [
+            'title' => 'Landing',
+            'deskripsi' => 'Landing Page',
+            'css' => 'landing.css'
+        ];
+
+        return view('Apps/landing', $data);
+    }
 }

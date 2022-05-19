@@ -1,0 +1,254 @@
+/*Google Font*/
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap');
+
+:root {
+    --header-height: 2.5rem;
+    /*===== Font and typography =====*/
+    --font-family: 'Radio Canada', sans-serif;
+    --font-bold: 700;
+    --font-light: 300;
+    --font-medium: 500;
+    --font-low-medium: 400;
+    --big-font-size: 2.5rem;
+    --form-big-font-size: 2rem;
+    --normal-font-size: .938rem;
+    --form-normal-font-size: 0.938rem;
+    --form-smaller-font-size: 0.875rem;
+    /*===== Colors =====*/
+    --primary-color: #1E435B;
+    --accent-color: #EAA900;
+    --white-color: #FFFFFF;
+    --f2f2: #F2F2F2;
+    --tanggal-artikel-home: rgba(0, 0, 0, 0.5);
+    --penulis-artikel-home: #526260;
+    --font-isi-artikel-home: #030402;
+    --dark-theme: #06263A;
+    --light-theme: #ffffff;
+    --artikel-card:#407BFF;
+    --second-context:#B9E5E6;
+    --hover-button: #5F9695;
+    --find-us:#BFCEF4;
+    /*===== z index =====*/
+    --z-fixed: 100; 
+}
+
+  /*===== BASE =====*/
+  *,::before,::after{
+    box-sizing: border-box;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  body{
+    margin: var(--header-height) 0 0 0;
+    padding: 0;
+    font-family: var(--font-family);
+    font-size: var(--normal-font-size);
+    font-weight: 500;
+    background-color: #fafafa;
+    transition: background-color 0.2s linear;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .l-main{
+    flex: 1 0 auto;
+  }
+
+  html, body {
+    height: 100%;
+  }
+  
+  h1,p,ul{
+    margin: 0;
+  }
+  
+  ul{
+    padding: 0;
+    list-style: none;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /*===== LAYOUT =====*/
+  .bd-grid{
+    /* max-width: 1024px; */
+    display: grid;
+    grid-template-columns: 100%;
+    column-gap: 2rem;
+    width: calc(100% - 2rem);
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+.nav__logo img{
+    max-height: 50pt;
+    border-radius: 100%;
+    margin-left: 3rem;
+}
+
+.intro{
+    text-align: center;
+}
+
+.title{
+  color: var(--primary-color);
+  font-family: var(--font-family);
+  font-size: 50pt;
+}
+
+.desc{
+    color: #5F9695;
+    text-align: center;
+}
+
+.front{
+    max-width: 1000px;
+}
+
+.kelebihan h1{
+    font-size: 40pt;
+    color: white;
+    margin: 4rem 4rem 4rem 0rem;
+}
+
+.potensi{
+    background-color: #5F9695;
+}
+
+.potensi-img{
+    max-width: 500px;
+    margin: 4rem;
+    text-align: center;
+}
+
+.potensi-container{
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    text-align: center;
+    row-gap: 2rem;
+}
+
+.fokus{
+    background-color:var(--primary-color);
+    text-align: left;
+}
+
+.fokus-img{
+    max-width: 500px;
+    margin: 4rem;
+}
+
+.fokus-container{
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    text-align: center;
+    row-gap: 2rem;
+}
+
+.unik{
+    background-color: #5F9695;
+}
+
+.unik-img{
+    max-width: 500px;
+    margin: 4rem;
+}
+
+.unik-container{
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    text-align: center;
+    row-gap: 2rem;
+}
+
+.button-link{
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: white;
+  padding: .75rem 2.5rem;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.062);
+  font-family: var(--font-family);
+  font-weight: var(--font-bold);
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+
+.join-us{
+    text-align: center;
+    margin: 8rem;
+    /* height: 5000px; */
+    /* background-color: white; */
+}
+
+/* FOOTER */
+.footer{
+  background-color: #1a252f;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  /* margin: 3rem 0 0 0; */
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Media queries */
+/* ===== MEDIA QUERIES =====*/
+@media screen and (max-width: 468px){
+  
+}
+
+@media screen and (max-width: 767px){
+  .random{
+    max-width: 30vw;
+  }
+}
+
+@media screen and (min-width: 768px){
+  :root{
+    --big-font-size: 5rem;
+    --normal-font-size: 1rem;
+  }
+  .random{
+    max-width: 10vw;
+  }
+}
+
+
+@media screen and (max-width: 960px) {
+  
+}
+
+@media screen and (min-width: 993px){
+}
+
+@media screen and (max-width: 992px){
+}
+
+@media screen and (min-width: 1024px) {
+  .bd-grid{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 1052px) {
+}
+
+@media screen and (min-width: 1024px) {
+  .bd-grid{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
