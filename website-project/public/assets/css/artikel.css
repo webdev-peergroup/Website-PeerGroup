@@ -34,7 +34,7 @@ a:hover{
 .judul-konten{
   text-align: center;
   font-size: var(--form-big-font-size);
-  border-bottom: 0.18rem solid var(--accent-color);
+  /* border-bottom: 0.18rem solid var(--accent-color); */
   left: 0;
   right: 0;
   margin: auto;

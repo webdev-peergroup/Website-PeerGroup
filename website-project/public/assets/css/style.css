@@ -1,11 +1,10 @@
 /*Google Font*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap');
 
 :root {
-    --header-height: 3rem;
+    --header-height: 2.5rem;
     /*===== Font and typography =====*/
-    --font-family: 'Montserrat', sans-serif;
+    --font-family: 'Radio Canada', sans-serif;
     --font-bold: 700;
     --font-light: 300;
     --font-medium: 500;
@@ -168,7 +167,6 @@
 
 
 
-
 .title{
   color: var(--accent-color);
   font-family: var(--font-family);
@@ -189,7 +187,7 @@
 
 
 .kepoin{
-  margin-left: 1rem;
+  margin-left: 0rem;
 }
 
 

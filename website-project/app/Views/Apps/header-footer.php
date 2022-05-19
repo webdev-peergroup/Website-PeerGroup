@@ -84,9 +84,14 @@
                                 <li class="dropdown__item"><a href="/artikel/karir" class="nav__link">Karir</a></li>
                             </ul>
                         </li>
-                        <!--<li class="nav__item"><a href="#" class="nav__link">#CeritaMereka</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Review</a></li>-->
-                        <!-- <li class="nav__item"><a href="#" class="nav__link">Kegiatan Kami</a></li> -->
+                        <li class="nav__item dropdown" >
+                            <a href="#" class="nav__link dropdown__link" id="dropdown">Kegiatan <i class='bx bx-chevron-down dropdown__icon' id="drop-icon"></i></a>
+                            <ul class="dropdown__menu" id="dropdown-menu">
+                                <li class="dropdown__item"><a href="/" class="nav__link">Kegiatan Kami</a></li>
+                                <li class="dropdown__item"><a href="/" class="nav__link">Volunteer</a></li>>
+                            </ul>
+                        </li>
+                        <!-- <li class="nav__item"><a href="/home/landing" class="nav__link">Landing</a></li> -->
                         <?php
                             if ($session->logged_in == true) {
                                 $logout = base_url('logout');
@@ -119,7 +124,6 @@
     </header>
     <?= $this->renderSection('content');?>
     <div class="footer">
-        <!-- <a href="#" class="nav__logo"><img src="/assets/images/Logo Peer Group Transparan.png" alt=""></a>  -->
         <small>Copyright &copy; Peergroup.id 2021</small>
     </div>
     <!--Main JS-->

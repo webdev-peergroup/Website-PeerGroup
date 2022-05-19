@@ -1,0 +1,87 @@
+ERROR - 2022-05-18 22:49:43 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-05-18 22:49:43 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\app\Models\ArtikelModel.php(34): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...')
+#2 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\app\Controllers\Home.php(25): App\Models\ArtikelModel->getnewartikel('self developmen...')
+#3 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\tasya\\...')
+#8 {main}
+ERROR - 2022-05-18 22:49:50 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-05-18 22:49:50 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\app\Models\ArtikelModel.php(34): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...')
+#2 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\app\Controllers\Home.php(25): App\Models\ArtikelModel->getnewartikel('self developmen...')
+#3 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\tasya\\...')
+#8 {main}
+ERROR - 2022-05-18 22:49:50 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-05-18 22:49:50 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\app\Models\ArtikelModel.php(34): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...')
+#2 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\app\Controllers\Home.php(25): App\Models\ArtikelModel->getnewartikel('self developmen...')
+#3 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\tasya\\...')
+#8 {main}
+ERROR - 2022-05-18 22:50:17 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-05-18 22:50:17 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\app\Models\ArtikelModel.php(34): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...')
+#2 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\app\Controllers\Home.php(25): App\Models\ArtikelModel->getnewartikel('self developmen...')
+#3 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\tasya\\...')
+#8 {main}
+ERROR - 2022-05-18 22:53:02 --> No database selected
+CRITICAL - 2022-05-18 22:53:02 --> No database selected
+#0 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM a...', 0)
+#1 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM a...')
+#2 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM a...')
+#3 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\app\Models\ArtikelModel.php(34): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...')
+#4 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\app\Controllers\Home.php(25): App\Models\ArtikelModel->getnewartikel('self developmen...')
+#5 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#6 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\tasya\\...')
+#10 {main}
+ERROR - 2022-05-18 22:53:02 --> No database selected
+CRITICAL - 2022-05-18 22:53:02 --> No database selected
+#0 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM a...', 0)
+#1 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM a...')
+#2 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM a...')
+#3 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\app\Models\ArtikelModel.php(34): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...')
+#4 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\app\Controllers\Home.php(25): App\Models\ArtikelModel->getnewartikel('self developmen...')
+#5 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#6 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\tasya\\...')
+#10 {main}
+ERROR - 2022-05-18 22:53:25 --> No database selected
+CRITICAL - 2022-05-18 22:53:25 --> No database selected
+#0 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM a...', 0)
+#1 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM a...')
+#2 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM a...')
+#3 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\app\Models\ArtikelModel.php(34): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...')
+#4 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\app\Controllers\Home.php(25): App\Models\ArtikelModel->getnewartikel('self developmen...')
+#5 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#6 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\tasya\\...')
+#10 {main}
