@@ -2324,7 +2324,6 @@
         },
         {
             "name": "symfony/deprecation-contracts",
-<<<<<<< HEAD
             "version": "v2.5.1",
             "source": {
                 "type": "git",
@@ -2335,18 +2334,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/e8b495ea28c1d97b5e0c121748d6f9b53d075c66",
                 "reference": "e8b495ea28c1d97b5e0c121748d6f9b53d075c66",
-=======
-            "version": "v3.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/deprecation-contracts.git",
-                "reference": "26954b3d62a6c5fd0ea8a2a00c0353a14978d05c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/26954b3d62a6c5fd0ea8a2a00c0353a14978d05c",
-                "reference": "26954b3d62a6c5fd0ea8a2a00c0353a14978d05c",
->>>>>>> 1a43174772bde7f38289353f8566f2f8b2e5e038
                 "shasum": ""
             },
             "require": {
@@ -2384,11 +2371,7 @@
             "description": "A generic function and convention to trigger deprecation notices",
             "homepage": "https://symfony.com",
             "support": {
-<<<<<<< HEAD
                 "source": "https://github.com/symfony/deprecation-contracts/tree/v2.5.1"
-=======
-                "source": "https://github.com/symfony/deprecation-contracts/tree/v3.0.1"
->>>>>>> 1a43174772bde7f38289353f8566f2f8b2e5e038
             },
             "funding": [
                 {
@@ -2404,11 +2387,7 @@
                     "type": "tidelift"
                 }
             ],
-<<<<<<< HEAD
             "time": "2022-01-02T09:53:40+00:00"
-=======
-            "time": "2022-01-02T09:55:41+00:00"
->>>>>>> 1a43174772bde7f38289353f8566f2f8b2e5e038
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -2610,9 +2589,5 @@
         "php": "^7.3 || ^8.0"
     },
     "platform-dev": [],
-<<<<<<< HEAD
     "plugin-api-version": "2.2.0"
-=======
-    "plugin-api-version": "2.3.0"
->>>>>>> 1a43174772bde7f38289353f8566f2f8b2e5e038
 }
