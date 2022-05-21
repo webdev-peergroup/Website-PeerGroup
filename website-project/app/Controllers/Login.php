@@ -191,7 +191,6 @@ class Login extends BaseController
     public function simpan(){
         // dd($this->request->getVar());
         //Validation
-        
         if (!$this->validate([
             'judul' => [
                 'rules'=>'required|is_unique[artikel.judul]',
@@ -210,26 +209,31 @@ class Login extends BaseController
             ]    
                     
         ])) {
-            $validation = \Config\Services::validation();   
-            // dd($validation);
-            // return redirect()->to('/admin-panel')->withInput()->with('validation',$validation);
+            // $validation = \Config\Services::validation();   
             return redirect()->to(base_url('admin-panel'))->withInput();
         }
-		
         //Ambil gambar
         $fileCover = $this->request->getFile('cover');
         // dd($fileCover);
-
-        //Check gambar apakah di upload
         if ($fileCover->getError() == 4) {
             $coverName = 'default.svg';
-        }else {
-            //Pindah gambar
-            $fileCover->move('assets/images/artikel');
-            //Ambil nama gambar
-            $coverName = $fileCover->getName();
+        }
+        else{
+            $coverName = $fileCover->getRandomName();
+            $fileCover->move('images/artikel',$coverName);
         }
         
+        // //Check gambar apakah di upload
+        // if ($fileCover->getError() == 4) {
+        //     $coverName = 'default.svg';
+        // }else {
+        //     //Pindah gambar
+        //     // $fileCover->move(WRITEPATH . 'uploads');
+        //      // Move the uploaded file to a new location.
+        //     $fileCover->move('assets/images/artikel');
+        //     //Ambil nama gambar
+        //     $coverName = $fileCover->getName();
+        // }
         //Slug if needed
         $slug = url_title($this->request->getVar('judul'), '-', true);
         //Simpan
@@ -295,7 +299,7 @@ class Login extends BaseController
             $coverName = 'default.svg';
         }else {
             //Pindah gambar
-            $fileCover->move('assets/images/artikel');
+            $fileCover->move('images/artikel');
             //Ambil nama gambar
             $coverName = $fileCover->getName();
         }

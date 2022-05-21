@@ -1,7 +1,6 @@
 <?= $this->extend('/Apps/header-footer');?>
 <?= $this->section('content')?>
     <main class="l-main">
-
         <!--Home-->
         <section class="home">
             <div class="home__container bd-grid">
@@ -42,12 +41,14 @@
                             $stitle = $self->judul;
                             $scover = $self->cover;
                             $sdeskripsi = $self->deskripsi;
+                            // dd($scover);
                         }
-                        if ($scover) {
+                        if($scover) {
+                            // dd($scover);
                             echo "<div class='kategori'>
                                         <h3 class='text-artikel'>Self Development</h3>
                                     <div class='artikel-content'>
-                                        <img src='/assets/images/artikel/$scover' alt='Cover postingan self development'>
+                                        <img src='images/artikel/$scover' alt='Cover postingan self development'>
                                         <p class='home-artikel-judul'>$stitle</p>
                                         <p class='text-isi-artikel'>$sdeskripsi</p>
                                     </div id='self'>
@@ -57,7 +58,7 @@
                             echo "<div class='kategori'>
                                         <h3 class='text-artikel'>Self Development</h3>
                                     <div class='artikel-content'>
-                                        <img src='/assets/images/artikel/default.svg' alt='Cover postingan self development'>
+                                        <img src='images/artikel/default.svg' alt='Cover postingan self development'>
                                         <p class='home-artikel-judul'>$stitle</p>
                                         <p class='text-isi-artikel'>$sdeskripsi</p>
                                     </div id='self'>
@@ -77,7 +78,7 @@
                             echo "<div class='kategori'>
                                         <h3 class='text-artikel' id='jurusan'>Jurusan</h3>
                                     <div class='artikel-content'>
-                                        <img src='/assets/images/artikel/$jcover' alt='Cover postingan Jurusan'>
+                                        <img src='images/artikel/$jcover' alt='Cover postingan Jurusan'>
                                         <p class='home-artikel-judul'>$jtitle</p>
                                         <p class='text-isi-artikel'>$jdeskripsi</p>
                                     </div>
@@ -87,7 +88,7 @@
                             echo "<div class='kategori'>
                                         <h3 class='text-artikel' id='jurusan'>Jurusan</h3>
                                     <div class='artikel-content'>
-                                        <img src='/assets/images/artikel/default.svg' alt='Cover postingan Jurusan'>
+                                        <img src='images/artikel/default.svg' alt='Cover postingan Jurusan'>
                                         <p class='home-artikel-judul'>$jtitle</p>
                                         <p class='text-isi-artikel'>$jdeskripsi</p>
                                     </div>
@@ -107,7 +108,7 @@
                             echo "<div class='kategori'>
                                     <h3 class='text-artikel' id='karir'>Karir</h3>
                                 <div class='artikel-content'>
-                                    <img src='/assets/images/artikel/$kcover' alt='Cover postingan Karir'>
+                                    <img src='images/artikel/$kcover' alt='Cover postingan Karir'>
                                     <p class='home-artikel-judul'>$ktitle</p>
                                     <p class='text-isi-artikel'>$kdeskripsi</p>
                                 </div>
@@ -117,7 +118,7 @@
                             echo "<div class='kategori'>
                                     <h3 class='text-artikel' id='karir'>Karir</h3>
                                 <div class='artikel-content'>
-                                    <img src='/assets/images/artikel/default.svg' alt='Cover postingan Karir'>
+                                    <img src='images/artikel/default.svg' alt='Cover postingan Karir'>
                                     <p class='home-artikel-judul'>$ktitle</p>
                                     <p class='text-isi-artikel'>$kdeskripsi</p>
                                 </div>
@@ -134,11 +135,11 @@
                     <h2 class="title-artikel-mobile">SELF DEVELOPMENT</h2>
                     <div class="box-artikel-mobile">
                         <div class="gambar-artikel-mobile">
-                            <img src='/assets/images/artikel/<?=$scover?>' alt='Cover postingan self development'>
+                            <img src='images/artikel/<?=$scover?>' alt='Cover postingan self development'>
                         </div>
                         <div class="isi-artikel-mobile">
                             <div class="judul-artikel-mobile">
-                                <a href="/detail-artikel/<?=$sslug?>"><?=$stitle?></a>
+                                <a href="/detail-artikel/<?= $sslug ?>"><?= $stitle ?></a>
                             </div>
                             <div class="deskripsi-artikel-mobile">
                                 <p><?=$sdeskripsi?></p>
@@ -152,11 +153,11 @@
                     <h2 class="title-artikel-mobile">KARIR</h2>
                     <div class="box-artikel-mobile">
                         <div class="gambar-artikel-mobile">
-                            <img src='/assets/images/artikel/<?=$kcover?>' alt='Cover postingan Karir'>
+                            <img src='images/artikel/<?= $kcover ?>' alt='Cover postingan Karir'>
                         </div>
                         <div class="isi-artikel-mobile">
                             <div class="judul-artikel-mobile">
-                                <a href="/detail-artikel/<?=$kslug?>"><?=$ktitle?></a>
+                                <a href="/detail-artikel/<?= $kslug ?>"><?= $ktitle ?></a>
                             </div>
                             <div class="deskripsi-artikel-mobile">
                                 <p><?=$kdeskripsi?></p>
@@ -170,7 +171,7 @@
                     <h2 class="title-artikel-mobile">JURUSAN</h2>
                     <div class="box-artikel-mobile">
                         <div class="gambar-artikel-mobile">
-                            <img src='/assets/images/artikel/<?=$jcover?>' alt='Cover postingan Jurusan'>
+                            <img src='images/artikel/<?=$jcover?>' alt='Cover postingan Jurusan'>
                         </div>
                         <div class="isi-artikel-mobile">
                             <div class="judul-artikel-mobile">

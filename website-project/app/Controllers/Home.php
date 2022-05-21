@@ -40,20 +40,24 @@ class Home extends BaseController
     }
     //Detail Artikel
     public function detart($id){
+        // dd($id);
         $list = $this->get->getartikel($id);
         // $deskripsi = $this->get->getmetadeskripsiartikel($id);
         $random = $this->get->getrandomartikel();
         foreach ($list->getResult() as $meta) {
-            $desk = $meta->deskripsi;
             $title = $meta->judul;
+            $desk = $meta->deskripsi;
         }
+        // dd($title = $meta->cover);
         $data = [
+            // dd($title);
             'title' => $title,
             'deskripsi' => $desk,
             'artikel' => $list,
             'css' => 'detailartikel.css',
             'rekomen' => $random
         ];
+        // dd($title);
         return view('Apps/detail artikel', $data);
     }
 

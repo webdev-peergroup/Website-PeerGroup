@@ -120,3 +120,318 @@ CRITICAL - 2022-05-19 08:18:52 --> Undefined variable $selfdev
 CRITICAL - 2022-05-19 10:00:56 --> Cannot redeclare App\Controllers\Home::landing()
 #0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
 #1 {main}
+CRITICAL - 2022-05-19 21:38:34 --> Undefined variable: totalTime
+#0 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/Debug/Toolbar/Views/toolbar.tpl.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/webdev...', 40, Array)
+#1 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/Debug/Toolbar.php(501): include('/var/www/webdev...')
+#2 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/Debug/Toolbar.php(464): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 /var/www/webdev-peergroup/website-project/app/Config/Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#4 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/Events/Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#5 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(308): CodeIgniter\Events\Events::trigger('pre_system')
+#6 /var/www/webdev-peergroup/website-project/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-19 21:46:30 --> Undefined variable: title
+#0 /var/www/webdev-peergroup/website-project/app/Controllers/Home.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/webdev...', 51, Array)
+#1 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Home->detart('coba-kegiatan')
+#2 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/webdev-peergroup/website-project/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-19 21:47:46 --> unlink(assets/images/artikel/Screenshot_20211108-134337713.jpg): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(assets/i...', '/var/www/webdev...', 174, Array)
+#1 /var/www/webdev-peergroup/website-project/app/Controllers/Login.php(174): unlink('assets/images/a...')
+#2 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Login->hapus_kegiatan('5')
+#3 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/webdev-peergroup/website-project/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-19 22:10:49 --> Undefined variable: scover
+#0 /var/www/webdev-peergroup/website-project/app/Views/Apps/index.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/webdev...', 46, Array)
+#1 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/View/View.php(210): include('/var/www/webdev...')
+#2 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('Apps/index', Array, true)
+#4 /var/www/webdev-peergroup/website-project/app/Controllers/Home.php(39): view('Apps/index', Array)
+#5 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#6 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/webdev-peergroup/website-project/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-19 22:10:49 --> Undefined variable: scover
+#0 /var/www/webdev-peergroup/website-project/app/Views/Apps/index.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/webdev...', 46, Array)
+#1 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/View/View.php(210): include('/var/www/webdev...')
+#2 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('Apps/index', Array, true)
+#4 /var/www/webdev-peergroup/website-project/app/Controllers/Home.php(39): view('Apps/index', Array)
+#5 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#6 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/webdev-peergroup/website-project/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-19 22:11:02 --> Undefined variable: scover
+#0 /var/www/webdev-peergroup/website-project/app/Views/Apps/index.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/webdev...', 46, Array)
+#1 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/View/View.php(210): include('/var/www/webdev...')
+#2 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('Apps/index', Array, true)
+#4 /var/www/webdev-peergroup/website-project/app/Controllers/Home.php(39): view('Apps/index', Array)
+#5 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#6 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/webdev-peergroup/website-project/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-19 22:12:19 --> Could not move file phpsdceVa to assets/images/artikel/ ()
+#0 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/HTTP/Files/UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phpsdceVa', 'assets/images/a...', '')
+#1 /var/www/webdev-peergroup/website-project/app/Controllers/Login.php(228): CodeIgniter\HTTP\Files\UploadedFile->move('assets/images/a...')
+#2 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Login->simpan()
+#3 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/webdev-peergroup/website-project/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-19 22:19:12 --> Undefined variable: title
+#0 /var/www/webdev-peergroup/website-project/app/Controllers/Home.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/webdev...', 51, Array)
+#1 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Home->detart('self-dev')
+#2 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/webdev-peergroup/website-project/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-19 22:20:22 --> Undefined variable: title
+#0 /var/www/webdev-peergroup/website-project/app/Controllers/Home.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/webdev...', 51, Array)
+#1 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Home->detart('self-dev')
+#2 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/webdev-peergroup/website-project/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-19 22:20:25 --> Undefined variable: title
+#0 /var/www/webdev-peergroup/website-project/app/Controllers/Home.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/webdev...', 51, Array)
+#1 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Home->detart('self-dev')
+#2 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/webdev-peergroup/website-project/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-19 22:21:59 --> Undefined variable: title
+#0 /var/www/webdev-peergroup/website-project/app/Controllers/Home.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/webdev...', 50, Array)
+#1 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Home->detart('self-dev')
+#2 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/webdev-peergroup/website-project/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-19 22:22:03 --> Undefined variable: title
+#0 /var/www/webdev-peergroup/website-project/app/Controllers/Home.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/webdev...', 50, Array)
+#1 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Home->detart('self-dev')
+#2 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/webdev-peergroup/website-project/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-19 22:22:34 --> Undefined variable: title
+#0 /var/www/webdev-peergroup/website-project/app/Controllers/Home.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/webdev...', 52, Array)
+#1 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Home->detart('self-dev')
+#2 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/webdev-peergroup/website-project/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-19 22:23:07 --> Undefined variable: scover
+#0 /var/www/webdev-peergroup/website-project/app/Views/Apps/index.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/webdev...', 46, Array)
+#1 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/View/View.php(210): include('/var/www/webdev...')
+#2 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('Apps/index', Array, true)
+#4 /var/www/webdev-peergroup/website-project/app/Controllers/Home.php(39): view('Apps/index', Array)
+#5 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#6 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/webdev-peergroup/website-project/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-19 22:24:24 --> Undefined variable: scover
+#0 /var/www/webdev-peergroup/website-project/app/Views/Apps/index.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/webdev...', 46, Array)
+#1 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/View/View.php(210): include('/var/www/webdev...')
+#2 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('Apps/index', Array, true)
+#4 /var/www/webdev-peergroup/website-project/app/Controllers/Home.php(39): view('Apps/index', Array)
+#5 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#6 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/webdev-peergroup/website-project/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-19 22:25:44 --> Undefined variable: jcover
+#0 /var/www/webdev-peergroup/website-project/app/Views/Apps/index.php(76): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/webdev...', 76, Array)
+#1 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/View/View.php(210): include('/var/www/webdev...')
+#2 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('Apps/index', Array, true)
+#4 /var/www/webdev-peergroup/website-project/app/Controllers/Home.php(39): view('Apps/index', Array)
+#5 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#6 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/webdev-peergroup/website-project/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-19 22:26:22 --> Could not move file phpko4Dk6 to assets/images/artikel/ ()
+#0 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/HTTP/Files/UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phpko4Dk6', 'assets/images/a...', '')
+#1 /var/www/webdev-peergroup/website-project/app/Controllers/Login.php(228): CodeIgniter\HTTP\Files\UploadedFile->move('assets/images/a...')
+#2 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Login->simpan()
+#3 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/webdev-peergroup/website-project/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-19 22:35:02 --> Could not move file phpRe4Je8 to assets/images/artikel/ ()
+#0 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/HTTP/Files/UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phpRe4Je8', 'assets/images/a...', '')
+#1 /var/www/webdev-peergroup/website-project/app/Controllers/Login.php(228): CodeIgniter\HTTP\Files\UploadedFile->move('assets/images/a...', '/tmp/phpRe4Je8')
+#2 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Login->simpan()
+#3 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/webdev-peergroup/website-project/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-19 22:40:39 --> Could not move file phparNDs6 to assets/images/artikel/ ()
+#0 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/HTTP/Files/UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phparNDs6', 'assets/images/a...', '')
+#1 /var/www/webdev-peergroup/website-project/app/Controllers/Login.php(228): CodeIgniter\HTTP\Files\UploadedFile->move('assets/images/a...')
+#2 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Login->simpan()
+#3 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/webdev-peergroup/website-project/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-19 22:41:59 --> Could not move file php50Avqi to assets/images/artikel/ ()
+#0 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/HTTP/Files/UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('php50Avqi', 'assets/images/a...', '')
+#1 /var/www/webdev-peergroup/website-project/app/Controllers/Login.php(228): CodeIgniter\HTTP\Files\UploadedFile->move('assets/images/a...')
+#2 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Login->simpan()
+#3 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/webdev-peergroup/website-project/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-19 22:50:35 --> An exception (RuntimeException) was thrown in /var/www/webdev-peergroup/website-project/vendor/kint-php/kint/src/Zval/Representation/SplFileInfoRepresentation.php on line 56 while executing Kint Parser Plugin "Kint\Parser\SplFileInfoPlugin". Error message: SplFileInfo::getPerms(): stat failed for /tmp/phphAoMLf
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(512, 'An exception (R...', '/var/www/webdev...', 608, Array)
+#1 /var/www/webdev-peergroup/website-project/vendor/kint-php/kint/src/Parser/Parser.php(608): trigger_error('An exception (R...', 512)
+#2 /var/www/webdev-peergroup/website-project/vendor/kint-php/kint/src/Parser/Parser.php(539): Kint\Parser\Parser->applyPlugins(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\InstanceValue), 2)
+#3 /var/www/webdev-peergroup/website-project/vendor/kint-php/kint/src/Parser/Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+#4 /var/www/webdev-peergroup/website-project/vendor/kint-php/kint/src/Kint.php(286): Kint\Parser\Parser->parse(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+#5 /var/www/webdev-peergroup/website-project/vendor/kint-php/kint/src/Kint.php(267): Kint\Kint->dumpVar(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+#6 /var/www/webdev-peergroup/website-project/vendor/kint-php/kint/src/Kint.php(590): Kint\Kint->dumpAll(Array, Array)
+#7 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/Common.php(328): Kint\Kint::dump(Object(CodeIgniter\HTTP\Files\UploadedFile))
+#8 /var/www/webdev-peergroup/website-project/app/Controllers/Login.php(234): dd(Object(CodeIgniter\HTTP\Files\UploadedFile))
+#9 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Login->simpan()
+#10 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#11 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /var/www/webdev-peergroup/website-project/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-05-19 22:52:31 --> Could not move file phpzJUMZ4 to assets/images/artikel/ ()
+#0 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/HTTP/Files/UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phpzJUMZ4', 'assets/images/a...', '')
+#1 /var/www/webdev-peergroup/website-project/app/Controllers/Login.php(228): CodeIgniter\HTTP\Files\UploadedFile->move('assets/images/a...')
+#2 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Login->simpan()
+#3 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/webdev-peergroup/website-project/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-19 23:00:44 --> Could not move file phpsB7L46 to /var/www/webdev-peergroup/website-project/writable/uploads/ ()
+#0 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/HTTP/Files/UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phpsB7L46', '/var/www/webdev...', '')
+#1 /var/www/webdev-peergroup/website-project/app/Controllers/Login.php(225): CodeIgniter\HTTP\Files\UploadedFile->move('/var/www/webdev...')
+#2 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Login->simpan()
+#3 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/webdev-peergroup/website-project/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-19 23:27:40 --> mkdir(): Permission denied
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): Permis...', '/var/www/webdev...', 176, Array)
+#1 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/HTTP/Files/UploadedFile.php(176): mkdir('images/artikel/', 511, true)
+#2 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/HTTP/Files/UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('images/artikel/')
+#3 /var/www/webdev-peergroup/website-project/app/Controllers/Login.php(223): CodeIgniter\HTTP\Files\UploadedFile->move('images/artikel/', '1653020860_01cb...')
+#4 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Login->simpan()
+#5 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/webdev-peergroup/website-project/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-19 23:29:18 --> mkdir(): Permission denied
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): Permis...', '/var/www/webdev...', 176, Array)
+#1 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/HTTP/Files/UploadedFile.php(176): mkdir('images/artikel/', 511, true)
+#2 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/HTTP/Files/UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('images/artikel/')
+#3 /var/www/webdev-peergroup/website-project/app/Controllers/Login.php(223): CodeIgniter\HTTP\Files\UploadedFile->move('images/artikel/', '1653020958_de46...')
+#4 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Login->simpan()
+#5 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/webdev-peergroup/website-project/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-19 23:37:28 --> fopen(/var/www/webdev-peergroup/website-project/writable/session/ci_sessionuocbshs8mn766tlriijpej3i1ut6kucp): failed to open stream: Permission denied
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(/var/www/...', '/var/www/webdev...', 129, Array)
+#1 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/Session/Handlers/FileHandler.php(129): fopen('/var/www/webdev...', 'c+b')
+#2 [internal function]: CodeIgniter\Session\Handlers\FileHandler->read('uocbshs8mn766tl...')
+#3 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/Session/Session.php(894): session_start()
+#4 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/Session/Session.php(238): CodeIgniter\Session\Session->startSession()
+#5 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/Config/Services.php(577): CodeIgniter\Session\Session->start()
+#6 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/Config/BaseService.php(248): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#7 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/Config/BaseService.php(189): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#8 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/Config/Services.php(563): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#9 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/Config/BaseService.php(248): CodeIgniter\Config\Services::session()
+#10 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/Common.php(901): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#11 /var/www/webdev-peergroup/website-project/app/Controllers/BaseController.php(51): session()
+#12 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#13 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#14 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 /var/www/webdev-peergroup/website-project/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#16 {main}
+CRITICAL - 2022-05-19 23:38:00 --> fopen(/var/www/webdev-peergroup/website-project/writable/session/ci_sessionuocbshs8mn766tlriijpej3i1ut6kucp): failed to open stream: Permission denied
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(/var/www/...', '/var/www/webdev...', 129, Array)
+#1 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/Session/Handlers/FileHandler.php(129): fopen('/var/www/webdev...', 'c+b')
+#2 [internal function]: CodeIgniter\Session\Handlers\FileHandler->read('uocbshs8mn766tl...')
+#3 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/Session/Session.php(894): session_start()
+#4 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/Session/Session.php(238): CodeIgniter\Session\Session->startSession()
+#5 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/Config/Services.php(577): CodeIgniter\Session\Session->start()
+#6 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/Config/BaseService.php(248): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#7 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/Config/BaseService.php(189): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#8 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/Config/Services.php(563): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#9 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/Config/BaseService.php(248): CodeIgniter\Config\Services::session()
+#10 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/Common.php(901): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#11 /var/www/webdev-peergroup/website-project/app/Controllers/BaseController.php(51): session()
+#12 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#13 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#14 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 /var/www/webdev-peergroup/website-project/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#16 {main}
+CRITICAL - 2022-05-19 23:45:53 --> Undefined variable: title
+#0 /var/www/webdev-peergroup/website-project/app/Controllers/Home.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/webdev...', 51, Array)
+#1 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Home->detart('images', 'artikel', '1653021600_8fdf...')
+#2 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/webdev-peergroup/website-project/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-19 23:46:04 --> Undefined variable: title
+#0 /var/www/webdev-peergroup/website-project/app/Controllers/Home.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/webdev...', 51, Array)
+#1 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Home->detart('images', 'artikel', '1653021600_8fdf...')
+#2 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/webdev-peergroup/website-project/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-19 23:47:18 --> Undefined variable: title
+#0 /var/www/webdev-peergroup/website-project/app/Controllers/Home.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/webdev...', 51, Array)
+#1 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Home->detart('images', 'artikel', '1653021600_8fdf...')
+#2 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/webdev-peergroup/website-project/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-19 23:51:58 --> Undefined variable: title
+#0 /var/www/webdev-peergroup/website-project/app/Controllers/Home.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/webdev...', 51, Array)
+#1 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Home->detart('images', 'artikel', '1653021600_8fdf...')
+#2 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/webdev-peergroup/website-project/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-19 23:52:24 --> Undefined variable: title
+#0 /var/www/webdev-peergroup/website-project/app/Controllers/Home.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/webdev...', 51, Array)
+#1 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Home->detart('images', 'artikel', '1653021550_3084...')
+#2 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/webdev-peergroup/website-project/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-19 23:52:29 --> Undefined variable: title
+#0 /var/www/webdev-peergroup/website-project/app/Controllers/Home.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/webdev...', 51, Array)
+#1 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Home->detart('images', 'artikel', '1653021600_8fdf...')
+#2 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/webdev-peergroup/website-project/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-19 23:52:34 --> Undefined variable: title
+#0 /var/www/webdev-peergroup/website-project/app/Controllers/Home.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/webdev...', 51, Array)
+#1 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Home->detart('images', 'artikel', '1653021600_8fdf...')
+#2 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/webdev-peergroup/website-project/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-19 23:52:38 --> Undefined variable: title
+#0 /var/www/webdev-peergroup/website-project/app/Controllers/Home.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/webdev...', 51, Array)
+#1 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Home->detart('images', 'artikel', 'aas.jpg')
+#2 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /var/www/webdev-peergroup/website-project/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/webdev-peergroup/website-project/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
