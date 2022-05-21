@@ -245,7 +245,7 @@
 /* FOOTER */
 .footer{
   background-color: #1a252f;
-  padding-top: 1rem;
+  padding-top: 2rem;
   padding-bottom: 1rem;
   margin: 3rem 0 0 0;
   color: #fff;
@@ -254,13 +254,129 @@
   bottom: 0;
 }
 
+.column {
+  float: left;
+  padding: 0 10px;
+  text-align: left;
+  font-size: 15px;
+  font-style: var(--font-medium);
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+.column p{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.col-sosmed{
+  width: 22%;
+  vertical-align: top;
+}
+
+.contact{
+  width: 25%;
+  margin-right: 9%;
+}
+
+.foot-sitemap{
+  width: 19%;
+}
+
+.col-logo{
+  width: 25%;
+  /* text-align: center; */
+}
+
+.footer-container{
+  margin: 0 5% 0 7%;
+}
+
+.sitemap{
+  margin-left: 16px;
+}
+
+.sitemap li{
+  margin-top: 5px;
+}
+
+.sitemap ul ul li{
+  margin-left: 5px;
+}
+
+.logo{
+  width: 100%;
+  margin-top: -2rem;
+  /* margin-bottom: 1rem; */
+}
+
+.sosial-media{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.sosial-media a{
+  text-emphasis: none;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.sitemap-link{
+  text-emphasis: none;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.sitemap-link:hover{
+  color: var(--second-context);
+}
+
+.link-sosmed:hover{
+  color: var(--second-context);
+}
+
+.img-kontak-media{ 
+  margin: 0.25rem;
+  width: 1rem;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  margin-top: 6px;
+  resize: none;
+  border: none;
+}
+
+input[type=submit] {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 6px;
+}
+
+input[type=submit]:hover {
+  background-color: #dea004;
+}
+
+
 /*ARTIKEL*/
 .ls-paragraph{
   padding-right: 2.7em;
 }
-
-
-
 
 .label{
   width: 50px;
@@ -298,6 +414,7 @@
   transform: translateX(24px);
 }
 
+/* Dark Mode */
 body.dark{
   background: #06263A;
 }
@@ -315,8 +432,6 @@ p.dark, .thumbnail-description.dark,
 .title-activity.dark{
   color: #B9E5E6;
 }
-
-
 
 .dark-penulis-kategori{
   color: #E7BF60;

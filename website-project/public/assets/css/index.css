@@ -179,7 +179,7 @@
     transition: background 0.2s linear;
     margin-bottom: 3rem;
 }
-
+/* 
 .img-kontak{
     width: 22rem;
 }
@@ -192,12 +192,13 @@
 .sosial-media a{
     text-emphasis: none;
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
 }
   
-.img-kontak-media{
-    height: 3rem;
-}
+.img-kontak-media{ 
+    margin: 0.25rem;
+} */
+
 
 /* Small phone */
 @media screen and (max-width: 480px) {
@@ -456,11 +457,11 @@
     }
 
     .img-kontak-media{
-        width: 3rem;
+        width: 1rem;
     }
     
     .sosial-media{
-        font-size: 1.5rem;
+        font-size: 0.75rem;
     }
     
     .kontak-container{

@@ -88,10 +88,10 @@
                             <a href="#" class="nav__link dropdown__link" id="dropdown">Kegiatan <i class='bx bx-chevron-down dropdown__icon' id="drop-icon"></i></a>
                             <ul class="dropdown__menu" id="dropdown-menu">
                                 <li class="dropdown__item"><a href="/" class="nav__link">Kegiatan Kami</a></li>
-                                <li class="dropdown__item"><a href="/" class="nav__link">Volunteer</a></li>>
+                                <li class="dropdown__item"><a href="/" class="nav__link">Volunteer</a></li>
                             </ul>
                         </li>
-                        <!-- <li class="nav__item"><a href="/home/landing" class="nav__link">Landing</a></li> -->
+                        <li class="nav__item"><a href="/home/landing" class="nav__link">Landing</a></li>
                         <?php
                             if ($session->logged_in == true) {
                                 $logout = base_url('logout');
@@ -124,6 +124,74 @@
     </header>
     <?= $this->renderSection('content');?>
     <div class="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="column col-sosmed"><p>Social Media</p>
+                    <div class="sosial-media">
+                        <img src="/assets/images/linkedin.png" class="img-kontak-media " alt="logo linkedin">
+                        <a href="https://www.linkedin.com/company/peer-group-id/" target="_blank" rel="noopener noreferrer" class="link-sosmed">Peer Group ID</a>
+                    </div>
+                    <div class="sosial-media">
+                        <img src="/assets/images/ig.png" class="img-kontak-media" alt="logo instagram">
+                        <a href="https://www.instagram.com/peergroup.id/" target="_blank" rel="noopener noreferrer" class="link-sosmed">peergroup.id</a> 
+                    </div>
+                    <div class="sosial-media">
+                        <img src="/assets/images/tiktok.png" class="img-kontak-media" alt="logo email">
+                        <a href="https://www.tiktok.com/@peergroup.id/" target="_blank" rel="noopener noreferrer" class="link-sosmed">peergroup.id</a>
+                    </div>
+                </div>
+                <div class="column contact"><p>Contact Us</p>
+                    <div class="container">
+                        <form action="action_page.php">
+
+                            <!-- <label for="fname">First Name</label> -->
+                            <input type="text" id="fname" name="firstname" placeholder="Name">
+
+                            <!-- <label for="lname">Last Name</label> -->
+                            <input type="text" id="lname" name="lastname" placeholder="Email">
+
+                            <!-- <label for="country">Country</label>
+                            <select id="country" name="country">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option> -->
+                            <!-- </select> -->
+
+                            <!-- <label for="subject">Subject</label> -->
+                            <textarea id="subject" name="subject" placeholder="Message" style="height:75px"></textarea>
+
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+                <div class="column foot-sitemap"><p>Sitemap</p>
+                    <ul style="list-style-type:disc" class="sitemap">
+                        <!-- <li><a href=""></a></li> -->
+                        <li ><a href="/" class="sitemap-link">Beranda</a></li>
+                        <li><a href="/about" class="sitemap-link">Siapa Kita</a></li>
+                        <li>Artikel
+                            <!-- <a href="#" class="nav__link dropdown__link" id="dropdown">Artikel <i class='bx bx-chevron-down dropdown__icon' id="drop-icon"></i></a> -->
+                            <ul style="list-style-type:circle" class="sitemap">
+                                <li><a href="/artikel/self" class="sitemap-link">Self Development</a></li>
+                                <li><a href="/artikel/jurusan" class="sitemap-link">Jurusan</a></li>
+                                <li><a href="/artikel/karir" class="sitemap-link">Karir</a></li>
+                            </ul>
+                        </li>
+                        <li>Kegiatan
+                        <ul style="list-style-type:circle" class="sitemap">
+                                <li><a href="/" class="sitemap-link">Kegiatan Kami</a></li>
+                                <li><a href="/" class="sitemap-link">Volunteer</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column col-logo">
+                    <img class="logo" src="/assets/images/Logo Peer Group Transparan.png" alt="Logo Peer Group ID">
+                    <!-- <a href="mailto:peergroup.id@gmail.com" class="nav__link">peergroup.id@gmail.com</a> -->
+                </div>
+            </div>
+        </div>
+        <br>
         <small>Copyright &copy; Peergroup.id 2021</small>
     </div>
     <!--Main JS-->
