@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="logo">
-        <a href="/" class="nav__logo"><img src="/assets/images/landing/Logo Peer Group.jpg" alt="Logo Peer Group ID"></a>
+        <a href="/" class="nav__logo"><img src="/assets/images/landing/Logo Peer Group.png" alt="Logo Peer Group ID"></a>
     </div>
     <!--Intro-->
     <div class="intro">
