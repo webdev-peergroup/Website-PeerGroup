@@ -231,6 +231,7 @@ form{
 .upload-foto{
   display: flex;
   flex-direction: column;
+  width: 30px;
 }
 
 .table{

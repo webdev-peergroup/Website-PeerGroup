@@ -59,26 +59,26 @@ class Login extends BaseController
 
 
     //Profil Admin
-    public function profile(){
-        $session = session();
-        if ($session->logged_in != TRUE) {
-            return redirect()->to('/login');
-        }
-        $user = $session->username;
-        $dataUser = $this->user->where(['username' => $user])->first();
-        $data = [
-            'title' => 'Profile',
-            'username' => $dataUser->username,
-            'password' => $dataUser->password,
-            'nama' => $dataUser->nama,
-            'id' => $dataUser->id_user,
-            'gender' => $dataUser->gender,
-            'foto' => $dataUser->foto,
-            'validation' => \Config\Services::validation()
-        ];
+    // public function profile(){
+    //     $session = session();
+    //     if ($session->logged_in != TRUE) {
+    //         return redirect()->to('/login');
+    //     }
+    //     $user = $session->username;
+    //     $dataUser = $this->user->where(['username' => $user])->first();
+    //     $data = [
+    //         'title' => 'Profile',
+    //         'username' => $dataUser->username,
+    //         'password' => $dataUser->password,
+    //         'nama' => $dataUser->nama,
+    //         'id' => $dataUser->id_user,
+    //         'gender' => $dataUser->gender,
+    //         'foto' => $dataUser->foto,
+    //         'validation' => \Config\Services::validation()
+    //     ];
 
-        return view('Apps/new_profile', $data);
-    }
+    //     return view('Apps/profile_admin', $data);
+    // }
 
 
     public function update_profile($id){
@@ -94,8 +94,7 @@ class Login extends BaseController
             $fileFoto->move('assets/images/profile');
             //Ambil nama gambar
             $profile = $fileFoto->getName();
-        }
-        
+        }      
         //Slug if needed
         // $slug = url_title($this->request->getVar('title'), '-', true);
         //Simpan

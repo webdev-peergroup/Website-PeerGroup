@@ -52,7 +52,7 @@ $routes->put('/kegiatan-admin/edit/(:any)', 'Login::edit_kegiatan/$1');
 //Bagian Admin Tambah Data
 $routes->get('/tambah-data', 'Login::tambah_data');
 //Bagian Admin Profile Data
-$routes->get('/profile', 'Login::profile');
+$routes->get('/profile', 'ProfileAdminController::profile');
 $routes->get('/update/profile/(:num)', 'Login::update_profile/$1');
 
 
