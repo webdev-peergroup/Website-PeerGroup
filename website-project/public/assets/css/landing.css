@@ -109,6 +109,10 @@
     text-align: center;
 }
 
+.desc:hover{
+    color: var(--primary-color);
+}
+
 .front{
     max-width: 1000px;
 }
@@ -182,12 +186,13 @@
   text-align: center;
 }
 
+.button-link:hover {
+  background-color: #dea004;
+}
 
 .join-us{
     text-align: center;
-    margin: 8rem;
-    /* height: 5000px; */
-    /* background-color: white; */
+    margin: 9.3rem;
 }
 
 /* FOOTER */
@@ -195,7 +200,6 @@
   background-color: #1a252f;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  /* margin: 3rem 0 0 0; */
   color: #fff;
   text-align: center;
   width: 100%;

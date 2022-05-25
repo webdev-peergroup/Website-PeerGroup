@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/landing.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Welcome to Peer Group ID</title>
 </head>
 <body>
@@ -63,6 +64,23 @@
     <div class="footer">
         <small>Copyright &copy; Peergroup.id 2021</small>
     </div>
-    <script src="/assets/js/landing.js"></script>
+
+    <!-- Scroll reveal animation -->
+    <script>
+        ScrollReveal({
+            origin: 'top',
+            distance: '80px',
+            duration: 2000,
+            reset: true
+        });
+        ScrollReveal().reveal('.intro');
+        ScrollReveal().reveal('.desc');
+        ScrollReveal().reveal('.intro-img');
+        ScrollReveal().reveal('.potensi-container', {delay: 400});
+        ScrollReveal().reveal('.fokus-container', {delay: 400});
+        ScrollReveal().reveal('.unik-container',{delay: 400});
+        ScrollReveal().reveal('.join-title');
+        ScrollReveal().reveal('.button-link');
+	</script>
 </body>
 </html>
