@@ -9,6 +9,7 @@
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="/assets/images/Logo Peer Group.jpg" type="image/x-icon">
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/contact.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/<?=$css?>"> 
     <!--  Essential META Tags -->
     <meta name="application-name" content="Web Peer Group ID">
@@ -141,14 +142,14 @@
                 </div>
                 <div class="column contact"><p>Contact Us</p>
                     <div class="container">
-                        <form action="action_page.php">
-                            <input type="text" id="fname" name="firstname" placeholder="Name">
-                            <input type="text" id="lname" name="lastname" placeholder="Email">
-                            <textarea id="subject" name="subject" placeholder="Message" style="height:75px"></textarea>
-
+                        <form action="https://formsubmit.co/peergroup.id@gmail.com" method="POST" id="my-form">
+                            <input type="text" id="fname" name="Nama" placeholder="Name" required>
+                            <input type="email" id="lname" name="Email" placeholder="Email" required>
+                            <textarea id="subject" name="Pesan" placeholder="Message" style="height:75px" required></textarea>
                             <input type="submit" value="Submit">
                         </form>
                     </div>
+                    <div id="status"></div>
                 </div>
                 <div class="column foot-sitemap"><p>Sitemap</p>
                     <ul style="list-style-type:disc" class="sitemap">
@@ -179,6 +180,7 @@
     </div>
     <!--Main JS-->
     <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/contact.js"></script>
     <?=$this->renderSection('js');?>
 </body>
 </html>
