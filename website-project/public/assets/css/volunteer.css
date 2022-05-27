@@ -24,9 +24,15 @@
   }
   
 .content{
-    /* width: 50%; */
     max-width: 388px;
     margin-top: 4rem;
+}
+
+.title{
+    font-size: var(--header-height);
+    text-align: center;
+    color: black;
+    padding-bottom: 1rem;
 }
 
 .intro-title { 
@@ -37,20 +43,17 @@
       text-align: center;
 }
 
-.title{
-    font-size: var(--header-height);
-    text-align: center;
-    color: black;
-}
-
 .career-container{
     background-color: #5F9695;
-    padding: 6rem;
+    padding: 3rem 7rem;
 }
 
 .career-desc{
-    text-align: justified;
+    text-align: justify;
+    color: white;
     font: 400;
+    font-size: large;
+    line-height: 25px;
 }
 
 .career-title{
@@ -78,10 +81,107 @@
     background-color: #dea004;
   }
 
-.join-us{
+  .benefit{
+      padding: 3rem 7rem;
+  }
+
+  .benefit-container{
+      padding-bottom: 2rem;
+  }
+
+  .benefit-desc {
+    float: left;
+    width: 33.3%;
     text-align: center;
-    margin: 9.3rem;
-}
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .benefit-desc img{
+      height: 75px;
+  }
+
+  .benefit-desc p{
+      text-align: justify;
+      padding: 0 2rem 2rem 2rem;
+  }
+
+  .divisi{
+    background-color: #5F9695;
+    padding: 3rem 7rem;
+  }
+  
+  .divisi-title{
+      color: white;
+  }
+
+  .divisi-desc{
+      display: inline;
+  }
+
+  .divisi-desc button{
+    width: 27%;
+    height: 185px;
+    text-align: center;
+    background-color: #455A64;
+    margin: 1.97rem;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    font-size: 30px;
+  }
+  
+  .join-us{
+      text-align: center;
+      padding: 9rem 7rem;
+  }
+
+  .join-title{
+      font-size: 45px;
+      line-height: 65px;
+  }
+
+  /* The Modal (background) */
+.pop {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .popup-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
   /* .home__button{
     display: inline-block;
     background-color: var(--primary-color);
@@ -546,4 +646,42 @@
         left: 6rem;
         /* top: 1rem; */
     }
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }

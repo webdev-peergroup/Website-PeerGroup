@@ -6,9 +6,9 @@
         <section class="intro">
             <div class="intro-container bd-grid">
                 <div class="content">
-                    <h1 class="intro-title">Career in<br>PeerGroup</h1>
+                    <h1 class="intro-title title">Career in<br>PeerGroup</h1>
                 </div>
-                <div class="intro-img">
+                <div class="intro-img title">
                     <img class="front" src="/assets/images/volunteer/career.png" alt="career">
                 </div>
             </div>
@@ -54,16 +54,78 @@
             <div class="benefit-container title">
                 <h1>Work With Us</h1>
             </div>
+            <div class="row">
+                <div class="benefit-desc">
+                    <img src="/assets/images/volunteer/teamwork.png"></img>
+                    <h2>Teamwork</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                <div class="benefit-desc">
+                    <img src="/assets/images/volunteer/teamwork.png"></img>
+                    <h2>Teamwork</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                <div class="benefit-desc">
+                    <img src="/assets/images/volunteer/teamwork.png"></img>
+                    <h2>Teamwork</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                <div class="benefit-desc">
+                    <img src="/assets/images/volunteer/teamwork.png"></img>
+                    <h2>Teamwork</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                <div class="benefit-desc">
+                    <img src="/assets/images/volunteer/teamwork.png"></img>
+                    <h2>Teamwork</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                <div class="benefit-desc">
+                    <img src="/assets/images/volunteer/teamwork.png"></img>
+                    <h2>Teamwork</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+            </div>
         </section>
         
-        <section class="career">
-            <div class="career-container">
-                <h1 class="career-title title">
-                    <span class="title-light">Career at</span>
-                    <span class="title-dark">Peer Group</span>
+        <section class="divisi">
+            <div class="divisi-container">
+                <h1 class="divisi-title title">
+                    Open Recruitment
+                    <!-- <span class="title-dark">Open</span>
+                    <span class="title-light">Recruitment</span> -->
                 </h1>
                 <!-- <a href="https://bit.ly/telegrampeergroup" class="button-link" target=”_blank”>Join Us</a> -->
-                <p class="career-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem velit eligendi labore debitis laborum, consequuntur, nesciunt ut, illum quam cupiditate minus iusto. Assumenda odio, fugit non molestias magni quod dignissimos. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque officia modi nisi quidem alias quae, quos repellat magni ad officiis quisquam. Necessitatibus soluta ipsa perferendis? Quia tempora hic asperiores eaque.<p>
+                <!-- <p class="career-desc"><p> -->
+            </div>
+            <div class="row">
+                <div class="divisi-desc">
+                    <button id="divisi-pop">Web Developer</button>
+                    <div id="popup" class="pop">
+                        <div class="popup-content">
+                            <span class="close">&times;</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem velit eligendi labore debitis laborum, consequuntur, nesciunt ut, illum quam cupiditate minus iusto. Assumenda odio, fugit non molestias magni quod dignissimos. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque officia modi nisi quidem alias quae, quos repellat magni ad officiis quisquam. Necessitatibus soluta ipsa perferendis? Quia tempora hic asperiores eaque.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="divisi-desc">
+                    <button id="divisi-pop">Public Relation</button>
+                    <div id="popup" class="pop">
+                        <div class="popup-content">
+                            <span class="close">&times;</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem velit eligendi labore debitis laborum, consequuntur, nesciunt ut, illum quam cupiditate minus iusto. Assumenda odio, fugit non molestias magni quod dignissimos. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque officia modi nisi quidem alias quae, quos repellat magni ad officiis quisquam. Necessitatibus soluta ipsa perferendis? Quia tempora hic asperiores eaque.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="divisi-desc">
+                    <button id="divisi-pop">Content Writer</button>
+                    <div id="popup" class="pop">
+                        <div class="popup-content">
+                            <span class="close">&times;</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem velit eligendi labore debitis laborum, consequuntur, nesciunt ut, illum quam cupiditate minus iusto. Assumenda odio, fugit non molestias magni quod dignissimos. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque officia modi nisi quidem alias quae, quos repellat magni ad officiis quisquam. Necessitatibus soluta ipsa perferendis? Quia tempora hic asperiores eaque.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -118,4 +180,5 @@
     <!--GASP-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="/assets/js/index.js"></script>
+    <script src="/assets/js/volunteer.js"></script>
 <?= $this->endsection();?>
