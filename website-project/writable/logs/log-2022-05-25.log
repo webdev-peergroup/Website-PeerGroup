@@ -43,3 +43,15 @@ CRITICAL - 2022-05-25 04:09:01 --> Call to undefined method CodeIgniter\Session\
 #7 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #8 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\tasya\\...')
 #9 {main}
+CRITICAL - 2022-05-25 10:39:08 --> Undefined variable $selfdev
+#0 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\app\Views\Apps\volunteer.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\tasya\\...', 39)
+#1 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\Users\\tasya\\...')
+#2 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Apps/volunteer', Array, true)
+#4 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\app\Controllers\Home.php(130): view('Apps/volunteer', Array)
+#5 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Home->volunteer()
+#6 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\tasya\Desktop\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\tasya\\...')
+#10 {main}

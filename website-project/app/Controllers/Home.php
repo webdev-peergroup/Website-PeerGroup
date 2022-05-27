@@ -118,4 +118,15 @@ class Home extends BaseController
 
         return view('Apps/landing', $data);
     }
+    
+    //volunteer
+    public function volunteer(){
+        $data = [
+            'title' => 'Volunteer',
+            'deskripsi' => 'Volunteer',
+            'css' => 'volunteer.css'
+        ];
+
+        return view('Apps/volunteer', $data);
+    }
 }
