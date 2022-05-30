@@ -37,8 +37,10 @@
 
 .intro-title { 
       grid-area: title;
-      font-size: var(--big-font-size);
+      font-size: 70px;
       margin-bottom: 0.5rem; 
+      padding-left: 25px;
+      padding-right: 25px;
       color: black;
       text-align: center;
 }
@@ -119,11 +121,11 @@
       color: white;
   }
 
-  .divisi-desc{
+  .popup_main{
       display: inline;
   }
 
-  .divisi-desc button{
+  .popup_main button{
     width: 27%;
     height: 185px;
     text-align: center;
@@ -133,6 +135,7 @@
     border-radius: 25px;
     border: none;
     font-size: 30px;
+    padding: 1.5rem;
   }
   
   .join-us{
@@ -144,44 +147,82 @@
       font-size: 45px;
       line-height: 65px;
   }
-
-  /* The Modal (background) */
-.pop {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
   
-  /* Modal Content/Box */
-  .popup-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
+  .popup_contain {
+    background: #fefefe;
+    margin: 15% auto;
+    padding: 15px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 80%;
+    position:relative;
   }
-  
-  /* The Close Button */
-  .close {
+
+  .popup_content{
+      padding: 10px;
+  }
+
+  .popup_content ul{
+      list-style: disc;
+      padding-left: 1.5rem;
+  }
+
+  .popup_close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
+    padding: 0 10px;
   }
   
-  .close:hover,
-  .close:focus {
+  .popup_close:hover,
+  .popup_close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
   }
+
+  .popup_body{
+    display:none;
+    position:fixed;
+    top:0;left:0;right:0;bottom:0;
+    -webkit-transition: 300ms;
+      -moz-transition: 300ms;
+      -o-transition: 300ms;
+      -ms-transition: 300ms;
+      transition: 300ms;
+  }
+  .popup_body_show{
+    display:block;
+    -webkit-transition: 300ms;
+      -moz-transition: 300ms;
+      -o-transition: 300ms;
+      -ms-transition: 300ms;
+      transition: 300ms;
+  }
+  .popup_back{
+    background: rgba(0,0,0,0.4);
+    position: fixed;
+    left:0;right:0;top:0;bottom:0;
+  }
+  /* .popup_contain{
+    position:relative;
+    background:#fff;
+    min-width:300px;
+    max-width:80%;
+    margin:100px auto 50px;
+    min-height:150px;
+    padding: 10px 20px;
+  } */
+  /* .popup_close{
+    background:red;
+    padding:3px 10px 5px;
+    position: absolute;
+    right:-10px;
+    top:-10px;
+    color: #fff;
+    border-radius: 50%;
+  } */
+
   /* .home__button{
     display: inline-block;
     background-color: var(--primary-color);
