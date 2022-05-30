@@ -119,6 +119,17 @@ class Home extends BaseController
         return view('Apps/landing', $data);
     }
     
+    //kegiatan kami
+    public function kegiatan_kami(){
+        $data = [
+            'title' => 'Kegiatan Kami',
+            'deskripsi' => 'Kegiatan Kami',
+            'css' => 'kegiatan_kami.css'
+        ];
+
+        return view('Apps/kegiatan_kami', $data);
+    }
+
     //volunteer
     public function volunteer(){
         $data = [

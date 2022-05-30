@@ -88,7 +88,7 @@
                         <li class="nav__item dropdown" >
                             <a href="#" class="nav__link dropdown__link" id="dropdown">Kegiatan <i class='bx bx-chevron-down dropdown__icon' id="drop-icon"></i></a>
                             <ul class="dropdown__menu" id="dropdown-menu">
-                                <li class="dropdown__item"><a href="/" class="nav__link">Kegiatan Kami</a></li>
+                                <li class="dropdown__item"><a href="/Home/kegiatan_kami" class="nav__link">Kegiatan Kami</a></li>
                                 <li class="dropdown__item"><a href="/Home/volunteer" class="nav__link">Volunteer</a></li>
                             </ul>
                         </li>
@@ -164,8 +164,8 @@
                         </li>
                         <li>Kegiatan
                         <ul style="list-style-type:circle" class="sitemap">
-                                <li><a href="/" class="sitemap-link">Kegiatan Kami</a></li>
-                                <li><a href="/" class="sitemap-link">Volunteer</a></li>
+                                <li><a href="/Home/kegiatan_kami" class="sitemap-link">Kegiatan Kami</a></li>
+                                <li><a href="/Home/volunteer" class="sitemap-link">Volunteer</a></li>
                             </ul>
                         </li>
                     </ul>
