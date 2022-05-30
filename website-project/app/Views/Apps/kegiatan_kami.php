@@ -51,6 +51,9 @@
           </div>
         </div>
       </div>
+      <div class="btn">
+        <a href="/artikel/event" class="button-link" target=”_blank”>Lihat Event Lainnya</a>
+      </div>
     </div>
 
     <!-- dokumentasi -->
