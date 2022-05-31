@@ -54,5 +54,4 @@
                 <!-- <a href="#">Show All</a> -->
             </div>
 </main>
-        <!-- End of the main section -->
 <?= $this->endsection();?>

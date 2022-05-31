@@ -78,37 +78,6 @@
                     </div>
                 </div>
             </div>
-            <!-- End of top -->
-
-            <!-- <div class="recent-updates">
-                <h2>Recent Updates</h2>
-                <div class="updates">
-                    Use from here to repeat
-                    <div class="update">
-                        <div class="profile-photo">
-                            <img src="/assets/images/profile/latar-belakang-keluarga-mina-twice-ramai-dibicarakan-ini-alasannya_171.jpeg" alt="profile image">
-                        </div>
-                        <div class="message">
-                            <p><b>Mina</b> post new artikel</p>
-                            <small class="text-muted">2 minutes ago</small>
-                        </div>
-                    </div>
-                    end of repeat
-                    Use from here to repeat
-                    <div class="update">
-                        <div class="profile-photo">
-                            <img src="/assets/images/profile/profile.jpg" alt="profile image">
-                        </div>
-                        <div class="message">
-                            <p><b>Eko</b> post new artikel</p>
-                            <small class="text-muted">2 minutes ago</small>
-                        </div>
-                    </div>
-                    end of repeat
-                </div>
-            </div> -->
-            <!-- End of Recent Updates -->
-
             <div class="analytics">
                 <a href="#" id="add-item">
                     <div class="items add">
