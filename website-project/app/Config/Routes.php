@@ -31,7 +31,8 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+$routes->get('/', 'Home::landing');
+$routes->get('/home', 'Home::index');
 $routes->get('/detail-artikel/(:any)', 'Home::detart/$1');
 $routes->get('/artikel/(:segment)', 'Home::artikel/$1');
 $routes->get('/about', 'Home::about');
@@ -51,7 +52,7 @@ $routes->put('/kegiatan-admin/edit/(:any)', 'Login::edit_kegiatan/$1');
 //Bagian Admin Tambah Data
 $routes->get('/tambah-data', 'Login::tambah_data');
 //Bagian Admin Profile Data
-$routes->get('/profile', 'Login::profile');
+$routes->get('/profile', 'ProfileAdminController::profile');
 $routes->get('/update/profile/(:num)', 'Login::update_profile/$1');
 
 

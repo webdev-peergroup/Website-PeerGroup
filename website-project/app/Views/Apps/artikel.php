@@ -12,25 +12,23 @@
                 <div class="konten">
                     <!--Area artikel-->
                     <div class="artikel">
-                        <?php
-                            foreach ($artikel->getResultArray() as $data):
-                        ?>
-                        <div class="box">
-                            <div class="img-thumbnail">
-                                <img src="/assets/images/artikel/<?php echo $data['cover']?>" alt="thumnail">
-                            </div>
-                            <div class="text-list">
-                                <a href="/detail-artikel/<?php echo $data['slug']?>" class="title-thumbnail"><?php echo $data['judul']?></a>
-                                <div class="penulis">
-                                    <p class="penulis-artikel-home"><?php echo $data['penulis']  ?></p> 
-                                    <span class="tanggal-artikel-home"><?php echo strftime('%e %B %G', strtotime($data['created_at']));?></span>
+                        <?php foreach ($artikel->getResultArray() as $data) : ?>
+                            <div class="box">
+                                <div class="img-thumbnail">
+                                    <img src="<?= base_url('images/artikel/'.$data['cover'])?>" alt="">
                                 </div>
-                                <div class="thumbnail-description">
-                                    <p><?php echo $data['deskripsi']?></p>
+                                <div class="text-list">
+                                    <a href="/detail-artikel/<?php echo $data['slug']?>" class="title-thumbnail"><?php echo $data['judul']?></a>
+                                    <div class="penulis">
+                                        <p class="penulis-artikel-home"><?php echo $data['penulis']  ?></p> 
+                                        <span class="tanggal-artikel-home"><?php echo strftime('%e %B %G', strtotime($data['created_at']));?></span>
+                                    </div>
+                                    <div class="thumbnail-description">
+                                        <p><?php echo $data['deskripsi']?></p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <?php endforeach?>
+                        <?php endforeach; ?>
                     </div>
                     <!--Area Rekomendasi-->
                     <div class="Rekomendasi">
@@ -45,7 +43,7 @@
                                 <a href="/detail-artikel/<?php echo $rekomendasi['slug']?>">
                                 <div class="random">
                                     <div class="rekomen-img">
-                                        <img src="/assets/images/artikel/<?php echo $rekomendasi['cover']?>" alt="thumnail">
+                                        <img src="<?= base_url('images/artikel/'.$data['cover'])?>" alt="thumnail">
                                     </div>
                                     <p class="text-rekomen"><?php echo $rekomendasi['judul']?></p>
                                 </div>

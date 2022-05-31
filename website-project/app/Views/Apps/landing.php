@@ -17,7 +17,7 @@
     <div class="intro">
         <h1 class="intro-title title">Ayo Bergabung Bersama<br>Peer Group ID</h1>
         <a href="https://bit.ly/telegrampeergroup" class="button-link" target=”_blank”>Join Us</a>
-        <p><br><a href="/" class="desc">cari tahu tentang Peer Group ID</a><p>
+        <p><br><a href="/home" class="desc">Cari tahu tentang Peer Group ID</a><p>
     
         <div class="intro-img">
             <img class="front" src="/assets/images/landing/chat.png" alt="group chat">
@@ -58,7 +58,7 @@
     <div class="join-us">
         <h1 class="join-title title">Temukan versi terbaik dirimu<br>di Peer Group ID</h1>
         <a href="https://bit.ly/telegrampeergroup" class="button-link" target=”_blank”>Join Us</a>
-        <p><br><a href="/" class="desc">know more about us</a><p>
+        <p><br><a href="/home" class="desc">know more about us</a><p>
     </div>
 
     <div class="footer">

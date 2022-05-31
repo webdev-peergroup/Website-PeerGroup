@@ -57,30 +57,6 @@ class Login extends BaseController
         return redirect()->to(base_url('login'));
     }
 
-
-    //Profil Admin
-    public function profile(){
-        $session = session();
-        if ($session->logged_in != TRUE) {
-            return redirect()->to('/login');
-        }
-        $user = $session->username;
-        $dataUser = $this->user->where(['username' => $user])->first();
-        $data = [
-            'title' => 'Profile',
-            'username' => $dataUser->username,
-            'password' => $dataUser->password,
-            'nama' => $dataUser->nama,
-            'id' => $dataUser->id_user,
-            'gender' => $dataUser->gender,
-            'foto' => $dataUser->foto,
-            'validation' => \Config\Services::validation()
-        ];
-
-        return view('Apps/new_profile', $data);
-    }
-
-
     public function update_profile($id){
         //Ambil gambar
         $fileFoto = $this->request->getFile('foto');
@@ -94,12 +70,7 @@ class Login extends BaseController
             $fileFoto->move('assets/images/profile');
             //Ambil nama gambar
             $profile = $fileFoto->getName();
-        }
-        
-        //Slug if needed
-        // $slug = url_title($this->request->getVar('title'), '-', true);
-        //Simpan
-        // dd($this->request->getVar());
+        }      
 		$this->user->save([
             'id_user' => $id,
 			'username' => $this->request->getVar('username'),
@@ -191,7 +162,6 @@ class Login extends BaseController
     public function simpan(){
         // dd($this->request->getVar());
         //Validation
-        
         if (!$this->validate([
             'judul' => [
                 'rules'=>'required|is_unique[artikel.judul]',
@@ -210,27 +180,20 @@ class Login extends BaseController
             ]    
                     
         ])) {
-            $validation = \Config\Services::validation();   
-            // dd($validation);
-            // return redirect()->to('/admin-panel')->withInput()->with('validation',$validation);
+            // $validation = \Config\Services::validation();   
             return redirect()->to(base_url('admin-panel'))->withInput();
         }
-		
         //Ambil gambar
         $fileCover = $this->request->getFile('cover');
         // dd($fileCover);
-
-        //Check gambar apakah di upload
         if ($fileCover->getError() == 4) {
             $coverName = 'default.svg';
-        }else {
-            //Pindah gambar
-            $fileCover->move('assets/images/artikel');
-            //Ambil nama gambar
-            $coverName = $fileCover->getName();
+        }
+        else{
+            $coverName = $fileCover->getRandomName();
+            $fileCover->move('images/artikel',$coverName);
         }
         
-        //Slug if needed
         $slug = url_title($this->request->getVar('judul'), '-', true);
         //Simpan
         if($this->request->getVar('kategori') === 'kegiatan'){
@@ -295,7 +258,7 @@ class Login extends BaseController
             $coverName = 'default.svg';
         }else {
             //Pindah gambar
-            $fileCover->move('assets/images/artikel');
+            $fileCover->move('images/artikel');
             //Ambil nama gambar
             $coverName = $fileCover->getName();
         }

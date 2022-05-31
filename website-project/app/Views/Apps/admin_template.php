@@ -5,7 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+    <!-- <link rel="stylesheet" type="text/css" href="/assets/css/admin.css"> -->
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" type="text/css" href="path-to/bootstrap.min.css"> -->
+    <!-- Bootstrap DataTables CSS -->
+    <!-- <link rel="stylesheet" type="text/css" href="path-to/dataTables.bootstrap.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <link rel="shortcut icon" href="/assets/images/Logo Peer Group.jpg" type="image/x-icon">
@@ -63,45 +70,14 @@
                 </div>
                 <div class="profile">
                     <div class="info">
-                        <p>Hey, <b><?php echo $session->panggilan?></b></p>
+                        <p>Hey, <b><?php echo $session->username?></b></p>
                         <small class="text-muted">Admin</small>
                     </div>
                     <div class="profile-photo">
-                        <img src="/assets/images/profile/<?=$session->foto?>" alt="profile picture">
+                        <img src="<?= base_url('/assets/images/profile/'.$session->foto)?>" alt="profile picture">
                     </div>
                 </div>
             </div>
-            <!-- End of top -->
-
-            <!-- <div class="recent-updates">
-                <h2>Recent Updates</h2>
-                <div class="updates">
-                    Use from here to repeat
-                    <div class="update">
-                        <div class="profile-photo">
-                            <img src="/assets/images/profile/latar-belakang-keluarga-mina-twice-ramai-dibicarakan-ini-alasannya_171.jpeg" alt="profile image">
-                        </div>
-                        <div class="message">
-                            <p><b>Mina</b> post new artikel</p>
-                            <small class="text-muted">2 minutes ago</small>
-                        </div>
-                    </div>
-                    end of repeat
-                    Use from here to repeat
-                    <div class="update">
-                        <div class="profile-photo">
-                            <img src="/assets/images/profile/profile.jpg" alt="profile image">
-                        </div>
-                        <div class="message">
-                            <p><b>Eko</b> post new artikel</p>
-                            <small class="text-muted">2 minutes ago</small>
-                        </div>
-                    </div>
-                    end of repeat
-                </div>
-            </div> -->
-            <!-- End of Recent Updates -->
-
             <div class="analytics">
                 <a href="#" id="add-item">
                     <div class="items add">
@@ -174,6 +150,8 @@
         </div>
     </div>
     <script src="/assets/js/admin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
     
 </body>
 </html>

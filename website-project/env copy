@@ -20,7 +20,6 @@ CI_ENVIRONMENT = development
 # APP
 #--------------------------------------------------------------------
 
-# app.baseURL = 'http://webpeergroup.test/'
 # app.baseURL = ''
 # app.forceGlobalSecureRequests = false
 
@@ -38,12 +37,12 @@ CI_ENVIRONMENT = development
 # DATABASE
 #--------------------------------------------------------------------
 
-database.default.hostname = mysql
-database.default.database = peergroupid
-database.default.username = root
-database.default.password = root
-database.default.DBDriver = MySQLi
-database.default.DBPrefix =
+# database.default.hostname = localhost
+# database.default.database = ci4
+# database.default.username = root
+# database.default.password = root
+# database.default.DBDriver = MySQLi
+# database.default.DBPrefix =
 
 # database.tests.hostname = localhost
 # database.tests.database = ci4
