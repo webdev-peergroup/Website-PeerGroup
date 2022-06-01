@@ -36,24 +36,33 @@ $routes->get('/home', 'Home::index');
 $routes->get('/detail-artikel/(:any)', 'Home::detart/$1');
 $routes->get('/artikel/(:segment)', 'Home::artikel/$1');
 $routes->get('/about', 'Home::about');
+$routes->get('/volunteer','Home::volunteer');
+$routes->get('/kegiatan-kami','Home::kegiatan_kami');
+
 //Bagian login
-$routes->get('/login', 'Login::index');
-$routes->post('/process', 'Login::process');
-$routes->get('/logout', 'Login::logout');
-$routes->get('/admin-panel', 'Login::admin');
+$routes->get('/login', 'LoginController::index');
+$routes->post('/process', 'LoginController::process');
+$routes->get('/logout', 'LoginController::logout');
+
+
+$routes->get('/admin-panel', 'AdminController::index');
+
 //Bagian Admin Artikel
-$routes->get('/artikel-admin', 'Login::artikel');
-$routes->put('/artikel-admin/edit/(:any)', 'Login::edit_artikel/$1');
-$routes->delete('/artikel-admin/hapus/(:num)', 'Login::hapus_artikel/$1');
+$routes->get('/artikel-admin', 'ArtikelController::index');
+$routes->put('/artikel-admin/edit/(:any)', 'ArtikelController::edit_artikel/$1');
+$routes->delete('/artikel-admin/hapus/(:num)', 'ArtikelController::hapus_artikel/$1');
+
 //Bagian Admin Kegiatan
-$routes->get('/kegiatan-admin', 'Login::kegiatan');
-$routes->delete('/kegiatan-admin/hapus/(:num)', 'Login::hapus_kegiatan/$1');
-$routes->put('/kegiatan-admin/edit/(:any)', 'Login::edit_kegiatan/$1');
+$routes->get('/kegiatan-admin', 'KegiatanController::index');
+$routes->delete('/kegiatan-admin/hapus/(:num)', 'KegiatanController::hapus_kegiatan/$1');
+$routes->put('/kegiatan-admin/edit/(:any)', 'KegiatanController::edit_kegiatan/$1');
+
 //Bagian Admin Tambah Data
-$routes->get('/tambah-data', 'Login::tambah_data');
+$routes->get('/tambah-data', 'ArtikelController::tambah_data');
+
 //Bagian Admin Profile Data
 $routes->get('/profile', 'ProfileAdminController::profile');
-$routes->get('/update/profile/(:num)', 'Login::update_profile/$1');
+$routes->get('/update/profile/(:num)', 'ProfileAdminController::update_profile/$1');
 
 
 //Ajax Request

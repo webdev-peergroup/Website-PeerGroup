@@ -36,7 +36,7 @@ class Home extends BaseController
             'css' => 'index.css',
             'dark' => $this->dark
         ];
-        return view('Apps/index', $data);
+        return view('Frontend/index', $data);
     }
     //Detail Artikel
     public function detart($id){
@@ -58,7 +58,7 @@ class Home extends BaseController
             'rekomen' => $random
         ];
         // dd($title);
-        return view('Apps/detail artikel', $data);
+        return view('Frontend/artikel/detail-artikel', $data);
     }
 
     //Halaman Artikel
@@ -97,7 +97,7 @@ class Home extends BaseController
             ];
         }
         
-        return view('Apps/artikel', $data);
+        return view('Frontend/artikel/artikel', $data);
     }
 
     //About
@@ -108,7 +108,7 @@ class Home extends BaseController
             'css' => 'about.css'
         ];
 
-        return view('Apps/about', $data);
+        return view('Frontend/about', $data);
     }
     
     //Landing
@@ -119,7 +119,7 @@ class Home extends BaseController
             'css' => 'landing.css'
         ];
 
-        return view('Apps/landing', $data);
+        return view('Frontend/landing', $data);
     }
     
     //kegiatan kami
@@ -130,7 +130,7 @@ class Home extends BaseController
             'css' => 'kegiatan_kami.css'
         ];
 
-        return view('Apps/kegiatan_kami', $data);
+        return view('Frontend/kegiatanKami/KegiatanKami', $data);
     }
 
     //volunteer
@@ -141,6 +141,6 @@ class Home extends BaseController
             'css' => 'volunteer.css'
         ];
 
-        return view('Apps/volunteer', $data);
+        return view('Frontend/kegiatanKami/volunteer', $data);
     }
 }
