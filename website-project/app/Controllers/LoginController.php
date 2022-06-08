@@ -23,7 +23,7 @@ class LoginController extends BaseController
         $data = [
             'deskripsi' => 'Login Admin Peer Group ID'
         ];
-        return view('Frontend/login/index', $data);
+        return view('Frontend/login/', $data);
     }
 
     public function process()
