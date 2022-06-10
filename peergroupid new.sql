@@ -2,10 +2,10 @@
 -- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Waktu pembuatan: 02 Feb 2022 pada 14.17
--- Versi server: 10.4.20-MariaDB
--- Versi PHP: 8.0.9
+-- Host: 127.0.0.1:3307
+-- Generation Time: Jun 09, 2022 at 06:05 AM
+-- Server version: 10.6.5-MariaDB
+-- PHP Version: 7.4.26
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,11 +20,13 @@ SET time_zone = "+00:00";
 --
 -- Database: `peergroupid`
 --
+CREATE DATABASE IF NOT EXISTS `peergroupid` DEFAULT CHARACTER SET armscii8 COLLATE armscii8_general_ci;
+USE `peergroupid`;
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `artikel`
+-- Struktur tabel dari `artikel`
 --
 
 CREATE TABLE `artikel` (
@@ -42,7 +44,7 @@ CREATE TABLE `artikel` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `artikel`
+-- Dumping data for table `artikel`
 --
 
 INSERT INTO `artikel` (`id`, `judul`, `slug`, `kategori`, `penulis`, `deskripsi`, `text`, `cover`, `sumber_cover`, `created_at`, `updated_at`) VALUES
@@ -57,7 +59,7 @@ INSERT INTO `artikel` (`id`, `judul`, `slug`, `kategori`, `penulis`, `deskripsi`
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `kegiatan`
+-- Struktur tabel dari `kegiatan`
 --
 
 CREATE TABLE `kegiatan` (
@@ -75,7 +77,7 @@ CREATE TABLE `kegiatan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `kegiatan`
+-- Dumping data for table `kegiatan`
 --
 
 INSERT INTO `kegiatan` (`id`, `judul`, `slug`, `kategori`, `deskripsi`, `penulis`, `text`, `cover`, `sumber_cover`, `created_at`, `updated_at`) VALUES
@@ -84,7 +86,7 @@ INSERT INTO `kegiatan` (`id`, `judul`, `slug`, `kategori`, `deskripsi`, `penulis
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `log`
+-- Struktur tabel dari `log`
 --
 
 CREATE TABLE `log` (
@@ -98,7 +100,20 @@ CREATE TABLE `log` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `user`
+-- Struktur tabel dari `quiz`
+--
+
+CREATE TABLE `quiz` (
+  `id` int(11) NOT NULL,
+  `soal` longtext NOT NULL,
+  `jawaban` varchar(128) NOT NULL,
+  `score` int(2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=armscii8;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur tabel dari `user`
 --
 
 CREATE TABLE `user` (
@@ -112,7 +127,7 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `user`
+-- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`id_user`, `username`, `password`, `nama`, `panggilan`, `gender`, `foto`) VALUES
@@ -125,53 +140,65 @@ INSERT INTO `user` (`id_user`, `username`, `password`, `nama`, `panggilan`, `gen
 --
 
 --
--- Indeks untuk tabel `artikel`
+-- Indexes for table `artikel`
 --
 ALTER TABLE `artikel`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `kegiatan`
+-- Indexes for table `kegiatan`
 --
 ALTER TABLE `kegiatan`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `log`
+-- Indexes for table `log`
 --
 ALTER TABLE `log`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `user`
+-- Indexes for table `quiz`
+--
+ALTER TABLE `quiz`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id_user`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `artikel`
+-- AUTO_INCREMENT dari table `artikel`
 --
 ALTER TABLE `artikel`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
--- AUTO_INCREMENT untuk tabel `kegiatan`
+-- AUTO_INCREMENT dari table `kegiatan`
 --
 ALTER TABLE `kegiatan`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT untuk tabel `log`
+-- AUTO_INCREMENT dari table `log`
 --
 ALTER TABLE `log`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT untuk tabel `user`
+-- AUTO_INCREMENT dari table `quiz`
+--
+ALTER TABLE `quiz`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT dari table `user`
 --
 ALTER TABLE `user`
   MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
