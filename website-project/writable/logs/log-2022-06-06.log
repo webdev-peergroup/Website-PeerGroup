@@ -1,0 +1,156 @@
+ERROR - 2022-06-06 01:08:19 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: No such host is known. 
+CRITICAL - 2022-06-06 01:08:19 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: No such host is known. 
+#0 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\app\Models\ArtikelModel.php(34): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...')
+#2 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\app\Controllers\Home.php(25): App\Models\ArtikelModel->getnewartikel('self developmen...')
+#3 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\tasya\\...')
+#8 {main}
+ERROR - 2022-06-06 01:08:32 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: No such host is known. 
+CRITICAL - 2022-06-06 01:08:32 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: No such host is known. 
+#0 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\app\Models\ArtikelModel.php(34): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...')
+#2 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\app\Controllers\Home.php(25): App\Models\ArtikelModel->getnewartikel('self developmen...')
+#3 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\tasya\\...')
+#8 {main}
+ERROR - 2022-06-06 01:10:05 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: No such host is known. 
+CRITICAL - 2022-06-06 01:10:05 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: No such host is known. 
+#0 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\app\Models\ArtikelModel.php(34): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...')
+#2 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\app\Controllers\Home.php(25): App\Models\ArtikelModel->getnewartikel('self developmen...')
+#3 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\tasya\\...')
+#8 {main}
+ERROR - 2022-06-06 01:12:29 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: No such host is known. 
+CRITICAL - 2022-06-06 01:12:29 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: No such host is known. 
+#0 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\app\Models\ArtikelModel.php(34): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...')
+#2 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\app\Controllers\Home.php(25): App\Models\ArtikelModel->getnewartikel('self developmen...')
+#3 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\tasya\\...')
+#8 {main}
+ERROR - 2022-06-06 01:12:40 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: No such host is known. 
+CRITICAL - 2022-06-06 01:12:40 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: No such host is known. 
+#0 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\app\Models\ArtikelModel.php(34): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...')
+#2 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\app\Controllers\Home.php(25): App\Models\ArtikelModel->getnewartikel('self developmen...')
+#3 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\tasya\\...')
+#8 {main}
+ERROR - 2022-06-06 01:16:39 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: No such host is known. 
+CRITICAL - 2022-06-06 01:16:39 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: No such host is known. 
+#0 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\app\Models\ArtikelModel.php(34): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...')
+#2 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\app\Controllers\Home.php(25): App\Models\ArtikelModel->getnewartikel('self developmen...')
+#3 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\tasya\\...')
+#8 {main}
+ERROR - 2022-06-06 01:16:45 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: No such host is known. 
+CRITICAL - 2022-06-06 01:16:45 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: No such host is known. 
+#0 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\app\Models\ArtikelModel.php(34): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...')
+#2 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\app\Controllers\Home.php(25): App\Models\ArtikelModel->getnewartikel('self developmen...')
+#3 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\tasya\\...')
+#8 {main}
+ERROR - 2022-06-06 01:16:58 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: No such host is known. 
+CRITICAL - 2022-06-06 01:16:58 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: No such host is known. 
+#0 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\app\Models\ArtikelModel.php(34): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...')
+#2 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\app\Controllers\Home.php(25): App\Models\ArtikelModel->getnewartikel('self developmen...')
+#3 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\tasya\\...')
+#8 {main}
+ERROR - 2022-06-06 01:17:00 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: No such host is known. 
+CRITICAL - 2022-06-06 01:17:00 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: No such host is known. 
+#0 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\app\Models\ArtikelModel.php(34): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...')
+#2 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\app\Controllers\Home.php(25): App\Models\ArtikelModel->getnewartikel('self developmen...')
+#3 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\tasya\\...')
+#8 {main}
+ERROR - 2022-06-06 01:17:03 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: No such host is known. 
+CRITICAL - 2022-06-06 01:17:03 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: No such host is known. 
+#0 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\app\Models\ArtikelModel.php(34): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...')
+#2 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\app\Controllers\Home.php(25): App\Models\ArtikelModel->getnewartikel('self developmen...')
+#3 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\tasya\\...')
+#8 {main}
+ERROR - 2022-06-06 01:23:32 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: No such host is known. 
+CRITICAL - 2022-06-06 01:23:32 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: No such host is known. 
+#0 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\app\Models\ArtikelModel.php(34): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...')
+#2 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\app\Controllers\Home.php(25): App\Models\ArtikelModel->getnewartikel('self developmen...')
+#3 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\tasya\\...')
+#8 {main}
+ERROR - 2022-06-06 01:27:24 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: No such host is known. 
+CRITICAL - 2022-06-06 01:27:24 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: No such host is known. 
+#0 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\app\Models\ArtikelModel.php(34): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...')
+#2 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\app\Controllers\Home.php(25): App\Models\ArtikelModel->getnewartikel('self developmen...')
+#3 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\tasya\\...')
+#8 {main}
+ERROR - 2022-06-06 01:27:31 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: No such host is known. 
+CRITICAL - 2022-06-06 01:27:31 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: No such host is known. 
+#0 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\app\Models\ArtikelModel.php(34): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...')
+#2 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\app\Controllers\Home.php(25): App\Models\ArtikelModel->getnewartikel('self developmen...')
+#3 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\tasya\OneDrive\Documents\Career\PeerGroup\Website-PeerGroup\website-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\tasya\\...')
+#8 {main}

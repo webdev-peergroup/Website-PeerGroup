@@ -4,7 +4,10 @@ const navMenu = document.getElementById('nav-menu'),
     closeMenu = document.getElementById('nav-close'),
     dropdown = document.getElementById('dropdown'),
     dropdownMenu = document.getElementById('dropdown-menu'),
-    dropicon = document.getElementById('drop-icon')
+    dropicon = document.getElementById('drop-icon'),
+    dropdown1 = document.getElementById('dropdown1'),
+    dropdownMenu1 = document.getElementById('dropdown-menu1'),
+    dropicon1 = document.getElementById('drop-icon1')
 
 // SHOW
 toggleMenu.addEventListener('click', ()=>{
@@ -14,6 +17,11 @@ toggleMenu.addEventListener('click', ()=>{
 dropdown.addEventListener('click', ()=>{
     dropdownMenu.classList.toggle('drop-show');
     dropicon.classList.toggle('icon-rotate');
+})
+
+dropdown1.addEventListener('click', ()=>{
+    dropdownMenu1.classList.toggle('drop-show');
+    dropicon1.classList.toggle('icon-rotate');
 })
 
 // HIDDEN

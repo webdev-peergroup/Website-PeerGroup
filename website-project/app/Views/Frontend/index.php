@@ -2,10 +2,10 @@
 <?= $this->section('content')?>
     <main class="l-main">
         <!--Home-->
-        <section class="home">
+        <section class="home section">
             <div class="home__container bd-grid">
                 <div class="content">
-                    <h1 class="title">Peergorup fix Self-development bukan hanya pengetahuan, tetapi kebutuhan.</h1>
+                    <h1 class="title">Self-development bukan hanya pengetahuan, tetapi kebutuhan.</h1>
                     <p class="desc" id="header">Yuk, bergabung bersama pemuda lainnya untuk temukan potensimu, belajar fokus pada kelebihanmu, dan menjadi unik versi dirimu. Bersama kami, mari belajar menjadi pribadi yang cemerlang!</p>
                 </div>
                 <div class="home__img">
