@@ -124,10 +124,8 @@
                                 </div>
                                     <a href='/detail-artikel/$kslug' class='selengkapnya-artikel'>Selengkapnya<i class='bx bx-arrow-back bx-flip-horizontal' ></i></a>
                                 </div>";
-                        }
-                        
+                        }   
                     }
-                    
                 ?>
             </div>
             <div class="artikel-mobile-container">
@@ -185,43 +183,6 @@
                 </div>
             </div>
         </section>
-            
-        <!-- KEGIATAN KAMI--> 
-        <!-- <section class="kegiatan-kami section" id="kegiatan-kami">
-        <h2 class="section-title">Kegiatan Kami</h2>
-        <div class="activity-container">
-            <div class="activity">
-            <img src="/assets/images/gambar1.png" class="img-activity" alt="">
-                <div class="activity-description">
-                    <a href="#"><h3 class="title-activity">LOREM IPSUM</h3></a>
-                    <p class="text-activity">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam</p>
-                </div>
-            </div>
-            <div class="activity">
-            <img src="/assets/images/gambar2.png" class="img-activity" alt="">
-                <div class="activity-description">
-                    <h3 class="title-activity">LOREM IPSUM</h3>
-                    <p class="text-activity">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam</p>
-                </div>
-            </div>
-        </div>
-        <div class="activity-container">
-            <div class="activity">
-            <img src="/assets/images/gambar3.png" class="img-activity" alt="">
-                <div class="activity-description">
-                    <h3 class="title-activity">LOREM IPSUM</h3>
-                    <p class="text-activity">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam</p>
-                </div>
-            </div>
-            <div class="activity">
-            <img src="/assets/images/gambar4.png" class="img-activity" alt="">
-                <div class="activity-description">
-                    <h3 class="title-activity">LOREM IPSUM</h3>
-                    <p class="text-activity">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam</p>
-                </div>
-            </div>
-        </div>
-        </section> -->
     </main>
 <?= $this->endsection();?>
 <?= $this->section('js')?>
