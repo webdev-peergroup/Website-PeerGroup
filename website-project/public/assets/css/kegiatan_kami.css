@@ -149,7 +149,6 @@ body {
   object-fit: cover;
   margin-right: 20px;
   border-radius: 25px;
-  
 }
 .gallery-cell:before {
   display: block;
@@ -233,7 +232,6 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-
   .first {
     width: 100vw;
     height: fit-content;
@@ -249,9 +247,7 @@ body {
   }
   .first .img {
     width: 50vw;
-    /* padding-bottom: 10px; */
     position: relative;
-    /* bottom: 100px; */
   }
 
   .event .title2 {
@@ -259,25 +255,24 @@ body {
     padding-top: 1rem;
     padding-bottom: 0.5rem;
     position: relative;
-    /* bottom: 20px; */
   }
-
   .event .container {
     grid-template-columns: repeat(1, 1fr);
   }
-
-  
   .event .container .card {
-    /* height: 450px; */
-    max-width: 50vw;
+    max-width: 53vw;
     max-height: 450px;
   }
   .event .container .card .head{
-    height: 50vh;
+    height: 50vw;
+  }
+  .button-link{
+    max-width: 40vw;
+    border-radius: 15px;
   }
 
   .dokumentasi {
-    height: 300px;
+    height: 220px;
     align-items: center;
     justify-content: center;
     padding: 0 1rem;
@@ -290,13 +285,4 @@ body {
   .gallery-cell{
     height: 200px;
   }
-  /* .slider {
-    width: 100%;
-    align-items: center;
-  }
-
-  .swiper {
-    width: 80vw;
-    height: auto;
-  } */
 }
