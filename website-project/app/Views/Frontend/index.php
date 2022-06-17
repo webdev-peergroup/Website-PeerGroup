@@ -23,7 +23,7 @@
                 <div class="about__desc">
                     <h1 class="about-title siapa" id="siapa-kita">Siapa Kita?</h1>
                     <p class="about__text" id="siapa">Peer Group ID merupakan platform paling tepat bagi para pemuda yang ingin mengembangkan diri lewat potensi yang dimiliki dengan berbagai kegiatan menarik berbasis pembinaan, pendampingan, dan konseling. Bersama kami, kamu bisa temukan, kembangkan, dan menjadi hebat dengan potensimu.</p>     
-                    <a href="about" class="button-link siapa">Kepoin Yuk <i class='bx bx-arrow-back bx-flip-horizontal' ></i></a>     
+                    <a href="about" class="button-link siapa" id="btn">Kepoin Yuk <i class='bx bx-arrow-back bx-flip-horizontal' ></i></a>     
                 </div>                                   
             </div>
         </section>

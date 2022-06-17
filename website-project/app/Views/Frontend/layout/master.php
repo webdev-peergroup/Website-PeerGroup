@@ -109,11 +109,11 @@
                         ?>
                         <li class="nav__item">
                             <div>
-                                <input type="checkbox" class="checkbox" id="chk" />
                                 <label class="label" for="chk">
                                     <i class='bx bxs-moon' ></i>
                                     <i class='bx bxs-sun' ></i>
-                                    <div class="ball"></div>
+                                    <input type="checkbox" class="checkbox" id="chk" />
+                                    <div class="slider round"></div>
                                 </label>
                             </div>
                         </li>
@@ -171,9 +171,6 @@
                             </li>
                         </ul>
                     </div>
-                    <!-- <div class="column col-logo">
-                        <img class="logo" src="/assets/images/Logo Peer Group Transparan.png" alt="Logo Peer Group ID">
-                    </div> -->
                 </div>
             </div>
         </div>

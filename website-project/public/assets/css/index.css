@@ -1,3 +1,19 @@
+  /* Light Color */
+:root {
+    --primary-color: #1E435B;
+    --hover-button:#EAA900;
+    --hover-text: #000000; 
+    --desc: #1E435B;
+  }
+  
+  /* Dark Color */
+  html[data-theme="dark"] {
+    --primary-color: #EAA900;
+    --desc: #F2F2F2;
+    --hover-button: #2a5a7a;
+    --hover-text: #FFFFFF; 
+}
+
 .home{
   overflow: hidden;
 }
@@ -20,12 +36,12 @@
 .title {
     grid-area: title;
     margin-bottom: 0.5rem; 
-    color: var(--accent-color);
+    color: #EAA900;
     font-family: var(--font-family);
 }
 
 .desc{
-  color: #5F9695;
+  color: var(--desc);
 }
 
 .about__container{
@@ -45,15 +61,16 @@
   position: relative;
   font-weight: var(--font-bold);
   margin-bottom: .75rem;
-  color: var(--accent-color);
+  color: #EAA900;
 }
 .about__desc{
     padding-right: 3rem;
+    color: var(--desc);
 }
 .button-link{
     display: inline-block;
     background-color: var(--primary-color);
-    color: #fff;
+    color: var(--bg-color);
     padding: .75rem 2.5rem;
     border-radius: 100px;
     font-family: var(--font-family);
@@ -62,6 +79,7 @@
 }
 .button-link:hover{
   background-color: var(--hover-button);
+  color: var(--hover-text);
 }
 
 .section{
@@ -73,6 +91,7 @@
   margin-top: 1rem;
   margin-bottom: .75rem;
   text-align: center;
+  color: #EAA900;
 }
 
 .artikel-container{
@@ -81,12 +100,12 @@
   flex-wrap: wrap;
 }
 .artikel-content{
-  background-color: var(--primary-color);
+  background-color: #1E435B;
   height: 24rem;
   width: 20.2rem;
   margin: 0.5rem 10px;
   border-radius: 10px;
-  color: var(--white-color);
+  color: #FFFFFF;
   overflow: hidden;
 }
 .artikel-content img{
@@ -99,12 +118,6 @@
 }
 .artikel-content img:hover{
   transform: scale(1.1);
-}
-.selengkapnya-artikel{
-  font-size: 1rem;
-  font-weight: var(--font-low-medium);
-  margin: 0rem 1.5rem;
-  color: black;
 }
 .text-isi-artikel{
   padding: .5rem 1rem;
@@ -120,7 +133,13 @@
 }
 .text-artikel{
   text-align: center;
-  color: #1E435B;
+  color: var(--hover-text);
+}
+.selengkapnya-artikel{
+  font-size: 1rem;
+  font-weight: var(--font-low-medium);
+  margin: 0rem 1.5rem;
+  color: var(--hover-text);
 }
 
 @media screen and (min-width: 577px) {
@@ -254,7 +273,7 @@
         margin-bottom: 1rem;
     }
     .title-artikel-mobile{
-        color: #5F9695;
+        color: var(--desc);
         font-family: var(--font-family);
         font-size: medium;
         margin-left: 1rem;
@@ -293,7 +312,7 @@
         max-height: 2.5rem;
     }
     .judul-artikel-mobile a{
-        color: var(--primary-color);
+        color: #000000;
         font-size: .8rem;
         font-weight: var(--font-bold);
         text-decoration: none;

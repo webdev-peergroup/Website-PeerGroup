@@ -14,23 +14,16 @@
     --form-normal-font-size: 0.938rem;
     --form-smaller-font-size: 0.875rem;
     /*===== Colors =====*/
-    --primary-color: #1E435B;
-    --accent-color: #EAA900;
-    --white-color: #FFFFFF;
-    --f2f2: #F2F2F2;
-    --tanggal-artikel-home: rgba(0, 0, 0, 0.5);
-    --penulis-artikel-home: #526260;
-    --font-isi-artikel-home: #030402;
-    --dark-theme: #06263A;
-    --light-theme: #ffffff;
-    --artikel-card:#407BFF;
-    --second-context:#B9E5E6;
-    --hover-button: #5F9695;
-    --find-us:#BFCEF4;
+    --bg-color: #FFFFFF;
     /*===== z index =====*/
     --z-fixed: 100; 
-}
+  }
   
+  /* Dark Color */
+  html[data-theme="dark"] {
+    --bg-color: #1a252f;
+}
+
 /*===== BASE =====*/
 *,::before,::after{
   box-sizing: border-box;
@@ -40,12 +33,11 @@ html{
 }
 body{
   margin: var(--header-height) 0 0 0;
-  /* padding: 5%; */
   max-width: 100%;
   font-family: var(--font-family);
   font-size: var(--normal-font-size);
   font-weight: 500;
-  background-color: #fafafa;
+  background-color: var(--bg-color);
   transition: background-color 0.2s linear;
   margin-bottom: 5rem;
   display: flex;
@@ -72,6 +64,7 @@ img{
   height: auto;
 }
 
+
 /*===== LAYOUT =====*/
 .bd-grid{
   max-width: 1024px;
@@ -87,7 +80,7 @@ img{
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--primary-color);
+  background-color: #1E435B;
 }
 
 /*===== NAV =====*/
@@ -108,10 +101,10 @@ img{
   margin-bottom: 2rem;
 }
 .nav__close, .nav__link, .nav__logo, .nav__toggle{
-  color: var(--white-color);
+  color: #FFFFFF;
 }
 .nav__link:hover{
-  color: var(--second-context);
+  color: #B9E5E6;
 }
 .nav__toggle{
   font-size: 1.5rem;
@@ -154,10 +147,10 @@ img{
 
 /* FOOTER */
 .footer{
-  background-color: #1a252f;
+  background-color: #1E435B;
   padding: 2rem 0 1rem 0;
   margin: 3rem 0 0 0;
-  color: #fff;
+  color: #FFFFFF;
   text-align: center;
   width: 100%;
   bottom: 0;
@@ -209,25 +202,26 @@ img{
 .column a{
   text-emphasis: none;
   text-decoration: none;
-  color: #ffffff;
+  color: #FFFFFF;
   font-size: 15px;
   font-weight: normal;
 }
 
 .sitemap-link:hover{
-  color: var(--second-context);
+  color: #B9E5E6;
 }
 .link-sosmed:hover{
-  color: var(--second-context);
+  color: #B9E5E6;
 }
 .img-kontak-media{ 
   margin: 0.25rem;
   width: 1rem;
 }
 
+/* Dark Mode Toggle */
 .label{
-  width: 43px;
-  height: 20px;
+  width: 39px;
+  height: 19px;
   background-color: #111;
   display: flex;
   border-radius: 50px;
@@ -237,52 +231,33 @@ img{
   position: relative;
 }
 .bxs-moon, .bxs-sun{
-  color: var(--accent-color);
-}
-.ball{
-  height: 19px;
-  width: 19px;
-  background-color: #FFFFFF;
-  position: absolute;
-  left: -0.3px;
-  border-radius: 50%;
-  transition: transform 0.2s linear;
+  color: #EAA900;
 }
 .checkbox{
   opacity: 0;
   position: absolute;
 }
-.checkbox:checked + .label .ball{
-  transform: translateX(24px);
+.slider {
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
 }
-
-/* Dark Mode */
-body.dark{
-  background: #06263A;
+.slider::before {
+  height: 19px;
+  width: 19px;
+  position: absolute;
+  left: -0.3px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  content: "";
+  transition: 0.4s;
 }
-.desc.dark, .section-title.dark, 
-.about__text.dark, .text-artikel.dark, 
-.selengkapnya-artikel.dark, .text-activity.dark, 
-p.dark, .thumbnail-description.dark, 
-.kategori-artikel.dark, .aboutsiapa.dark,
-.text-rekomen.dark, .link-sosmed.dark,
-.mobile-sosmed-container.dark, .mobile-sosmed-link.dark{
-  color: var(--light-theme);
-}
-.title-activity.dark{
-  color: #B9E5E6;
-}
-.dark-penulis-kategori{
-  color: #E7BF60;
-}
-.dark-tanggal-kategori{
-  color: var(--light-theme);
-}
-.dark-box{
-  background: var(--primary-color);
-}
-.kategori-artikel{
-  color: var(--primary-color);
+input:checked + .slider::before {
+  transform: translateX(21px);
 }
 
 @media screen and (max-width: 600px){
@@ -293,7 +268,7 @@ p.dark, .thumbnail-description.dark,
     width: 50%;
     height: 100%;
     padding: 3.5rem 1.5rem 0;
-    background: var(--primary-color);
+    background: #1E435B;
     backdrop-filter: blur(10px);
     transition: .5s;
     display: block;
@@ -338,7 +313,7 @@ p.dark, .thumbnail-description.dark,
     padding: .5rem 1.5rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: .5rem;
-    background-color: var(--primary-color);
+    background-color: #1E435B;
   }
   .dropdown__item {
     margin: .5rem 0;
