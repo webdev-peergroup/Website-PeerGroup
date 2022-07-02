@@ -2,10 +2,10 @@
 -- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3307
--- Generation Time: Jun 09, 2022 at 06:05 AM
--- Server version: 10.6.5-MariaDB
--- PHP Version: 7.4.26
+-- Host: localhost
+-- Generation Time: Jul 02, 2022 at 06:03 AM
+-- Server version: 10.4.21-MariaDB
+-- PHP Version: 8.0.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -26,7 +26,7 @@ USE `peergroupid`;
 -- --------------------------------------------------------
 
 --
--- Struktur tabel dari `artikel`
+-- Table structure for table `artikel`
 --
 
 CREATE TABLE `artikel` (
@@ -59,7 +59,19 @@ INSERT INTO `artikel` (`id`, `judul`, `slug`, `kategori`, `penulis`, `deskripsi`
 -- --------------------------------------------------------
 
 --
--- Struktur tabel dari `kegiatan`
+-- Table structure for table `jawaban`
+--
+
+CREATE TABLE `jawaban` (
+  `id_quiz` int(11) NOT NULL,
+  `id_jawaban` int(11) NOT NULL,
+  `jawaban` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=armscii8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `kegiatan`
 --
 
 CREATE TABLE `kegiatan` (
@@ -86,7 +98,7 @@ INSERT INTO `kegiatan` (`id`, `judul`, `slug`, `kategori`, `deskripsi`, `penulis
 -- --------------------------------------------------------
 
 --
--- Struktur tabel dari `log`
+-- Table structure for table `log`
 --
 
 CREATE TABLE `log` (
@@ -100,20 +112,31 @@ CREATE TABLE `log` (
 -- --------------------------------------------------------
 
 --
--- Struktur tabel dari `quiz`
+-- Table structure for table `quiz`
 --
 
 CREATE TABLE `quiz` (
-  `id` int(11) NOT NULL,
-  `soal` longtext NOT NULL,
-  `jawaban` varchar(128) NOT NULL,
-  `score` int(2) NOT NULL
+  `id_title` int(11) NOT NULL,
+  `id_quiz` int(11) NOT NULL,
+  `soal` text NOT NULL,
+  `score` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=armscii8;
 
 -- --------------------------------------------------------
 
 --
--- Struktur tabel dari `user`
+-- Table structure for table `title`
+--
+
+CREATE TABLE `title` (
+  `id_title` int(11) NOT NULL,
+  `title` varchar(128) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=armscii8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
 --
 
 CREATE TABLE `user` (
@@ -146,6 +169,13 @@ ALTER TABLE `artikel`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `jawaban`
+--
+ALTER TABLE `jawaban`
+  ADD PRIMARY KEY (`id_jawaban`),
+  ADD KEY `id_quiz` (`id_quiz`);
+
+--
 -- Indexes for table `kegiatan`
 --
 ALTER TABLE `kegiatan`
@@ -161,7 +191,14 @@ ALTER TABLE `log`
 -- Indexes for table `quiz`
 --
 ALTER TABLE `quiz`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id_quiz`),
+  ADD KEY `id_title` (`id_title`);
+
+--
+-- Indexes for table `title`
+--
+ALTER TABLE `title`
+  ADD PRIMARY KEY (`id_title`);
 
 --
 -- Indexes for table `user`
@@ -174,34 +211,62 @@ ALTER TABLE `user`
 --
 
 --
--- AUTO_INCREMENT dari table `artikel`
+-- AUTO_INCREMENT for table `artikel`
 --
 ALTER TABLE `artikel`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
--- AUTO_INCREMENT dari table `kegiatan`
+-- AUTO_INCREMENT for table `jawaban`
+--
+ALTER TABLE `jawaban`
+  MODIFY `id_jawaban` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `kegiatan`
 --
 ALTER TABLE `kegiatan`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT dari table `log`
+-- AUTO_INCREMENT for table `log`
 --
 ALTER TABLE `log`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dari table `quiz`
+-- AUTO_INCREMENT for table `quiz`
 --
 ALTER TABLE `quiz`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_quiz` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dari table `user`
+-- AUTO_INCREMENT for table `title`
+--
+ALTER TABLE `title`
+  MODIFY `id_title` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
   MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `jawaban`
+--
+ALTER TABLE `jawaban`
+  ADD CONSTRAINT `jawaban_ibfk_1` FOREIGN KEY (`id_quiz`) REFERENCES `quiz` (`id_quiz`);
+
+--
+-- Constraints for table `quiz`
+--
+ALTER TABLE `quiz`
+  ADD CONSTRAINT `quiz_ibfk_1` FOREIGN KEY (`id_title`) REFERENCES `title` (`id_title`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
