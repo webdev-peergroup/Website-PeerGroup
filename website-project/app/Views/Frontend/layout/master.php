@@ -92,6 +92,7 @@
                                 <li class="dropdown__item"><a href="/Home/volunteer" class="nav__link">Volunteer</a></li>
                             </ul>
                         </li>
+                        <li class="nav__item"><a href="/Home/quiz" class="nav__link">Quiz</a></li>
                         <?php
                             if ($session->logged_in == true) {
                                 $logout = base_url('logout');

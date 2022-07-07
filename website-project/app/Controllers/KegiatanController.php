@@ -6,6 +6,7 @@ use App\Controllers\BaseController;
 use App\Models\ArtikelModel;
 use App\Models\KegiatanModel;
 use App\Models\LoginModel;
+use App\Models\QuizModel;
 
 class KegiatanController extends BaseController
 {

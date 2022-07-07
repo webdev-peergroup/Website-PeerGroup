@@ -6,12 +6,14 @@ use App\Controllers\BaseController;
 use App\Models\LoginModel;
 use App\Models\ArtikelModel;
 use App\Models\KegiatanModel;
+use App\Models\QuizModel;
 
 class AdminController extends BaseController
 {
     protected $get;
     protected $user;
     protected $kegiatan;
+    protected $quiz;
     public function __construct(){
         $this->get = new ArtikelModel();
         $this->user = new LoginModel();

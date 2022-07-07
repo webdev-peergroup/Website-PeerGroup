@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Models\ArtikelModel;
 use App\Models\KegiatanModel;
+use App\Models\QuizModel;
 
 class Home extends BaseController
 {
@@ -12,9 +13,11 @@ class Home extends BaseController
     protected $getkegiatan;
     protected $deskripsi;
     protected $dark;
+    protected $getquiz;
     public function __construct(){
         $this->get = new ArtikelModel();
         $this->getkegiatan = new KegiatanModel();
+        $this->getquiz = new QuizModel();
         $this->deskripsi = 'Self-development bukan hanya pengetahuan, tetapi kebutuhan. Yuk, bergabung bersama pemuda lainnya untuk temukan potensimu, belajar fokus pada kelebihanmu...';
         $this->dark = '';
     }
@@ -26,6 +29,7 @@ class Home extends BaseController
         $karir = $this->get->getnewartikel('karir');
         $jurusan = $this->get->getnewartikel('jurusan');
         $kegiatan = $this->getkegiatan->getdatakegiatan();
+        $quiz = $this->getquiz->gettitle();
         $data = [
             'title' => 'Peer Group ID - Sebuah Website Pengembangan Potensi Diri',
             'deskripsi' => $this->deskripsi,
@@ -142,5 +146,72 @@ class Home extends BaseController
         ];
 
         return view('Frontend/kegiatanKami/volunteer', $data);
+    }
+    
+    public function quiz(){
+        // $css = 'artikel.css';
+        // $random = $this->get->getrandomartikel();
+        // if ($e == 'self') {
+            $quiz_title = $this->getquiz->gettitle();
+            $quiz_soal = $this->getquiz->getsoal();
+            $quiz_jwb = $this->getquiz->getjwban();
+            $data = [
+                'title' => 'Quiz',
+                'quiz' => $quiz_title,
+                'soal' => $quiz_soal,
+                'jwb' => $quiz_jwb,
+                // 'kategori' => 'Self Development',
+                // 'deskripsi' => 'Artikel tentang Self Development ada disini.',
+                'deskripsi' => 'ini quiz',
+                'css' => 'quiz.css'
+                // 'css' => $css,
+                // 'rekomen' => $random
+            ];
+        // }elseif ($e == 'jurusan') {
+        //     $getartikel = $this->get->getdataartikel($e);
+        //     $data = [
+        //         'title' => 'Artikel Jurusan',
+        //         'kategori' => 'Jurusan',
+        //         'deskripsi' => 'Artikel tentang Jurusan ada disini.',
+        //         'artikel' => $getartikel,
+        //         'css' => $css,
+        //         'rekomen' => $random
+        //     ];
+        // }elseif ($e == 'karir') {
+        //     $getartikel = $this->get->getdataartikel($e);
+        //     $data = [
+        //         'title' => 'Artikel Karir',
+        //         'kategori' => 'Karir',
+        //         'artikel' => $getartikel,
+        //         'deskripsi' => 'Artikel tentang Karir ada disini.',
+        //         'css' => $css,
+        //         'rekomen' => $random
+        //     ];
+        // }
+        
+        return view('Frontend/quiz/quiz', $data);
+    }
+
+    public function detquiz($id){
+        // dd($id);
+        echo $id;
+        $list = $this->getquiz->getsoal($id);
+        // $deskripsi = $this->get->getmetadeskripsiartikel($id);
+        // $random = $this->get->getrandomartikel();
+        foreach ($list->getResult() as $meta) {
+            $title = $meta->judul;
+            $desk = $meta->deskripsi;
+        }
+        // dd($title = $meta->cover);
+        $data = [
+            // dd($title);
+            'title' => $title,
+            'deskripsi' => $desk,
+            'quiz' => $list,
+            // 'css' => 'detailartikel.css',
+            // 'rekomen' => $random
+        ];
+        // dd($title);
+        return view('Frontend/quiz/detail-quiz', $data);
     }
 }
