@@ -1,3 +1,17 @@
+/* Light Color */
+:root {
+    --primary-color: #1E435B;
+    --line: #EAA900;
+    --desc: #1E435B;
+}
+  
+  /* Dark Color */
+  html[data-theme="dark"] {
+      --primary-color: #EAA900;
+      --line: #ffffff;
+    --desc: #F2F2F2;
+}
+
 .aboutcontent {
     padding: 0 5%;
     margin: 3rem 3rem;  
@@ -6,14 +20,25 @@
 .abouttitle {
     display: flex;
     justify-content: center;
-    border-bottom: 2px solid rgb(182, 149, 41);
+    border-bottom: 2px solid var(--line);
     margin: 7rem 25% 5rem;
 }
+.aboutsiapa{
+    margin: 0 .5rem 1rem 0;
+    color: var(--primary-color);
+}
+
 
 .descContent {
     width: 50%;
     float: left;
     margin-bottom: 4rem;
+    padding-right: 0.5rem;
+    color: var(--desc);
+    text-align: justify;
+}
+.descContent h2{
+    color: #EAA900;
 }
 
 .imgContent {
@@ -21,34 +46,29 @@
     float: right; 
     margin-bottom: 2rem;
 }
-
 .imgsiapakita{
-    height: 27rem;
     width: 40rem;
+}
+.imgsiapakita img{
+    padding-top: 0;
+    margin-top: 0;
 }
 
 .valueContent {
     margin: 0 7%;
     width: 85%;
-    background-color: #BFCEF4;
+    background-color: #1E435B;
     padding: 1rem 2rem;
     padding-bottom: 4rem;
     border-radius: 10px; 
+    color: #ffffffef;
 }
-
-.valueContent.dark{
-    background-color: #344464;
-    color: #fff;
-}
-
 .vision {  
     align-items: center;
     display: flex;
     flex-direction: column;
+    text-align: justify;
 }
-
-/* .mission {  } */
-
 .theader { 
     text-align: center;
     border-bottom: 2px solid #1E435B;
@@ -57,28 +77,11 @@
     margin-right: auto;
 }
 
-.theader.dark{
-    border-bottom: 2px solid #fff;
-}
-
-.aboutsiapa{
-    margin: 0 .5rem 1rem 0;
-    color: var(--primary-color);
-}
-
-.aboutkita{
-    margin: 0 0 1rem 0;
-}
-
-/* Small Phone */
-@media screen and (max-width:480px) {
-    
-}
-
 @media screen and (max-width:576px) {
     .aboutcontent{
         margin: 3rem 1rem;
     }
+
     .abouttitle{
         margin-top: 4rem;
         margin-left: auto;
@@ -95,19 +98,6 @@
         gap: 0em 0em; 
         height: 32rem;
     }
-
-    .imgContent{
-        grid-row: 1;
-        width: 100%;
-        float: none;
-        margin-bottom: 0;
-        height: 18rem;
-    }
-
-    .imgsiapakita{
-        height: 100%;
-    }
-
     .descContent{
         grid-row: 2;
         width: 100%;
@@ -115,6 +105,17 @@
         text-overflow: ellipsis;
         overflow: hidden;
         margin-bottom: 0;
+        padding-right: 0;
+    }
+    .imgContent{
+        grid-row: 1;
+        width: 100%;
+        float: none;
+        margin-bottom: 0;
+        height: 18rem;
+    }
+    .imgsiapakita{
+        height: 100%;
     }
 
     .valueContent{
@@ -128,13 +129,11 @@
         width: 95%;
         padding: 1rem .5rem;
     }
-
     .vision, .mission{
         font-size: .8rem;
     }
 }
 
-/* Tablet */
 @media screen and (min-width: 576px){
     .valueContent{
         display: grid; 

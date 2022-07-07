@@ -1,47 +1,49 @@
-/*===== INTRO =====*/
+/* Light Color */
+:root {
+  --primary-color: #000000;
+  --btn: #1E435B;
+  --text: #ffffff;
+  --bg: #ffffff;
+}
+
+/* Dark Color */
+html[data-theme="dark"] {
+    --primary-color: #ffffff;
+    --btn: #ffffff;
+    --text: #000000;
+    --bg: #1E435B;
+}
+
 .intro {
   overflow: hidden;
 }
-
 .intro-container {
-  height: calc(100vh - var(--header-height));
-  grid-template-rows: repeat(2, max-content);
-  row-gap: 1.5rem;
+  width: 100vw;
+  max-width: 1024px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+}
+.intro-container .intro-title {
+  font-size: 5vw;
+  color:var(--primary-color);
+  margin: auto 0;
+  margin-right: 10px;
+  text-align: center;
+  padding-left: 3rem;
+}
+.intro-container .front {
+  width: 50vw;
+  height: auto;
 }
 
-.intro-img {
-  padding-top: 0;
-  justify-self: center;
-  /* margin-top: 1rem; */
-}
-
-.intro-img img {
-  position: relative;
-  width: 500px;
-  height: 400px;
-  top: 0;
-}
-
-.content {
-  width: 100%;
-  margin-top: 4rem;
-}
-
-.title {
+ .title {
   font-size: var(--header-height);
   text-align: center;
-  color: black;
   padding-bottom: 1rem;
-}
-
-.intro-title {
-  grid-area: title;
-  font-size: 50px;
-  margin: 0 auto;
-  padding-left: 25px;
-  padding-right: 25px;
-  color: black;
-  text-align: center;
 }
 
 .career-container {
@@ -70,7 +72,6 @@
   background-color: var(--accent-color);
   color: white;
   padding: 0.75rem 2.5rem;
-  /* border-radius: 10px; */
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.062);
   font-family: var(--font-family);
   font-weight: var(--font-bold);
@@ -84,6 +85,7 @@
 
 .benefit {
   padding: 3rem 7rem;
+  background-color: #ffe4a0;
 }
 
 .benefit-container {
@@ -148,12 +150,13 @@
 }
 
 .popup_contain {
-  background: #fefefe;
+  background: var(--bg);
   margin: 15% auto;
   padding: 15px;
   border: 1px solid #888;
   width: 80%;
   position: relative;
+  color: var(--primary-color);
 }
 
 .popup_content {
@@ -209,63 +212,32 @@
   top: 0;
   bottom: 0;
 }
-/* .popup_contain{
-    position:relative;
-    background:#fff;
-    min-width:300px;
-    max-width:80%;
-    margin:100px auto 50px;
-    min-height:150px;
-    padding: 10px 20px;
-  } */
-/* .popup_close{
-    background:red;
-    padding:3px 10px 5px;
-    position: absolute;
-    right:-10px;
-    top:-10px;
-    color: #fff;
-    border-radius: 50%;
-  } */
 
-/* .home__button{
-    display: inline-block;
-    background-color: var(--primary-color);
-    color: var(--light-theme);
-    padding: 1.125rem 2rem;
-    border-radius: 100px;
-    margin-top: 1.5rem;
-  } */
-
-/* .button-link:hover{
-    background-color: var(--hover-button);
-  } */
-
-/* .desc{
-    color: #5F9695;
-  } */
-
-/* .katerogi{
-    padding: 2rem;
-    margin: 1rem 1rem;
-  }*/
-  
- 
-
+.join-title{
+  color: var(--primary-color);
+}
+.button-link{
+  border-radius: 20px;
+  background-color: var(--btn);
+  color: var(--text);
+}
 
 @media screen and (max-width: 600px) {
   .intro-container {
     display: flex;
     flex-direction: column;
+    height: 100vh;
+    text-align: center;
   }
 
   .intro-img {
+    margin-top: -25vw;
     width: 100%;
   }
 
   .intro-img .front {
     width: 60vw;
-    height: 40vh;
+    height: auto;
     position: relative;
   }
 
@@ -279,7 +251,11 @@
 
   .intro-title {
     font-size: 2em;
-    padding-bottom: 50px;
+  }
+  .intro-title .title h1{
+    /* font-size: 2em; */
+    padding-left: 0;
+    /* padding-bottom: 50px; */
   }
 
   .career-container {
@@ -344,29 +320,6 @@
 /* Tablet */
 
 @media screen and (max-width: 1276px) and (min-width: 600px) {
-  .intro-container {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    row-gap: 30px;
-  }
-
-  .intro-img {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .intro-img img {
-    width: 50vw;
-    height: 40vh;
-  }
-  .content {
-    width: calc(100% - 2rem);
-    margin-top: 50px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
   .benefit {
     padding: 2rem 2rem;
   }

@@ -247,7 +247,7 @@ body {
   .first {
     width: 100vw;
     height: fit-content;
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF; */
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -3,11 +3,11 @@
 <main class="l-main">
     <div class="aboutcontent">
             <div class="abouttitle">
-                <h1 class="aboutsiapa">Siapa <span style="color: rgb(182, 149, 41);">Kita ?</span></h1>
+                <h1 class="aboutsiapa">Siapa Kita ?</h1>
             </div>
             <div class="about-container">
                 <div class="descContent">
-                    <h2 style="color: rgb(182, 149, 41);">Peer Group ID</h2>
+                    <h2>Peer Group ID</h2>
                     <p id="header">Peer Group ID merupakan platform paling tepat bagi para pemuda yang ingin mengembangkan diri lewat potensi yang dimiliki dengan berbagai kegiatan menarik berbasis pembinaan, pendampingan, dan konseling. Bersama kami, kamu bisa temukan, kembangkan, dan menjadi hebat dengan potensimu.</p>
                 </div>
                 <div class="imgContent">
