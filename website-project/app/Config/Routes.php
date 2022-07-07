@@ -2,6 +2,8 @@
 
 namespace Config;
 
+use App\Controllers\QuizController;
+
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
 
@@ -38,6 +40,7 @@ $routes->get('/artikel/(:segment)', 'Home::artikel/$1');
 $routes->get('/about', 'Home::about');
 $routes->get('/volunteer','Home::volunteer');
 $routes->get('/kegiatan-kami','Home::kegiatan_kami');
+$routes->get('/quiz-ah','QuizViewController::index');
 
 //Bagian login
 $routes->get('/login', 'LoginController::index');
@@ -63,6 +66,10 @@ $routes->get('/tambah-data', 'ArtikelController::tambah_data');
 //Bagian Admin Profile Data
 $routes->get('/profile', 'ProfileAdminController::profile');
 $routes->get('/update/profile/(:num)', 'ProfileAdminController::update_profile/$1');
+
+//QUiz
+$routes->get('/quiz', 'QuizController::index');
+$routes->get('/detail-quiz/(:any)', 'QuizController::detailQuiz/$1/');
 
 
 //Ajax Request

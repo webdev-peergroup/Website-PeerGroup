@@ -48,8 +48,12 @@
                     <h3>Profile</h3>
                 </a>
                 <a href="/dokumentasi" class="nav-link <?php if(uri_string() === 'profile') echo "active"; ?>">
-                    <span class="material-icons-sharp">Foto dokumentasi</span>
+                    <span class="material-icons-sharp">person_outline</span>
                     <h3>foto-dokumentasi</h3>
+                </a>
+                <a href="/quiz" class="nav-link <?php if(uri_string() === 'quiz') echo "active"; ?>">
+                    <span class="material-icons-sharp">person_outline</span>
+                    <h3>Quiz</h3>
                 </a>
                 <a href="<?php echo base_url('logout')?>">
                     <span class="material-icons-sharp">logout</span>
