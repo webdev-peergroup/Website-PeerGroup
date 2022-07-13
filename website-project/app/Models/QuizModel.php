@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class QuizModel extends Model
 {
-    protected $table = 'quiz';
+    // protected $table = 'title';
     protected $allowedFields = ['id_title', 'title'];
     protected $db;
     public function __construct(){
@@ -14,7 +14,7 @@ class QuizModel extends Model
     }
 
     public function gettitle(){
-        $query = $this->db->query("SELECT * FROM quiz");
+        $query = $this->db->query("SELECT * FROM title");
         return $query;
     }
     

@@ -21,16 +21,16 @@
                                             <?php echo $dat['id_soal'], '. ', $dat['soal'], '<br>'?>
                                             <?php foreach ($jwb->getResultArray() as $dt) : ?>
                                                 <?php if(($dat['id_title'] == $dt['id_title']) and ($dat['id_soal'] == $dt['id_soal'])) : ?>
-                                                    <li><?php echo $dt['id_title'], '-', $dt['id_soal'], '-', $dt['id_jwb'], ' ', $dt['jwb'], '<br>';?></li>
-                                                <?php endif; ?>
-                                            <?php endforeach; ?>
+                                                    <li><?php echo $dt['id_jwb'], ' ', $dt['jwb'], '<br>';?></li>
+                                                <?php endif ?>
+                                            <?php endforeach ?>
                                             <?php echo '<br>'?>
-                                        <?php endif; ?>
-                                    <?php endforeach; ?>
+                                        <?php endif ?>
+                                    <?php endforeach ?>
                                 </div>
                             </div>
                             <?php echo '<br>'?>
-                        <?php endforeach; ?>
+                        <?php endforeach ?>
                     </div>
                 </div>
             </div>    
