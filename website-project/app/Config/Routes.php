@@ -67,7 +67,11 @@ $routes->get('/tambah-data', 'ArtikelController::tambah_data');
 $routes->get('/profile', 'ProfileAdminController::profile');
 $routes->get('/update/profile/(:num)', 'ProfileAdminController::update_profile/$1');
 
-//QUiz
+//quiz frontend
+$routes->get('/quiz1','QuizViewController::index');
+
+
+//QUiz beckend
 $routes->get('/quiz', 'QuizController::index');
 $routes->get('/detail-quiz/(:any)', 'QuizController::detailQuiz/$1/');
 

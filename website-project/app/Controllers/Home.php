@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Models\ArtikelModel;
 use App\Models\KegiatanModel;
+use App\Models\QuizModel;
 
 class Home extends BaseController
 {
@@ -12,8 +13,11 @@ class Home extends BaseController
     protected $getkegiatan;
     protected $deskripsi;
     protected $dark;
+    protected $getquiz;
+
     public function __construct(){
         $this->get = new ArtikelModel();
+        $this->getquiz = new QuizModel();
         $this->getkegiatan = new KegiatanModel();
         $this->deskripsi = 'Self-development bukan hanya pengetahuan, tetapi kebutuhan. Yuk, bergabung bersama pemuda lainnya untuk temukan potensimu, belajar fokus pada kelebihanmu...';
         $this->dark = '';
@@ -142,5 +146,37 @@ class Home extends BaseController
         ];
 
         return view('Frontend/kegiatanKami/volunteer', $data);
+    }
+    public function quiz(){
+            $quiz_title = $this->getquiz->gettitle();
+            $quiz_soal = $this->getquiz->getsoal();
+            $quiz_jwb = $this->getquiz->getjwban();
+            $data = [
+                'title' => 'Quiz',
+                'quiz' => $quiz_title,
+                'soal' => $quiz_soal,
+                'jwb' => $quiz_jwb,
+                'deskripsi' => 'ini quiz',
+                'css' => 'quiz.css'
+            ];
+        
+        return view('Frontend/quiz/index', $data);
+    }
+
+    public function detquiz($id){
+        // dd($id);
+        echo $id;
+        $list = $this->getquiz->getsoal($id);
+        foreach ($list->getResult() as $meta) {
+            $title = $meta->judul;
+            $desk = $meta->deskripsi;
+        }
+        $data = [
+            'title' => $title,
+            'deskripsi' => $desk,
+            'quiz' => $list,
+        ];
+        // dd($title);
+        return view('Frontend/quiz/detail-quiz', $data);
     }
 }

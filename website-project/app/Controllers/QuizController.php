@@ -22,7 +22,7 @@ class QuizController extends BaseController
         if ($session->logged_in != TRUE) {
             return redirect()->to('/login');
         }
-        $title = $this->get->getTitle();
+        $title = $this->get->gettitle();
         // dd($title);/
         $data = [
             'title' => 'Quiz',
@@ -32,18 +32,19 @@ class QuizController extends BaseController
         return view('Backend/dashboard/quiz/index',$data);
     }
     public function detailQuiz($id){
-        // dd($idQuiz);
-        $detail = $this->get->getSoal($id);
-        $jawaban = $this->get->getJawaban($id);
-        // dd($jawaban);
-        $data = [
-            'title' => 'Detail',
-            'detail' => $detail,
-            'jawaban' => $jawaban,
-            'validation' => \Config\Services::validation()
-        ];
-        // dd($detail);
-        // dd($data);
+            $quiz_title = $this->get->gettitle($id);
+            $quiz_soal = $this->get->getsoalDetail($id);
+            $quiz_jwb = $this->get->getjwbanDetail($id);
+            $data = [
+                'title' => 'Quiz',
+                'quiz' => $quiz_title,
+                'soal' => $quiz_soal,
+                'jwb' => $quiz_jwb,
+                'deskripsi' => 'ini quiz',
+                'css' => 'quiz.css',
+                'validation' => \Config\Services::validation()
+            ];
+
         return view('Backend/dashboard/quiz/detail', $data);
     }
 }
