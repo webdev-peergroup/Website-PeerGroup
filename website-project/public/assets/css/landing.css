@@ -114,7 +114,7 @@
 }
 
 .front{
-    max-width: 1000px;
+    max-width: 100%;
 }
 
 .kelebihan h1{
@@ -209,12 +209,47 @@
 /* Media queries */
 /* ===== MEDIA QUERIES =====*/
 @media screen and (max-width: 468px){
-  
+  .bd-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .potensi-container, .fokus-container, .unik-container {
+    height: auto;
+    padding: 2rem;
+  }
 }
 
 @media screen and (max-width: 767px){
   .random{
     max-width: 30vw;
+  }
+
+  .potensi-img, .fokus-img, .unik-img {
+    margin: 0;
+  }
+
+  .join-title {
+    font-size: 1.8rem !important;
+  }
+
+  .title {
+    margin-top: 15px;
+    font-size: 2.3rem;
+    padding: 1.2rem;
+  }
+
+  .potensi-container, .fokus-container, .unik-container {
+    padding: 2rem;
+  }
+
+  .kelebihan h1 {
+    font-size: 2.2rem;
+    margin: 0;
+  }
+
+  .join-us {
+    margin: 2rem;
   }
 }
 
@@ -241,8 +276,8 @@
 
 @media screen and (min-width: 1024px) {
   .bd-grid{
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 

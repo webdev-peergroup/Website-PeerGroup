@@ -1,267 +1,272 @@
-a{
+/* Light Color */
+:root {
+  --primary-color: #1E435B;
+}
+
+/* Dark Color */
+html[data-theme="dark"] {
+  --primary-color: #F2F2F2;
+}
+
+a {
   text-decoration: none;
-  color: #000000;
+  color: #1E435B;
   font-weight: bold;
 }
 
-a:hover{
-  color: #1E435B;
+a:hover {
+  color: #367097;
 }
-.l-main{
+.l-main {
   max-width: calc(100% - 10rem);
   margin-left: auto;
   margin-right: auto;
 }
+
+.kategori-artikel{
+  color: var(--primary-color);
+}
 /*Artikel*/
-.container__artikel{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: .5fr 1.5fr;
-    gap: 2rem 0em;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "title"
-      "konten";
-    justify-items: center;
-    align-items: center;
+.container__artikel {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 1.5fr;
+  gap: 2rem 0em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "title"
+    "konten";
+  justify-items: center;
+  align-items: center;
 }
 
-
-.konten { grid-area: konten; }
+.konten {
+  grid-area: konten;
+}
 .title {
   width: max-content;
 }
-.judul-konten{
+.judul-konten {
   text-align: center;
   font-size: var(--form-big-font-size);
-  /* border-bottom: 0.18rem solid var(--accent-color); */
   left: 0;
   right: 0;
   margin: auto;
 }
 
-
-.box{
-  display: grid; 
-  grid-template-columns: .6fr 2.5fr; 
-  grid-template-rows: 1fr; 
-  gap: 0px 1em; 
-  grid-template-areas: 
-  "img-thumbnail text-list"; 
-  background: var(--f2f2);
+.box {
+  display: grid;
+  grid-template-columns: 0.6fr 2.5fr;
+  grid-template-rows: 1fr;
+  gap: 0px 1em;
+  grid-template-areas: "img-thumbnail text-list";
+  background: #F2F2F2;
   border-radius: 5px;
   margin-bottom: 1rem;
   transition: background 0.2s linear;
   max-height: 8vw;
 }
-.img-thumbnail { 
-  grid-area: img-thumbnail; 
+.img-thumbnail {
+  grid-area: img-thumbnail;
 }
 
-.img-thumbnail img { 
+.img-thumbnail img {
   border-radius: 5px;
   height: 8vw;
   width: 100%;
   object-fit: cover;
 }
-.text-list { 
-  grid-area: text-list; 
+.text-list {
+  grid-area: text-list;
   display: grid;
-  grid-template-rows: .5fr 0.5fr 1.5fr;
+  grid-template-rows: 0.5fr 0.5fr 1.5fr;
   grid-auto-columns: 1fr;
   gap: 0em 0em;
   grid-auto-flow: row;
   padding: 0 0.5rem 0 0;
 }
 
-.title-thumbnail { 
-  grid-area: 1 / 1 / 2 / 2; 
+.title-thumbnail {
+  grid-area: 1 / 1 / 2 / 2;
+  height: 1.5rem;;
   font-size: 1.3rem;
   font-weight: var(--font-bold);
-  color: var(--primary-color);
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
 
-.title-thumbnail.dark{
-  color: var(--white-color);
+.penulis {
+  grid-area: 2 / 1 / 3 / 2;
 }
 
-.penulis { grid-area: 2 / 1 / 3 / 2; }
-
-.thumbnail-description { 
-  grid-area: 3 / 1 / 4 / 2; 
+.thumbnail-description {
+  grid-area: 3 / 1 / 4 / 2;
   color: #030402;
   text-overflow: ellipsis;
-  font-size: .89em;
+  font-size: 0.89em;
   max-height: 2rem;
   overflow: hidden;
 }
 
-.header-rekomendasi-home{
+.header-rekomendasi-home {
   display: flex;
   width: 100%;
-  color: var(--white-color);
+  color: #F2F2F2;;
   height: 3rem;
-  background-color: #1E435B;
+  background-color: #1e435b;
   justify-content: center;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   align-items: center;
 }
 
-.penulis-artikel-home{
+.penulis-artikel-home {
   font-style: italic;
   font-weight: var(--font-medium);
-  color: var(--penulis-artikel-home);
-  font-size: .89em;
+  font-size: 0.89em;
 }
 
-.tanggal-artikel-home{
+.tanggal-artikel-home {
   color: rgba(0, 0, 0, 0.5);
-} 
+}
 
 /*Rekomendasi*/
-.Rekomendasi{
+.Rekomendasi {
   max-width: 100%;
 }
-.rekomendasi-container{
-    
-    height: 617px;
-    border-radius: 5px;
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-auto-rows: 1fr; 
-    grid-template-rows: 0.2fr 2.8fr; 
-    gap: 0em 0em; 
-  }
-  
-  .header-rekomendasi{
-    display: flex;
-    width: 100%;
-    color: var(--white-color);
-    height: 3rem;
-    background-color: #1E435B;
-    justify-content: center;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    align-items: center;
-    margin-top: 9rem;
-  }
-  
-  .rekomen-fill {
-    margin-top: .5rem;
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-auto-rows: 1fr; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 0fr 0fr 0fr; 
-    gap: 0em 1em; 
-    grid-template-areas: 
-      ". ."
-      ". ."
-      ". ."; 
-    justify-items: center;
-  }
-  
-  /*Rekomendasi*/
-  
-  .rekomen-img {
-    width: 100%;
-    height: max-content;
-  }
-  .rekomen-img img{
-    height: 100%;
-  }
-  
-  .text-rekomen{
-    max-lines: 3;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    height: 60px;
-  }
+.rekomendasi-container {
+  height: 617px;
+  border-radius: 5px;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-template-rows: 0.2fr 2.8fr;
+  gap: 0em 0em;
+}
 
-.box.dark-box{
-    background: var(--primary-color);
-  }
-  
-  .penulis{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+.random {
+  max-width: 200px;
+}
+
+.rekomen-fill {
+  margin-top: 0.5rem;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0fr 0fr 0fr;
+  gap: 0.5em 1em;
+  grid-template-areas:
+    ". ."
+    ". ."
+    ". .";
+  justify-items: center;
+  background-color: #F2F2F2;
+  border-radius: 5px;
+  height: fit-content;
+}
+
+/*Rekomendasi*/
+
+.rekomen-img {
+  /* height: max-content; */
+  height: 5.5rem;
+  width: 5.5rem;
+}
+.rekomen-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.text-rekomen {
+  max-lines: 3;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 60px;
+}
+
+.penulis {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 /* Small Phone */
 @media screen and (max-width: 525px) {
-  .penulis{ 
+  .penulis {
     display: none;
   }
 
-  .text-list{
-    grid-template-rows: .5fr 0fr 1fr;
+  .text-list {
+    grid-template-rows: 0.5fr 0fr 1fr;
   }
 }
-@media screen and (max-width: 576px){
-  .title{ 
-    margin-top: 2rem;
+@media screen and (max-width: 576px) {
+  .title {
+    margin-top: 8rem;
+    margin-bottom: 4rem;
   }
-  .l-main{
+  .l-main {
     max-width: 100%;
   }
-  .judul-konten{
+  .judul-konten {
     font-size: 1.5rem;
+    margin-top: 3rem;
   }
 
-  .judul-konten::after{
+  .judul-konten::after {
     top: 7.5rem;
     width: 14rem;
   }
 
-  .artikel{
+  .artikel {
     grid-row: 1;
   }
 
-  .Rekomendasi{
+  .Rekomendasi {
     grid-row: 2;
     padding: 0;
   }
 
-  .container__artikel{
-    margin-left: .5rem;
-    margin-right: .5rem;
-    grid-template-rows: .1fr 1fr;
+  .container__artikel {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    grid-template-rows: 0.1fr 1fr;
     align-items: center;
   }
 
-  .box{
-    max-height: 100%;
+  .box {
     gap: 0 0.5em;
-    background: var(--f2f2);
-    padding: .5rem .5rem;
+    padding: 0.5rem 0.5rem;
   }
 
-  .img-thumbnail{
+  .img-thumbnail {
     width: 8rem;
     height: 6rem;
   }
 
-  .img-thumbnail img{
+  .img-thumbnail img {
+    max-width: 8rem;
     height: 100%;
   }
 
-  .title-thumbnail{
+  .title-thumbnail {
     text-overflow: ellipsis;
+    font-weight: bold;
+    font-size: 2em;
   }
-  
-  .title-thumbnail{
+
+  .title-thumbnail {
     font-size: 1rem;
   }
-  .penulis, .thumbnail-description {
-    font-size: .7rem;
-  } 
+  .penulis,
+  .thumbnail-description {
+    font-size: 0.7rem;
+  }
 
-  .thumbnail-description{
+  .thumbnail-description {
     text-overflow: ellipsis;
     overflow: hidden;
     text-align: justify;
@@ -270,23 +275,76 @@ a:hover{
 }
 
 @media screen and (min-width: 576px) {
-  .l-main{
+  .l-main {
     margin-top: 2rem;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .konten{
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-auto-rows: 1fr; 
-    grid-template-rows: 1fr 1fr; 
-    gap: 0em 0em; 
+  .title {
+    margin-top: 90px;
+  }
+  .judul-konten {
+    font-size: 1.2rem;
+  }
+
+  .artikel {
+    position: relative;
+    bottom: 110px;
+  }
+  .konten {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0em 0em;
+  }
+
+  .box {
+    margin-top: 60px;
+  }
+
+  .img-thumbnail img {
+    width: 9rem;
+    height: 100%;
+  }
+
+  .rekomendasi {
+    position: relative;
+    bottom: 40px;
+  }
+
+  .rekomen-fill {
+    grid-template-columns: 100%;
+    width: 100%;
+    justify-items: left;
+  }
+
+  .rekomen-artikel {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: auto;
+    gap: 0 20px;
+  }
+
+  .random {
+    width: 100%;
+  }
+
+  .text-rekomen {
+    width: 100%;
+    margin-left: 30px;
+  }
+
+  .rekomen-img img {
+    width: 150px;
+    height: 150px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .konten{
+  .konten {
     display: grid;
     grid-template-columns: 3fr 0.5fr;
     grid-template-rows: 1fr;
@@ -294,22 +352,39 @@ a:hover{
     grid-auto-flow: row;
   }
 
-  .rekomen-img img{
+  .rekomen-img img {
     height: 7vw;
+  }
+
+  .random {
+    display: flex;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .title-thumbnail{
-    font-size: .9em;
+  .title-thumbnail {
+    font-size: 0.9em;
   }
 
-  .penulis-artikel-home, .tanggal-artikel-home{
-    font-size: .5em;
+  .penulis-artikel-home,
+  .tanggal-artikel-home {
+    font-size: 0.5em;
   }
 
-  .thumbnail-description{
-    font-size: .8em;
-    max-height: 3rem;
+  .thumbnail-description {
+    font-size: 0.8em;
+    max-height: 2.6rem;
+  }
+
+  .img-thumbnail img {
+    height: 100%;
+  }
+
+  .random {
+    width: 150px;
+  }
+
+  .box {
+    margin-bottom: 30px;
   }
 }

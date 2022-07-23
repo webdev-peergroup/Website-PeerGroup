@@ -31,47 +31,6 @@ closePop.addEventListener('click', () => {
     // console.log(closePop);
 })
 
-// Change theme
-const enabledDarkMode = () => {
-    //Add dark mode
-    document.body.classList.add('dark-theme-variables');
-    //Set local storage
-    localStorage.setItem('darkMode', 'enabled');
-    themeToggle.querySelector('span:nth-child(2)').classList.add('active');
-    themeToggle.querySelector('span:nth-child(1)').classList.remove('active');
-    if (window.location.pathname === '/admin-panel') {
-        date.classList.add('invert');
-        dateKegiatan.classList.add('invert');
-    }
-}
-const disableDarkMode = () => {
-    //Add dark mode
-    document.body.classList.remove('dark-theme-variables');
-    //Set local storage
-    localStorage.setItem('darkMode', null);
-    themeToggle.querySelector('span:nth-child(2)').classList.remove('active');
-    themeToggle.querySelector('span:nth-child(1)').classList.add('active');
-    if (window.location.pathname === '/admin-panel') {
-        date.classList.remove('invert');
-        dateKegiatan.classList.remove('invert');
-    }
-}
-
-if (darkMode === 'enabled') {
-    enabledDarkMode();    
-}
-
-themeToggle.addEventListener("click", () => {
-    darkMode = localStorage.getItem('darkMode');
-    if (darkMode !== 'enabled') {
-        enabledDarkMode();
-        
-    }else {
-        disableDarkMode();
-    }
-    // document.body.classList.toggle('dark-theme-variables');
-})
-
 //Buat AJAX
 var xhr = new XMLHttpRequest();
 //Date Pick

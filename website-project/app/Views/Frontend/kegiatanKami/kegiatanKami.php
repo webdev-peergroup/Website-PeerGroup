@@ -9,8 +9,7 @@
         <h1>Event yang diadakan</h1>
         <h1>PeerGroup</h1>
       </div>
-
-      <img class="img title" src="/assets/images/work.png" alt="work" />
+      <img class="img" src="/assets/images/work.png" alt="work" />
     </div>
 
     <!-- event page -->
@@ -40,7 +39,7 @@
             <p>22 Januari 2022</p>
           </div>
         </div>
-        <div class="card">
+        <div class="card card3">
           <div class="head"></div>
           <div class="body">
             <h2>Judul</h2>
@@ -61,7 +60,7 @@
       <div class="title3 title">
         <h1>Dokumentasi</h1>
       </div>
-      <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+      <div class="gallery js-flickity" data-flickity-options='{ "contain": true, "wrapAround": true, "autoPlay": 2000 }'>
         <img class="gallery-cell" src="/assets/images/artikel/Logo Peer Group.jpg" ></img>
         <img class="gallery-cell" src="/assets/images/artikel/Logo Peer Group.jpg" ></img>
         <img class="gallery-cell" src="/assets/images/artikel/Logo Peer Group.jpg" ></img>

@@ -42,20 +42,28 @@ function move(e){
     })
 }
 
+// Dark Mode
+const toggleSwitch = document.querySelector(
+  '.label input[type="checkbox"]'
+);
+const currentTheme = localStorage.getItem("theme");
 
+if (currentTheme) {
+  document.documentElement.setAttribute("data-theme", currentTheme);
 
+  if (currentTheme === "dark") {
+    toggleSwitch.checked = true;
+  }
+}
 
-// /*===== SCROLL REVEAL ANIMATION =====*/
-// const sr = ScrollReveal({
-//     origin: 'top',
-//     distance: '80px',
-//     duration: 2000,
-//     reset: true
-// });
+function switchTheme(event) {
+  if (event.target.checked) {
+    document.documentElement.setAttribute("data-theme", "dark");
+    localStorage.setItem("theme", "dark");
+  } else {
+    document.documentElement.setAttribute("data-theme", "light");
+    localStorage.setItem("theme", "light");
+  }
+}
 
-const chk = document.getElementById('chk');
-
-
-// const isdark = sessionStorage.getItem('dark');
-
-// document.getElementById('chk').checked = true;
+toggleSwitch.addEventListener("change", switchTheme, false);

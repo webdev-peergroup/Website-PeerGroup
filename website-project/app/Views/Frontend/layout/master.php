@@ -109,11 +109,11 @@
                         ?>
                         <li class="nav__item">
                             <div>
-                                <input type="checkbox" class="checkbox" id="chk" />
                                 <label class="label" for="chk">
                                     <i class='bx bxs-moon' ></i>
                                     <i class='bx bxs-sun' ></i>
-                                    <div class="ball"></div>
+                                    <input type="checkbox" class="checkbox" id="chk" />
+                                    <div class="slider round"></div>
                                 </label>
                             </div>
                         </li>
@@ -124,55 +124,54 @@
     </header>
     <?= $this->renderSection('content');?>
     <div class="footer">
-        <div class="footer-container">
-            <div class="row">
-                <div class="column col-sosmed"><p>Social Media</p>
-                    <div class="sosial-media">
-                        <img src="/assets/images/linkedin.png" class="img-kontak-media " alt="logo linkedin">
-                        <a href="https://www.linkedin.com/company/peer-group-id/" target="_blank" rel="noopener noreferrer" class="link-sosmed">Peer Group ID</a>
+        <div class="bd-grid">
+            <div class="footer-container">
+                <div class="row">
+                    <div class="column col-sosmed"><p>Social Media</p>
+                        <div class="sosial-media">
+                            <img src="/assets/images/linkedin.png" class="img-kontak-media " alt="logo linkedin">
+                            <a href="https://www.linkedin.com/company/peer-group-id/" target="_blank" rel="noopener noreferrer" class="link-sosmed">Peer Group ID</a>
+                        </div>
+                        <div class="sosial-media">
+                            <img src="/assets/images/ig.png" class="img-kontak-media" alt="logo instagram">
+                            <a href="https://www.instagram.com/peergroup.id/" target="_blank" rel="noopener noreferrer" class="link-sosmed">peergroup.id</a> 
+                        </div>
+                        <div class="sosial-media">
+                            <img src="/assets/images/tiktok.png" class="img-kontak-media" alt="logo email">
+                            <a href="https://www.tiktok.com/@peergroup.id/" target="_blank" rel="noopener noreferrer" class="link-sosmed">peergroup.id</a>
+                        </div>
                     </div>
-                    <div class="sosial-media">
-                        <img src="/assets/images/ig.png" class="img-kontak-media" alt="logo instagram">
-                        <a href="https://www.instagram.com/peergroup.id/" target="_blank" rel="noopener noreferrer" class="link-sosmed">peergroup.id</a> 
+                    <div class="column contact"><p>Contact Us</p>
+                        <div class="container">
+                            <form action="https://formsubmit.co/peergroup.id@gmail.com" method="POST" id="my-form">
+                                <input type="text" id="fname" name="Nama" placeholder="Name" required>
+                                <input type="email" id="lname" name="Email" placeholder="Email" required>
+                                <textarea id="subject" name="Pesan" placeholder="Message" style="height:75px" required></textarea>
+                                <input type="submit" value="Submit">
+                            </form>
+                        </div>
+                        <div id="status"></div>
                     </div>
-                    <div class="sosial-media">
-                        <img src="/assets/images/tiktok.png" class="img-kontak-media" alt="logo email">
-                        <a href="https://www.tiktok.com/@peergroup.id/" target="_blank" rel="noopener noreferrer" class="link-sosmed">peergroup.id</a>
-                    </div>
-                </div>
-                <div class="column contact"><p>Contact Us</p>
-                    <div class="container">
-                        <form action="https://formsubmit.co/peergroup.id@gmail.com" method="POST" id="my-form">
-                            <input type="text" id="fname" name="Nama" placeholder="Name" required>
-                            <input type="email" id="lname" name="Email" placeholder="Email" required>
-                            <textarea id="subject" name="Pesan" placeholder="Message" style="height:75px" required></textarea>
-                            <input type="submit" value="Submit">
-                        </form>
-                    </div>
-                    <div id="status"></div>
-                </div>
-                <div class="column foot-sitemap"><p>Sitemap</p>
-                    <ul style="list-style-type:disc" class="sitemap">
-                        <li ><a href="/home" class="sitemap-link">Home</a></li>
-                        <li><a href="/about" class="sitemap-link">About Us</a></li>
-                        <li>Artikel
+                    <div class="column foot-sitemap"><p>Sitemap</p>
+                        <ul style="list-style-type:disc" class="sitemap">
+                            <li ><a href="/home" class="sitemap-link">Home</a></li>
+                            <li><a href="/about" class="sitemap-link">About Us</a></li>
+                            <li>Artikel
+                                <ul style="list-style-type:circle" class="sitemap">
+                                    <li><a href="/artikel/self" class="sitemap-link">Self Development</a></li>
+                                    <li><a href="/artikel/jurusan" class="sitemap-link">Jurusan</a></li>
+                                    <li><a href="/artikel/karir" class="sitemap-link">Karir</a></li>
+                                </ul>
+                            </li>
+                            <li>Kegiatan
                             <ul style="list-style-type:circle" class="sitemap">
-                                <li><a href="/artikel/self" class="sitemap-link">Self Development</a></li>
-                                <li><a href="/artikel/jurusan" class="sitemap-link">Jurusan</a></li>
-                                <li><a href="/artikel/karir" class="sitemap-link">Karir</a></li>
-                            </ul>
-                        </li>
-                        <li>Kegiatan
-                        <ul style="list-style-type:circle" class="sitemap">
-                                <li><a href="/Home/kegiatan_kami" class="sitemap-link">Kegiatan Kami</a></li>
-                                <li><a href="/Home/volunteer" class="sitemap-link">Volunteer</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+                                    <li><a href="/Home/kegiatan_kami" class="sitemap-link">Kegiatan Kami</a></li>
+                                    <li><a href="/Home/volunteer" class="sitemap-link">Volunteer</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <!-- <div class="column col-logo">
-                    <img class="logo" src="/assets/images/Logo Peer Group Transparan.png" alt="Logo Peer Group ID">
-                </div> -->
             </div>
         </div>
         <br>

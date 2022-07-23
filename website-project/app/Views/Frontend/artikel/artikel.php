@@ -37,18 +37,20 @@
                                 <h2>Rekomendasi</h2>
                             </div>
                             <div class="rekomen-fill">
-                            <?php 
-                                foreach ($rekomen->getResultArray() as $rekomendasi):
-                            ?>
-                                <a href="/detail-artikel/<?php echo $rekomendasi['slug']?>">
-                                <div class="random">
-                                    <div class="rekomen-img">
-                                        <img src="<?= base_url('assets/images/artikel/'.$data['cover'])?>" alt="thumnail">
-                                    </div>
-                                    <p class="text-rekomen"><?php echo $rekomendasi['judul']?></p>
+                               <div class="rekomen-artikel">
+                               <?php 
+                               foreach ($rekomen->getResultArray() as $rekomendasi):
+                               ?>
+                                    <a href="/detail-artikel/<?php echo $rekomendasi['slug']?>">
+                                     <div class="random">
+                                        <div class="rekomen-img">
+                                            <img src="/assets/images/artikel/<?php echo $rekomendasi['cover']?>" alt="thumnail">
+                                        </div>
+                                        <p class="text-rekomen"><?php echo $rekomendasi['judul']?></p>
+                                        </div>
+                                    </a>
+                                    <?php endforeach?>
                                 </div>
-                                </a>
-                                <?php endforeach?>
                             </div>
                         </div>
                     </div>                        
