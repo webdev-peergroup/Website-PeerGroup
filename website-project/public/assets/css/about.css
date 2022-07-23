@@ -7,8 +7,8 @@
   
   /* Dark Color */
   html[data-theme="dark"] {
-      --primary-color: #EAA900;
-      --line: #ffffff;
+    --primary-color: #EAA900;
+    --line: #ffffff;
     --desc: #F2F2F2;
 }
 

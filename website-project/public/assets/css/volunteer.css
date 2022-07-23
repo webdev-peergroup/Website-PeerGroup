@@ -14,6 +14,10 @@ html[data-theme="dark"] {
     --bg: #1E435B;
 }
 
+.bd-grid {
+  max-width: 1024px;
+}
+
 .intro {
   overflow: hidden;
 }
@@ -46,8 +50,11 @@ html[data-theme="dark"] {
   padding-bottom: 1rem;
 }
 
-.career-container {
+.career{
   background-color: #5f9695;
+}
+
+.career-container {
   padding: 3rem 7rem;
 }
 
@@ -69,7 +76,6 @@ html[data-theme="dark"] {
 
 .button-link {
   display: inline-block;
-  background-color: var(--accent-color);
   color: white;
   padding: 0.75rem 2.5rem;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.062);
@@ -77,10 +83,13 @@ html[data-theme="dark"] {
   font-weight: var(--font-bold);
   margin-top: 1.5rem;
   text-align: center;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button-link:hover {
-  background-color: #dea004;
+  background-color:#EAA900;
 }
 
 .benefit {
@@ -127,7 +136,7 @@ html[data-theme="dark"] {
 }
 
 .popup_main button {
-  width: 27%;
+  width: 30%;
   height: 185px;
   text-align: center;
   background-color: #455a64;
@@ -136,7 +145,7 @@ html[data-theme="dark"] {
   border-radius: 25px;
   border: none;
   font-size: 30px;
-  padding: 1.5rem;
+  padding: 1rem;
 }
 
 .join-us {
@@ -301,7 +310,6 @@ html[data-theme="dark"] {
   }
 
   .popup_main button {
-    position: relative;
     width: 120px;
     height: 120px;
     font-size: 0.9em;
@@ -317,11 +325,38 @@ html[data-theme="dark"] {
   }
 }
 
-/* Tablet */
+@media screen and (min-width: 1024px){
+  .intro-container .intro-title {
+    font-size: 4rem;
+  }
 
-@media screen and (max-width: 1276px) and (min-width: 600px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .popup_main button {
+    width: 12rem;
+    height: 10rem;
+    font-size: 1.7em;
+  }
+
+  .divisi .row {
+    text-align: center;
+  }
+
+  .popup_content{
+    text-align: left;
+  }
+}
+
+
+@media screen and (max-width: 1024px) and (min-width: 601px) {
+  .career-container{
+    padding: 2rem;
+  }
+
   .benefit {
-    padding: 2rem 2rem;
+    padding: 2rem;
   }
 
   .career-title {
@@ -349,6 +384,15 @@ html[data-theme="dark"] {
     width: 19vw;
     height: 17vh;
     font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 880px) and (min-width: 601px) {
+  .divisi{
+    padding: 2rem 0 0 2rem;
+  }
+  .divisi .row {
+    font-size: 0.5em;
   }
 }
 

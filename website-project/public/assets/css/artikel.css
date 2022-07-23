@@ -1,16 +1,30 @@
+/* Light Color */
+:root {
+  --primary-color: #1E435B;
+}
+
+/* Dark Color */
+html[data-theme="dark"] {
+  --primary-color: #F2F2F2;
+}
+
 a {
   text-decoration: none;
-  color: #000000;
+  color: #1E435B;
   font-weight: bold;
 }
 
 a:hover {
-  color: #1e435b;
+  color: #367097;
 }
 .l-main {
   max-width: calc(100% - 10rem);
   margin-left: auto;
   margin-right: auto;
+}
+
+.kategori-artikel{
+  color: var(--primary-color);
 }
 /*Artikel*/
 .container__artikel {
@@ -35,7 +49,6 @@ a:hover {
 .judul-konten {
   text-align: center;
   font-size: var(--form-big-font-size);
-  /* border-bottom: 0.18rem solid var(--accent-color); */
   left: 0;
   right: 0;
   margin: auto;
@@ -47,7 +60,7 @@ a:hover {
   grid-template-rows: 1fr;
   gap: 0px 1em;
   grid-template-areas: "img-thumbnail text-list";
-  background: var(--f2f2);
+  background: #F2F2F2;
   border-radius: 5px;
   margin-bottom: 1rem;
   transition: background 0.2s linear;
@@ -75,16 +88,12 @@ a:hover {
 
 .title-thumbnail {
   grid-area: 1 / 1 / 2 / 2;
+  height: 1.5rem;;
   font-size: 1.3rem;
   font-weight: var(--font-bold);
-  color: var(--primary-color);
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-}
-
-.title-thumbnail.dark {
-  color: var(--white-color);
 }
 
 .penulis {
@@ -103,7 +112,7 @@ a:hover {
 .header-rekomendasi-home {
   display: flex;
   width: 100%;
-  color: var(--white-color);
+  color: #F2F2F2;;
   height: 3rem;
   background-color: #1e435b;
   justify-content: center;
@@ -115,7 +124,6 @@ a:hover {
 .penulis-artikel-home {
   font-style: italic;
   font-weight: var(--font-medium);
-  color: var(--penulis-artikel-home);
   font-size: 0.89em;
 }
 
@@ -137,19 +145,6 @@ a:hover {
   gap: 0em 0em;
 }
 
-.header-rekomendasi {
-  display: flex;
-  width: 100%;
-  color: var(--white-color);
-  height: 3rem;
-  background-color: #1e435b;
-  justify-content: center;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  align-items: center;
-  margin-top: 9rem;
-}
-
 .random {
   max-width: 200px;
 }
@@ -161,21 +156,28 @@ a:hover {
   grid-auto-rows: 1fr;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0fr 0fr 0fr;
-  gap: 0em 1em;
+  gap: 0.5em 1em;
   grid-template-areas:
     ". ."
     ". ."
     ". .";
   justify-items: center;
+  background-color: #F2F2F2;
+  border-radius: 5px;
+  height: fit-content;
 }
 
 /*Rekomendasi*/
 
 .rekomen-img {
-  height: max-content;
+  /* height: max-content; */
+  height: 5.5rem;
+  width: 5.5rem;
 }
 .rekomen-img img {
   height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .text-rekomen {
@@ -184,10 +186,6 @@ a:hover {
   overflow: hidden;
   white-space: nowrap;
   height: 60px;
-}
-
-.box.dark-box {
-  background: var(--primary-color);
 }
 
 .penulis {
@@ -241,7 +239,6 @@ a:hover {
 
   .box {
     gap: 0 0.5em;
-    background: var(--f2f2);
     padding: 0.5rem 0.5rem;
   }
 
