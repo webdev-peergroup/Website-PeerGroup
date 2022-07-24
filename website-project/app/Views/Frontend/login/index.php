@@ -56,7 +56,9 @@
                     <!-- <a href="#" class="form__forgot">Forgot Password?</a> -->
 
                     <input type="submit" class="form__button" value="Login">
-
+                    <div class="home">
+                        <a href="/home" class="home_link">Back to Home</a>
+                    </div>
                     <!-- <div class="form__social">
                         <span class="form__social-text">Our login with</span>
 

@@ -1,12 +1,12 @@
 const sideMenu = document.querySelector("aside");
 const menuBtn = document.querySelector("#menu-btn");
 const closeBtn = document.querySelector("#close-btn");
-const themeToggle = document.querySelector(".theme-toggler");
+// const themeToggle = document.querySelector(".theme-toggler");
 const date = document.getElementById("date-filter");
 const dateKegiatan = document.getElementById("date-filter-kegiatan");
 const container = document.getElementById('recent-post');
 const containerKegiatan = document.getElementById('recent-post-kegiatan');
-let darkMode = localStorage.getItem("darkMode");
+// let darkMode = localStorage.getItem("darkMode");
 const addButton = document.getElementById("add-item");
 const closePop = document.getElementById('close-modal');
 

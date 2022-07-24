@@ -128,10 +128,18 @@ class Home extends BaseController
     
     //kegiatan kami
     public function kegiatan_kami(){
+        $random = $this->getkegiatan->getrandomkegiatan();
+        $data = [
+            'title' => 'Artikel Kegiatan',
+            'deskripsi' => 'Artikel kegiatan ada disini.',
+            'css' => 'artikel.css',
+            
+        ];
         $data = [
             'title' => 'Kegiatan Kami',
             'deskripsi' => 'Kegiatan Kami',
-            'css' => 'kegiatan_kami.css'
+            'css' => 'kegiatan_kami.css',
+            'rekomen' => $random
         ];
 
         return view('Frontend/kegiatanKami/KegiatanKami', $data);
@@ -176,7 +184,39 @@ class Home extends BaseController
             'deskripsi' => $desk,
             'quiz' => $list,
         ];
-        // dd($title);
+
         return view('Frontend/quiz/detail-quiz', $data);
+    }
+
+    public function event(){
+        $random = $this->getkegiatan->getrandomkegiatan();
+        $getevent = $this->getkegiatan->getdatakegiatan();
+        $data = [
+            'title' => 'Artikel Kegiatan',
+            'deskripsi' => 'Artikel kegiatan ada disini.',
+            'event' => $getevent,
+            'css' => 'artikel.css',
+            'rekomen' => $random
+        ];
+        
+        return view('Frontend/kegiatanKami/event', $data);
+    }
+
+    public function detevent($id){
+        $list = $this->getkegiatan->getkegiatan($id);
+        $random = $this->getkegiatan->getrandomkegiatan();
+        foreach ($list->getResult() as $meta) {
+            $title = $meta->judul;
+            $desk = $meta->deskripsi;
+        }
+        $data = [
+            'title' => $title,
+            'deskripsi' => $desk,
+            'event' => $list,
+            'css' => 'detailartikel.css',
+            'rekomen' => $random
+        ];
+
+        return view('Frontend/kegiatanKami/detail-event', $data);
     }
 }

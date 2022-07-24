@@ -13,7 +13,7 @@
     --color-primary-variant: #111e88;
     --color-dark-variant: #677483;
     --color-background: #f6f6f9;
-
+--bg-color: #fe6464;
     --card-border-radius: 2rem;
     --border-radius-1: .4rem;
     --border-radius-2: .8rem;
@@ -23,7 +23,14 @@
     --padding-1: 1.2rem;
 
     --box-shadow: 0 2rem 3rem var(--color-light);
+    --bg-color: #FFFFFF;
 }
+
+/* Dark Color */
+  html[data-theme="dark"] {
+    --bg-color: #1a252f;
+}
+
 
 .dark-theme-variables{
     --color-background: #181a1e;
@@ -54,7 +61,8 @@ body{
     height: 100vh;
     font-family: poppins, sans-serif;
     font-size: .88rem;
-    background-color: var(--color-background);
+    background-color: var(--bg-color);
+    /* background-color:#fe6464; */
     user-select: none;
     overflow-x: hidden;
     color: var(--color-dark);
@@ -433,6 +441,51 @@ main a{
     color: white;
     border-radius: var(--border-radius-1);
 }
+
+
+/* Dark Mode Toggle */
+.label{
+    width: 39px;
+    height: 19px;
+    background-color: #111;
+    display: flex;
+    border-radius: 50px;
+    padding: 5px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  .bxs-moon, .bxs-sun{
+    color: #EAA900;
+  }
+  .checkbox{
+    opacity: 0;
+    position: absolute;
+  }
+  .slider {
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.4s;
+  }
+  .slider::before {
+    height: 19px;
+    width: 19px;
+    position: absolute;
+    left: -0.3px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    content: "";
+    transition: 0.4s;
+  }
+  input:checked + .slider::before {
+    transform: translateX(21px);
+  }
+
+
 
 .right .top .profile{
     display: flex;

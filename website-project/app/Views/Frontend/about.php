@@ -1,6 +1,6 @@
 <?= $this->extend('Frontend/layout/master');?>
 <?= $this->section('content')?>
-<main class="l-main">
+<main class="l-main bd-grid">
     <div class="aboutcontent">
             <div class="abouttitle">
                 <h1 class="aboutsiapa">Siapa Kita ?</h1>

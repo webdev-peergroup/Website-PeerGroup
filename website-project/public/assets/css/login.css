@@ -167,7 +167,7 @@ img{
     font-size: var(--normal-font-size);
     outline: none;
     border: none;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
     background-color: var(--first-color);
     color: #fff;
     border-radius: .5rem;
@@ -175,40 +175,23 @@ img{
     transition: .3s;
 }
 .form__button:hover{
-    box-shadow: 0px 15px 36px rgba(0,0,0,.15);
+    background-color: #367097;
+    /* box-shadow: 0px 15px 36px rgba(0,0,0,.15); */
+}
+.home{
+    padding-top: 0.5rem;
+    text-align: center;
+    font-size: 13px;
 }
 
-/*=== Form social===*/
-.form__social{
-    text-align: center;
-}
-.form__social-text{
-    display: block;
-    font-size: var(--normal-font-size);
-    margin-bottom: 1rem;
-}
-.form__social-icon{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    margin-right: 1rem;
-    padding: .5rem;
-    background-color: var(--text-color);
-    color: #fff;
-    font-size: 1.25rem;
-    border-radius: 50%;
-}
-.form__social-icon:hover{
-    background-color: var(--first-color);
-}
 .alert{
     background: #D6EAF8;
     padding: 20px 1rem;
     border-radius: 10px;
     margin-block-end: 2rem;
 }
+
+
 /*===== MEDIA QUERIS =====*/
 @media screen and (min-width: 968px){
     .shape1{

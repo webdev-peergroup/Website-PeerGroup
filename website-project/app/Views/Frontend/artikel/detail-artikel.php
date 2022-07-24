@@ -2,7 +2,7 @@
 <?= $this->section('content')?>
 <main class="l-main">
     <section class="artikel section">
-        <div class="artikel__container detail">
+        <div class="artikel__container detail bd-grid">
             <!--Area artikel-->
             <article>
                 <div class="artikel">
@@ -29,15 +29,9 @@
                             ?>
                         </div>
                     <?php endforeach; ?>
-                    <!-- <img src='images/artikel/".$data['cover']."'alt='cover'> -->
                     <div class="text">
                         <?= $data['text'] ?>
                     </div>
-                    
-                    <!-- <div class="animation">
-                        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                        <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_kmfssxfk.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
-                    </div> -->
                 </div>
             </article>
             <aside>
@@ -48,19 +42,23 @@
                                 <h2>Rekomendasi</h2>
                             </div>
                             <div class="rekomen-fill">
-                                <?php foreach ($artikel->getResultArray() as $data): ?>
-                                    <a href="/detail-artikel/<?= $data['slug']?>">
-                                    <div class="random">
+                               <div class="rekomen-artikel">
+                               <?php 
+                               foreach ($rekomen->getResultArray() as $rekomendasi):
+                               ?>
+                                    <a href="/detail-artikel/<?php echo $rekomendasi['slug']?>">
+                                     <div class="random">
                                         <div class="rekomen-img">
-                                            <img src=<?= base_url('assets/images/artikel/'. $data['cover']) ?> alt="thumnail">
+                                            <img src="/assets/images/artikel/<?php echo $rekomendasi['cover']?>" alt="thumnail">
                                         </div>
-                                        <p class="text-rekomen"><?= $data['judul']?></p>
-                                    </div>
+                                        <p class="text-rekomen"><?php echo $rekomendasi['judul']?></p>
+                                        </div>
                                     </a>
-                                <?php endforeach?>
+                                    <?php endforeach?>
+                                </div>
                             </div>
                         </div>
-                </div>                         
+                    </div>
             </aside>
         </div>
     </section>

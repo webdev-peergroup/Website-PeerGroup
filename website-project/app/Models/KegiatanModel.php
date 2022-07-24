@@ -26,6 +26,11 @@ class KegiatanModel extends Model
         return $query;
     }
 
+    public function getrandomkegiatan(){
+        $query = $this->db->query("SELECT * FROM kegiatan ORDER BY RAND() LIMIT 6");
+        return $query;
+    }
+
     public function getkegiatanwhere($date){
         $query = $this->db->query("SELECT * FROM kegiatan Where updated_at LIKE '%$date%'");
         return $query;

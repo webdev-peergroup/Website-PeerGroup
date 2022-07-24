@@ -32,7 +32,6 @@ body {
 }
 .first .title {
   font-size: 2.5vw;
-  /* color: black; */
   color:var(--desc);
   margin: auto 0;
   margin-right: 10px;
@@ -82,31 +81,31 @@ body {
 }
 .event .container .card .head {
   width: 100%;
-  height: 281px;
-  background-color: #C4C4C4;
+  height: 150px;
   margin-bottom: 15px;
   background-size: cover;
   border-radius: 10px;
 }
-.event .container .card .body h2 {
-  font-size: 25px;
+
+.event .container .card .head img{
+  border-radius: 10px;
 }
-.event .container .card .body p {
-  font-size: 16px;
-  color: #A9A9A9;
-  margin-top: 10px;
-  text-align: justify;
-  padding: 0 1rem;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+
+.event .container .card .body {
+  padding-bottom: 1.5rem;
+}
+.event .container .card .body h2 a{
+  font-size: 25px;
+  color: #000000;
 }
 .event .container .card .fot p {
+  position: absolute;
   font-size: 1rem;
   color: #A9A9A9;
   text-align: left;
-  margin-top: 15px;
   padding-left: 1rem;
+  bottom: 0;
+  padding-bottom: 1rem;
 }
 .card:hover {
   -webkit-transform: scale(1.05);
@@ -247,7 +246,6 @@ body {
   .first {
     width: 100vw;
     height: fit-content;
-    /* background-color: #FFFFFF; */
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -11,6 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="/assets/css/new_admin.css">
     <link rel="shortcut icon" href="/assets/images/Logo Peer Group.jpg" type="image/x-icon">
     <title>Admin Panel - Peer Group ID</title> 
@@ -64,9 +65,14 @@
         <?= $this->renderSection('content');?>
         <div class="right">
             <div class="top">
-                <button id="menu-btn">
-                    <span class="material-icons-sharp">menu</span>
-                </button>
+                <!-- <div>
+                    <label class="label" for="chk">
+                        <i class='bx bxs-moon' ></i>
+                        <i class='bx bxs-sun' ></i>
+                        <input type="checkbox" class="checkbox" id="chk" />
+                        <div class="slider round"></div>
+                    </label>
+                </div> -->
                 <div class="theme-toggler">
                     <span class="material-icons-sharp active">light_mode</span>
                     <span class="material-icons-sharp">dark_mode</span>
@@ -152,6 +158,7 @@
         </div>
     </div>
     <!-- JS -->
+    <script src="/assets/js/main.js"></script>
     <script src="/assets/js/admin.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
