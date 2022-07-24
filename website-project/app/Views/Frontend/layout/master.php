@@ -9,6 +9,7 @@
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="/assets/images/Logo Peer Group.jpg" type="image/x-icon">
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/contact.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/<?=$css?>"> 
     <!--  Essential META Tags -->
     <meta name="application-name" content="Web Peer Group ID">
@@ -64,7 +65,7 @@
         <div class="l-header">
             <nav class="nav bd-grid">
                 <div>
-                    <a href="/" class="nav__logo"><img src="/assets/images/Logo Peer Group Transparan.png" alt="Logo Peer Group ID"></a> 
+                    <a href="/home" class="nav__logo"><img src="/assets/images/Logo Peer Group Transparan.png" alt="Logo Peer Group ID"></a> 
                 </div>
                 <div class="nav__toggle" id="nav-toggle">
                     <i class='bx bx-menu'></i>
@@ -74,8 +75,8 @@
                         <i class='bx bx-x'></i>
                     </div>
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="/home" class="nav__link">Beranda</a></li>
-                        <li class="nav__item"><a href="/about" class="nav__link">Siapa Kita</a></li>
+                        <li class="nav__item"><a href="/home" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="/about" class="nav__link">About Us</a></li>
                         <li class="nav__item dropdown" >
                             <a href="#" class="nav__link dropdown__link" id="dropdown">Artikel <i class='bx bx-chevron-down dropdown__icon' id="drop-icon"></i></a>
                             <ul class="dropdown__menu" id="dropdown-menu">
@@ -85,13 +86,12 @@
                             </ul>
                         </li>
                         <li class="nav__item dropdown" >
-                            <a href="#" class="nav__link dropdown__link" id="dropdown">Kegiatan <i class='bx bx-chevron-down dropdown__icon' id="drop-icon"></i></a>
-                            <ul class="dropdown__menu" id="dropdown-menu">
-                                <li class="dropdown__item"><a href="/kegiatan-kami" class="nav__link">Kegiatan Kami</a></li>
-                                <li class="dropdown__item"><a href="/volunteer" class="nav__link">Volunteer</a></li>>
+                            <a href="#" class="nav__link dropdown__link" id="dropdown1">Kegiatan<i class='bx bx-chevron-down dropdown__icon' id="drop-icon1"></i></a>
+                            <ul class="dropdown__menu" id="dropdown-menu1">
+                                <li class="dropdown__item"><a href="/Home/kegiatan_kami" class="nav__link">Kegiatan Kami</a></li>
+                                <li class="dropdown__item"><a href="/Home/volunteer" class="nav__link">Volunteer</a></li>
                             </ul>
                         </li>
-                        <!-- <li class="nav__item"><a href="/home/landing" class="nav__link">Landing</a></li> -->
                         <?php
                             if ($session->logged_in == true) {
                                 $logout = base_url('logout');
@@ -109,11 +109,11 @@
                         ?>
                         <li class="nav__item">
                             <div>
-                                <input type="checkbox" class="checkbox" id="chk" />
                                 <label class="label" for="chk">
                                     <i class='bx bxs-moon' ></i>
                                     <i class='bx bxs-sun' ></i>
-                                    <div class="ball"></div>
+                                    <input type="checkbox" class="checkbox" id="chk" />
+                                    <div class="slider round"></div>
                                 </label>
                             </div>
                         </li>
@@ -124,10 +124,62 @@
     </header>
     <?= $this->renderSection('content');?>
     <div class="footer">
+        <div class="bd-grid">
+            <div class="footer-container">
+                <div class="row">
+                    <div class="column col-sosmed"><p>Social Media</p>
+                        <div class="sosial-media">
+                            <img src="/assets/images/linkedin.png" class="img-kontak-media " alt="logo linkedin">
+                            <a href="https://www.linkedin.com/company/peer-group-id/" target="_blank" rel="noopener noreferrer" class="link-sosmed">Peer Group ID</a>
+                        </div>
+                        <div class="sosial-media">
+                            <img src="/assets/images/ig.png" class="img-kontak-media" alt="logo instagram">
+                            <a href="https://www.instagram.com/peergroup.id/" target="_blank" rel="noopener noreferrer" class="link-sosmed">peergroup.id</a> 
+                        </div>
+                        <div class="sosial-media">
+                            <img src="/assets/images/tiktok.png" class="img-kontak-media" alt="logo email">
+                            <a href="https://www.tiktok.com/@peergroup.id/" target="_blank" rel="noopener noreferrer" class="link-sosmed">peergroup.id</a>
+                        </div>
+                    </div>
+                    <div class="column contact"><p>Contact Us</p>
+                        <div class="container">
+                            <form action="https://formsubmit.co/peergroup.id@gmail.com" method="POST" id="my-form">
+                                <input type="text" id="fname" name="Nama" placeholder="Name" required>
+                                <input type="email" id="lname" name="Email" placeholder="Email" required>
+                                <textarea id="subject" name="Pesan" placeholder="Message" style="height:75px" required></textarea>
+                                <input type="submit" value="Submit">
+                            </form>
+                        </div>
+                        <div id="status"></div>
+                    </div>
+                    <div class="column foot-sitemap"><p>Sitemap</p>
+                        <ul style="list-style-type:disc" class="sitemap">
+                            <li ><a href="/home" class="sitemap-link">Home</a></li>
+                            <li><a href="/about" class="sitemap-link">About Us</a></li>
+                            <li>Artikel
+                                <ul style="list-style-type:circle" class="sitemap">
+                                    <li><a href="/artikel/self" class="sitemap-link">Self Development</a></li>
+                                    <li><a href="/artikel/jurusan" class="sitemap-link">Jurusan</a></li>
+                                    <li><a href="/artikel/karir" class="sitemap-link">Karir</a></li>
+                                </ul>
+                            </li>
+                            <li>Kegiatan
+                            <ul style="list-style-type:circle" class="sitemap">
+                                    <li><a href="/Home/kegiatan_kami" class="sitemap-link">Kegiatan Kami</a></li>
+                                    <li><a href="/Home/volunteer" class="sitemap-link">Volunteer</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
         <small>Copyright &copy; Peergroup.id 2021</small>
     </div>
     <!--Main JS-->
     <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/contact.js"></script>
     <?=$this->renderSection('js');?>
 </body>
 </html>

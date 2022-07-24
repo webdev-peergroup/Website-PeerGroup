@@ -1,3 +1,19 @@
+/* Light Color */
+:root {
+    --primary-color: #1E435B;
+    --desc: #000000;
+    --tgl: rgba(0, 0, 0, 0.5);
+    --author: #dea004;
+}
+  
+  /* Dark Color */
+  html[data-theme="dark"] {
+    --primary-color: #EAA900;
+    --desc: #F2F2F2;
+    --tgl: rgba(255, 255, 255, 0.75);
+    --author: #B9E5E6;
+}
+
 a{
     text-decoration: none;
     color: #000000;
@@ -5,19 +21,21 @@ a{
 }
 
 a:hover{
-    color: #1E435B;
+    color: #367097;
 }
 .detail{
     margin-top: 5rem;
 }
 
 .title-artikel {
-    color: var(--accent-color);
+    color: var(--primary-color);
     font-family: var(--font-family);
     font-size: 3rem;
     text-transform: capitalize;
+    padding-bottom: 0.5rem;
+
 }
-  
+
 .header-artikel {
     display: flex;
     flex-wrap: wrap;
@@ -31,15 +49,16 @@ a:hover{
 }
   
 .arti-image{
-    max-width: 720px;
-    height: 385px;
+    /* max-width: 720px; */
+    /* max-width: 100%; */
+    /* height: 385px; */
     margin-bottom: 1rem;
     margin-left: auto;
     margin-right: auto;
 }
   
 .arti-image img {
-    width: 100rem;
+    width: 50vw;
     height: 100%;
     border-radius: 20px;
 }
@@ -53,6 +72,7 @@ a:hover{
     margin-right: auto;
     margin-top: 1rem;
     line-height: 1.5rem;
+    color: var(--desc);
 }
 
 .text p{
@@ -63,10 +83,6 @@ a:hover{
     font-size: 1.3rem;
     margin-block-start: 0em;
     margin-block-end: 0em;
-}
-  
-.text, .header-artikel{
-    margin-left: 3rem;
 }
   
 .paragraph{
@@ -86,13 +102,15 @@ a:hover{
     align-items: center;
     margin-top: 1rem;
 }
-
+.author{
+    color: var(--desc);
+}
 .author-name{
-    color: #D3766A;
+    color: var(--author);
 }
   
 .date{
-    color: rgba(0, 0, 0, 0.5);
+    color: var(--tgl);
 }
 
 .share img{
@@ -103,10 +121,6 @@ a:hover{
 .animation{
     display: flex;
     justify-content: center;
-}
-
-.author.dark, .date.dark, .sumber.dark, .text.dark, .author-name.dark{
-    color: var(--light-theme);
 }
 
 .close{
@@ -123,53 +137,82 @@ a:hover{
     margin-right: 7rem;
     line-height: 3rem;
 }
-
-/* Rekomendasi */
-.rekomendasi-container{
-    width: 100%;
-    height: 617px;
-    border-radius: 5px;
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-auto-rows: 1fr; 
-    grid-template-rows: 0.2fr 2.8fr; 
-    gap: 0em 0em; 
+.sumber{
+    color: var(--desc);
 }
 
-.header-rekomendasi-home{
+/* Rekomendasi */
+.header-rekomendasi-home {
     display: flex;
     width: 100%;
-    color: var(--white-color);
+    color: #F2F2F2;;
     height: 3rem;
-    background-color: #1E435B;
+    background-color: #1e435b;
     justify-content: center;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     align-items: center;
+  }
+
+.Rekomendasi {
+  width: 25vw;
+  min-width: 13rem;
+  max-width: 20rem;
+  height: 60vh;
+}
+.rekomendasi-container {
+  height: 617px;
+  border-radius: 5px;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-template-rows: 0.2fr 2.8fr;
+  gap: 0em 0em;
 }
 
 .rekomen-fill {
-    margin-top: .5rem;
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-auto-rows: 1fr; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
-    gap: 1em 2em; 
-    grid-template-areas: 
-      ". ."
-      ". ."
-      ". ."; 
+  margin-top: 0.5rem;
+  padding-right: 1rem;
+  justify-items: center;
+  background-color: #F2F2F2;
+  border-radius: 5px;
+  height: fit-content;
 }
+
 .rekomen-img {
-    width: 100%;
+  height: 5.5rem;
+  width: 5.5rem;
 }
-  
-.text-rekomen{
-    max-lines: 3;
-    text-overflow: ellipsis;
+.rekomen-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
-/* Small Phone */
+
+.text-rekomen {
+  max-lines: 3;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  float: left;
+  margin-left: 6rem;
+  width: 14vw;
+  max-width: 14rem;
+}
+
+.penulis {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width:768px) {
+    .title-artikel{
+        font-size: 1.5rem;
+    }   
+    
+}
+
 @media screen and (max-width: 576px) {
     .header-artikel, .text{
         margin-left: 1rem;
@@ -196,6 +239,20 @@ a:hover{
         grid-template-rows: 0fr 0fr; 
         gap: 0em 0em; 
     }
+
+    .rekomendasi-container{
+        padding: 0 2rem;
+    }
+
+    .Rekomendasi{
+        width: 100%;
+        max-width: 100%;
+        padding-top: 2rem;
+    }
+    .text-rekomen{
+        width: 50vw;
+        max-width:60vw;
+    }
 }
 
 @media screen and (min-width: 576px) {
@@ -209,7 +266,8 @@ a:hover{
     }
     article{
         max-width: 1024px;
-        width: calc(100% - 20rem);
+        width: 100%;
+        padding-left: 15%;
     }
 
     aside{
@@ -217,9 +275,12 @@ a:hover{
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:400px) {
     .title-artikel{
         font-size: 1.5rem;
     }   
-    
+    .text-rekomen{
+        width: 35vw;
+        max-width:40vw;
+    }
 }

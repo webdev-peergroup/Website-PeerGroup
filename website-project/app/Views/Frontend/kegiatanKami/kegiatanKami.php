@@ -9,50 +9,77 @@
         <h1>Event yang diadakan</h1>
         <h1>PeerGroup</h1>
       </div>
-
-      <img class="img title" src="/assets/images/work.png" alt="work" />
+      <img class="img" src="/assets/images/work.png" alt="work" />
     </div>
 
     <!-- event page -->
+    <?php 
+      $count = 1;
+      foreach ($rekomen->getResultArray() as $rekomendasi)
+      {
+        if($count == 1)
+          $event1 = $rekomendasi;
+        elseif($count == 2)
+          $event2 = $rekomendasi;
+        elseif($count == 3)
+          $event3 = $rekomendasi;
+        $count++;
+      }
+    ?>
     <div class="event">
       <div class="title2 title">
-        <h1>Event</h1>
+        <h1>Artikel Kegiatan</h1>
       </div>
 
       <div class="container">
         <div class="card">
-          <div class="head"></div>
+          <div class="head">
+            <div class="rekomen-img">
+                <img src="/assets/images/artikel/<?php echo $event1['cover']?>" alt="thumnail">
+            </div>
+          </div>
           <div class="body">
-            <h2>Judul</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h2>
+              <a href="/home/detevent/<?php echo $event1['slug']?>"><?php echo $event1['judul']?></a>
+            </h2>
           </div>
           <div class="fot">
-            <p>22 Januari 2022</p>
+            <p><span class="tanggal-artikel-home"><?php echo strftime('%e %B %G', strtotime($event1['created_at']));?></span></p>
           </div>
         </div>
         <div class="card">
-          <div class="head"></div>
+          <div class="head">
+            <div class="rekomen-img">
+                <img src="/assets/images/artikel/<?php echo $event2['cover']?>" alt="thumnail">
+            </div>
+          </div>
           <div class="body">
-            <h2>Judul</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h2>
+              <a href="/home/detevent/<?php echo $event2['slug']?>"><?php echo $event2['judul']?></a>
+            </h2>
           </div>
           <div class="fot">
-            <p>22 Januari 2022</p>
+            <p><span class="tanggal-artikel-home"><?php echo strftime('%e %B %G', strtotime($event2['created_at']));?></span></p>
           </div>
         </div>
-        <div class="card">
-          <div class="head"></div>
+        <div class="card card3">
+          <div class="head">
+            <div class="rekomen-img">
+                <img src="/assets/images/artikel/<?php echo $event3['cover']?>" alt="thumnail">
+            </div>
+          </div>
           <div class="body">
-            <h2>Judul</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h2>
+              <a href="/home/detevent/<?php echo $event3['slug']?>"><?php echo $event3['judul']?></a>
+            </h2>
           </div>
           <div class="fot">
-            <p>22 Januari 2022</p>
+            <p><span class="tanggal-artikel-home"><?php echo strftime('%e %B %G', strtotime($event3['created_at']));?></span></p>
           </div>
         </div>
       </div>
       <div class="btn">
-        <a href="/artikel/event" class="button-link" target=”_blank”>Lihat Event Lainnya</a>
+        <a href="/home/event" class="button-link" target=”_blank”>Lihat Kegiatan Lainnya</a>
       </div>
     </div>
 
@@ -61,7 +88,7 @@
       <div class="title3 title">
         <h1>Dokumentasi</h1>
       </div>
-      <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+      <div class="gallery js-flickity" data-flickity-options='{ "contain": true, "wrapAround": true, "autoPlay": 2000 }'>
         <img class="gallery-cell" src="/assets/images/artikel/Logo Peer Group.jpg" ></img>
         <img class="gallery-cell" src="/assets/images/artikel/Logo Peer Group.jpg" ></img>
         <img class="gallery-cell" src="/assets/images/artikel/Logo Peer Group.jpg" ></img>

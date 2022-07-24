@@ -4,7 +4,10 @@ const navMenu = document.getElementById('nav-menu'),
     closeMenu = document.getElementById('nav-close'),
     dropdown = document.getElementById('dropdown'),
     dropdownMenu = document.getElementById('dropdown-menu'),
-    dropicon = document.getElementById('drop-icon')
+    dropicon = document.getElementById('drop-icon'),
+    dropdown1 = document.getElementById('dropdown1'),
+    dropdownMenu1 = document.getElementById('dropdown-menu1'),
+    dropicon1 = document.getElementById('drop-icon1')
 
 // SHOW
 toggleMenu.addEventListener('click', ()=>{
@@ -14,6 +17,11 @@ toggleMenu.addEventListener('click', ()=>{
 dropdown.addEventListener('click', ()=>{
     dropdownMenu.classList.toggle('drop-show');
     dropicon.classList.toggle('icon-rotate');
+})
+
+dropdown1.addEventListener('click', ()=>{
+    dropdownMenu1.classList.toggle('drop-show');
+    dropicon1.classList.toggle('icon-rotate');
 })
 
 // HIDDEN
@@ -34,20 +42,28 @@ function move(e){
     })
 }
 
+// Dark Mode
+const toggleSwitch = document.querySelector(
+  '.label input[type="checkbox"]'
+);
+const currentTheme = localStorage.getItem("theme");
 
+if (currentTheme) {
+  document.documentElement.setAttribute("data-theme", currentTheme);
 
+  if (currentTheme === "dark") {
+    toggleSwitch.checked = true;
+  }
+}
 
-// /*===== SCROLL REVEAL ANIMATION =====*/
-// const sr = ScrollReveal({
-//     origin: 'top',
-//     distance: '80px',
-//     duration: 2000,
-//     reset: true
-// });
+function switchTheme(event) {
+  if (event.target.checked) {
+    document.documentElement.setAttribute("data-theme", "dark");
+    localStorage.setItem("theme", "dark");
+  } else {
+    document.documentElement.setAttribute("data-theme", "light");
+    localStorage.setItem("theme", "light");
+  }
+}
 
-const chk = document.getElementById('chk');
-
-
-// const isdark = sessionStorage.getItem('dark');
-
-// document.getElementById('chk').checked = true;
+toggleSwitch.addEventListener("change", switchTheme, false);

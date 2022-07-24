@@ -1,3 +1,13 @@
+/* Light Color */
+:root {
+  --desc: #000000;
+}
+
+/* Dark Color */
+html[data-theme="dark"] {
+  --desc: #F2F2F2;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,106 +17,96 @@
 
 body {
   overflow-x: hidden;
-}
-
-.gallery-cell {
-  width: 66%;
-  height: 500px;
-  object-fit: cover;
-  margin-right: 10px;
-  border-radius: 25px;
-}
-
-.gallery-cell:before {
-  display: block;
+  text-align: center;
 }
 
 .first {
   width: 100vw;
+  max-width: 1024px;
   height: 600px;
-  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 .first .title {
-  font-size: 1.5rem;
-  color: black;
+  font-size: 2.5vw;
+  color:var(--desc);
   margin: auto 0;
   margin-right: 10px;
   text-align: center;
+  padding-left: 3rem;
 }
-
 .first .img {
   width: 30vw;
+  height: auto;
 }
 
 .event {
-  width: 100vw;
+  width: 100%;
   height: auto;
   background-color: #72a2a1;
-  padding: 0 5rem;
+  padding: 0 3rem;
 }
-
 .event .title2 {
   font-size: 1.5rem;
-  color: #fff;
+  color: #FFFFFF;
   text-align: center;
   padding-top: 45px;
   padding-bottom: 1rem;
 }
-
 .event .container {
+  max-width: 1024px;
+  height: auto;
   display: grid;
   margin: auto;
   grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
   position: relative;
   justify-items: center;
 }
-
 .event .container .card {
-  width: 80%;
+  width: 100vw;
+  max-width: 259px;
   height: auto;
   grid-column: span;
   margin: 10px 0;
   border-radius: 10px;
   position: relative;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  background-color: #FFFFFF;
   transition: all 0.5s;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
   text-align: center;
 }
-
 .event .container .card .head {
   width: 100%;
-  height: 281px;
-  background-color: #c4c4c4;
+  height: 150px;
   margin-bottom: 15px;
   background-size: cover;
   border-radius: 10px;
 }
 
-.event .container .card .body h2 {
+.event .container .card .head img{
+  border-radius: 10px;
+}
+
+.event .container .card .body {
+  padding-bottom: 1.5rem;
+}
+.event .container .card .body h2 a{
   font-size: 25px;
+  color: #000000;
 }
-
-.event .container .card .body p {
-  font-size: 16px;
-  color: rgb(169, 169, 169);
-  margin: 0 5px;
-}
-
 .event .container .card .fot p {
+  position: absolute;
   font-size: 1rem;
-  color: rgb(169, 169, 169);
+  color: #A9A9A9;
   text-align: left;
-  margin-top: 15px;
-  margin-left: 15px;
+  padding-left: 1rem;
+  bottom: 0;
+  padding-bottom: 1rem;
 }
-
 .card:hover {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
@@ -118,152 +118,181 @@ body {
   width: 100%;
   padding-bottom: 2rem;
 }
-
 .button-link{
-  background-color: var(--primary-color);
-  color: white;
+  display: inline-block;
+  padding: .75rem 2.5rem;
+  border-radius: 100px;
+  background-color: #1E435B;
+  color: #FFFFFF;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.062);
   font-family: var(--font-family);
   font-weight: var(--font-bold);
   margin-top: 1.5rem;
   text-align: center;
 }
-
 .button-link:hover {
-  background-color: white;
-  color: var(--primary-color);
+  background-color: #FFFFFF;
+  color: #1E435B;
 }
 
 .dokumentasi {
   width: 100vw;
-  height: 100vh;
-  background-color: #fff;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 3rem;
+  max-height: fit-content;
   margin-bottom: 3rem;
 }
-
 .dokumentasi .title3 {
   font-size: 1.5rem;
   text-align: center;
-  color: black;
+  color: var(--desc);
   padding-top: 45px;
   padding-bottom: 2rem;
 }
-
+.gallery-cell {
+  width: 48%;
+  height: 300px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 25px;
+}
+.gallery-cell:before {
+  display: block;
+}
+.flickity-page-dots .dot.is-selected{
+	background:var(--desc);
+}
 
 @media screen and (max-width: 1024px) {
-  body {
-    overflow-x: hidden;
-  }
-
   .event .container .card {
-    width: 20vw;
+    width: 90%;
     max-height: 400px;
     align-items: center;
   }
-
   .event .container .card .body h2 {
     font-size: 1.3em;
-    /*font-family: "heading";*/
   }
-
   .event .container .card .body p {
     font-size: 1em;
-    color: rgb(169, 169, 169);
-    /*font-family: "paragraf";*/
-    margin: 0 5px;
+    color: #A9A9A9;
   }
 
   .dokumentasi {
-    height: 50vh;
+    max-height: fit-content;
+    margin-bottom: 3rem;
     align-items: center;
     justify-content: center;
   }
+}
 
-  .kontak .data {
-    flex-direction: column;
+@media screen and (min-width: 1024px) {
+  .first .title{
+    font-size: 26px;
   }
-
-  .kontak .alamat {
-    font-size: 1em;
-    line-height: 10px;
-    text-align: center;
-  }
-
-  .kontak .sosmed .icon {
-    position: relative;
-    left: 50px;
+  .first .img{
+    width: 310px;
   }
 }
 
-@media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
+@media screen and (max-width: 900px) {
+  .first{
+    height: 400px;
+  }
+  .first .img {
+    width: 35vw;
+    padding-right: 1rem;
   }
 
+  .event{
+    padding: 0 1rem;
+  }
+  .event .title2 {
+    font-size: 1.3rem;
+  }
+  .event .container .card {
+    width: 100vw;
+    max-width: 230px;
+  }
+  .event .container .card .head {
+    height: 200px;
+  }
+  .dokumentasi .title{
+    font-size: 1.3rem;
+  }
+  .gallery-cell{
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .event{
+    padding: 0;
+  }
+  .event .container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .event .container .card3{
+    display:none;
+  }
+
+  .gallery-cell{
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 600px) {
   .first {
     width: 100vw;
-    height: 100vh;
-    background-color: #fff;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 1rem;
   }
-
+  .first .title{
+    margin: 0;
+    padding: 0;
+  }
   .first .img {
-    width: 70vw;
-    padding-bottom: 10px;
+    width: 50vw;
     position: relative;
-    bottom: 100px;
   }
 
   .event .title2 {
-    font-size: 1em;
+    font-size: 0.7rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
     position: relative;
-    bottom: 20px;
   }
-
   .event .container {
     grid-template-columns: repeat(1, 1fr);
   }
-
   .event .container .card {
-    max-width: 50vw;
-    max-height: 400px;
+    max-width: 53vw;
+    max-height: 450px;
+  }
+  .event .container .card .head{
+    height: 50vw;
+  }
+  .button-link{
+    max-width: 40vw;
+    border-radius: 15px;
   }
 
   .dokumentasi {
-    height: 50vh;
+    height: 220px;
     align-items: center;
     justify-content: center;
+    padding: 0 1rem;
   }
-
-  .slider {
-    width: 100%;
-    align-items: center;
+  .dokumentasi .title{
+    font-size: 0.7rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
-
-  .swiper {
-    width: 80vw;
-    height: auto;
-  }
-
-  .kontak .data {
-    flex-direction: column;
-  }
-
-  .kontak .alamat {
-    font-size: 1em;
-    line-height: 20px;
-  }
-
-  .kontak .sosmed .icon {
-    margin-left: -50px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .event .container .card {
-    width: 100%;
-    max-height: 400px;
+  .gallery-cell{
+    height: 200px;
   }
 }
