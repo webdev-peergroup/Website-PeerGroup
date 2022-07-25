@@ -14,7 +14,6 @@
                                     <span id="penulis" style="font-weight: var(--font-bold);">Penulis :</span>   
                                     <span class="author-name"><?= $data['penulis'] ?></span>  
                                 </div>
-                                <span class="date"><?= strftime('%e %B %G', strtotime($data['created_at'])); ?></span>
                             </div>
                             <?php
                                 if ( $data['cover'] != NULL) {

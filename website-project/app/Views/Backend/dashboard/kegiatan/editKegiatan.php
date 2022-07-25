@@ -14,7 +14,11 @@
 <?= $this->section('content')?>
 <main>
     <h1><?=$title?></h1>
-
+    <style>
+        .right .analytics{
+        display: none;
+    }
+    </style>
     <!-- <div class="date">
         <input type="date" name="date-filter" id="date-filter">
     </div> -->

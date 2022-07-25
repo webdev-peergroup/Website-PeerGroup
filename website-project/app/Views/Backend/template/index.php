@@ -11,7 +11,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="/assets/css/new_admin.css">
     <link rel="shortcut icon" href="/assets/images/Logo Peer Group.jpg" type="image/x-icon">
     <title>Admin Panel - Peer Group ID</title> 
@@ -48,14 +47,14 @@
                     <span class="material-icons-sharp">person_outline</span>
                     <h3>Profile</h3>
                 </a>
-                <a href="/dokumentasi" class="nav-link <?php if(uri_string() === 'profile') echo "active"; ?>">
+                <!-- <a href="/dokumentasi" class="nav-link <?php if(uri_string() === 'profile') echo "active"; ?>">
                     <span class="material-icons-sharp">person_outline</span>
                     <h3>foto-dokumentasi</h3>
                 </a>
                 <a href="/quiz" class="nav-link <?php if(uri_string() === 'quiz') echo "active"; ?>">
                     <span class="material-icons-sharp">person_outline</span>
                     <h3>Quiz</h3>
-                </a>
+                </a> -->
                 <a href="<?php echo base_url('logout')?>">
                     <span class="material-icons-sharp">logout</span>
                     <h3>Logout</h3>
@@ -65,14 +64,9 @@
         <?= $this->renderSection('content');?>
         <div class="right">
             <div class="top">
-                <!-- <div>
-                    <label class="label" for="chk">
-                        <i class='bx bxs-moon' ></i>
-                        <i class='bx bxs-sun' ></i>
-                        <input type="checkbox" class="checkbox" id="chk" />
-                        <div class="slider round"></div>
-                    </label>
-                </div> -->
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
                 <div class="theme-toggler">
                     <span class="material-icons-sharp active">light_mode</span>
                     <span class="material-icons-sharp">dark_mode</span>

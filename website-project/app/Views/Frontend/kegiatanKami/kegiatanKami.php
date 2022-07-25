@@ -43,9 +43,6 @@
               <a href="/home/detevent/<?php echo $event1['slug']?>"><?php echo $event1['judul']?></a>
             </h2>
           </div>
-          <div class="fot">
-            <p><span class="tanggal-artikel-home"><?php echo strftime('%e %B %G', strtotime($event1['created_at']));?></span></p>
-          </div>
         </div>
         <div class="card">
           <div class="head">
@@ -57,9 +54,6 @@
             <h2>
               <a href="/home/detevent/<?php echo $event2['slug']?>"><?php echo $event2['judul']?></a>
             </h2>
-          </div>
-          <div class="fot">
-            <p><span class="tanggal-artikel-home"><?php echo strftime('%e %B %G', strtotime($event2['created_at']));?></span></p>
           </div>
         </div>
         <div class="card card3">
@@ -73,9 +67,6 @@
               <a href="/home/detevent/<?php echo $event3['slug']?>"><?php echo $event3['judul']?></a>
             </h2>
           </div>
-          <div class="fot">
-            <p><span class="tanggal-artikel-home"><?php echo strftime('%e %B %G', strtotime($event3['created_at']));?></span></p>
-          </div>
         </div>
       </div>
       <div class="btn">
@@ -84,7 +75,7 @@
     </div>
 
     <!-- dokumentasi -->
-    <div class="dokumentasi">
+    <!-- <div class="dokumentasi">
       <div class="title3 title">
         <h1>Dokumentasi</h1>
       </div>
@@ -93,7 +84,7 @@
         <img class="gallery-cell" src="/assets/images/artikel/Logo Peer Group.jpg" ></img>
         <img class="gallery-cell" src="/assets/images/artikel/Logo Peer Group.jpg" ></img>
         <img class="gallery-cell" src="/assets/images/artikel/Logo Peer Group.jpg" ></img>
-      </div>
+      </div> -->
   </main>
 <?= $this->endsection();?>
 <?= $this->section('js')?>
