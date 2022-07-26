@@ -23,7 +23,12 @@ class App extends BaseConfig
      *
      * @var string
      */
+<<<<<<< HEAD
+    // public $baseURL = 'https://peergroup.id/';
+    public $baseURL = 'http://webpeergroup.test/';
+=======
     public $baseURL = 'http://localhost:8080/';
+>>>>>>> 7e4576164b9919d883294e8fced951e92cb54846
 
     /**
      * --------------------------------------------------------------------------
@@ -36,7 +41,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $indexPage = 'index.php';
+    public $indexPage = '';
 
     /**
      * --------------------------------------------------------------------------
