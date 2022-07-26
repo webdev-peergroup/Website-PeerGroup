@@ -9,10 +9,9 @@
                     <thead>
                         <tr>
                             <th>Judul</th>
-                            <!-- <th>Kategori</th> -->
+                            <th>Kategori</th>
                             <th>Penulis</th>
                             <th>Tanggal Post</th>
-                            <th>Tanggal Update</th>
                             <th></th>
                         </tr>
                     </thead>
@@ -24,25 +23,24 @@
                                         </tr>";
                             }else
                             foreach ($kegiatan->getResultArray() as $data): ?>
-                        <tr>
-                            <td><a href="/detail-artikel/<?php echo $data['slug']?>"><?php echo $data['judul']?></a></td>
-                            
-                            <td><?php echo $data['penulis']?></td>
-                            <td><?php echo strftime('%e %b %Y', strtotime($data['created_at'])); ?></td>
-                            <td><?php echo strftime('%e %b %Y', strtotime($data['updated_at'])); ?></td>
-                            <td class="button-action">
-                                <form action="/kegiatan-admin/edit/<?=$data['slug']?>" method="post">
-                                    <?csrf_field();?>
-                                    <input type="hidden" name="_method" value="PUT">
-                                    <button type="submit" class="button">Edit</button>
+                            <tr>
+                                <td><a href="/home/detevent/<?php echo $data['slug']?>"><?php echo $data['judul']?></a></td>
+                                <td><?php echo $data['penulis']?></td>
+                                <td><?php echo $data['kategori']?></td>
+                                <td><?php echo strftime('%e %b %Y', strtotime($data['created_at'])); ?></td>
+                                <td class="button-action">
+                                    <form action="/kegiatan-admin/edit/<?=$data['slug']?>" method="post">
+                                        <?csrf_field();?>
+                                        <input type="hidden" name="_method" value="PUT">
+                                        <button type="submit" class="button" id="edit">Edit</button>
                                     </form>
                                     <form action="/kegiatan-admin/hapus/<?=$data['id']?>" method="post">
-                                    <?csrf_field();?>
-                                    <input type="hidden" name="_method" value="DELETE">
-                                    <button type="submit" class="button" onclick="return confirm('Apakah anda yakin ingin menghapus <?=$data['judul']?> ?')">Hapus</button>
-                                </form>
-                            </td>
-                        </tr>
+                                        <?csrf_field();?>
+                                        <input type="hidden" name="_method" value="DELETE">
+                                        <button type="submit" class="button" onclick="return confirm('Apakah anda yakin ingin menghapus <?=$data['judul']?> ?')">Hapus</button>
+                                    </form>
+                                </td>
+                            </tr>
                         <?php endforeach?>
                     </tbody>
                 </table>

@@ -2,10 +2,10 @@
 <?= $this->section('content') ?>
 <main>
     <h1>Dashboard</h1>
-    <h5 class="label-date-filter">Filter tanggal</h5>
+    <!-- <h5 class="label-date-filter">Filter tanggal</h5>
     <div class="date">
         <input type="date" name="date-filter" id="date-filter">
-    </div>
+    </div> -->
 
     <!-- Recent Post -->
     <div class="recent-post" >
@@ -13,23 +13,19 @@
         <table id="recent-post">
             <thead>
                 <tr>
-                    <th>Judul</th>
-                    <th>Kategori</th>
-                    <th>Penulis</th>
-                    <th>Tanggal Post</th>
-                    <th>Tanggal Update</th>
-                    <th></th>
+                    <th class="judul">Judul</th>
+                    <th class="kategori">Kategori</th>
+                    <th class="penulis">Penulis</th>
+                    <th class="tgl">Tanggal Post</th>
                 </tr>
             </thead>
             <tbody>
                 <?php foreach ($allpost->getResultArray() as $data): ?>
                 <tr>
-                    <td><a href="/detail-artikel/<?php echo $data['slug']?>"><?php echo $data['judul']?></a></td>
-                    <td><?php echo $data['kategori']?></td>
-                    <td><?php echo $data['penulis']?></td>
-                    <td><?php echo strftime('%e %b %Y', strtotime($data['created_at'])); ?></td>
-                    <td><?php echo strftime('%e %b %Y', strtotime($data['updated_at'])); ?></td>
-                    
+                    <td class="judul-ar"><a href="/detail-artikel/<?php echo $data['slug']?>"><?php echo $data['judul']?></a></td>
+                    <td class="kategori-ar"><?php echo $data['kategori']?></td>
+                    <td class="penulis-ar"><?php echo $data['penulis']?></td>
+                    <td class="tgl-ar"><?php echo strftime('%e %b %Y', strtotime($data['created_at'])); ?></td>
                 </tr>
                 <?php endforeach?>
             </tbody>
@@ -37,33 +33,30 @@
         <!-- <a href="#">Show All</a> -->
     </div>
     
-    <h5 class="label-date-filter">Filter tanggal</h5>
+    <!-- <h5 class="label-date-filter">Filter tanggal</h5>
     <div class="date kegiatan">
         <input type="date" name="date-filter" id="date-filter-kegiatan">
-    </div>
+    </div> -->
     <!-- Recent Post -->
     <div class="recent-post" >
         <h2>Recent Post Kegiatan</h2>
         <table id="recent-post-kegiatan">
             <thead>
                 <tr>
-                    <th>Judul</th>
-                    <th>Kategori</th>
-                    <th>Penulis</th>
-                    <th>Tanggal Post</th>
-                    <th>Tanggal Update</th>
+                    <th class="judul">Judul</th>
+                    <th class="kategori">Judul</th>
+                    <th class="penulis">Penulis</th>
+                    <th class="tgl">Tanggal Post</th>
                     <th></th>
                 </tr>
             </thead>
             <tbody>
                 <?php foreach ($kegiatan->getResultArray() as $data): ?>
                 <tr>
-                    <td><a href="/detail-artikel/<?php echo $data['slug']?>"><?php echo $data['judul']?></a></td>
-                    <td><?php echo $data['kategori']?></td>
-                    <td><?php echo $data['penulis']?></td>
-                    <td><?php echo strftime('%e %b %Y', strtotime($data['created_at'])); ?></td>
-                    <td><?php echo strftime('%e %b %Y', strtotime($data['updated_at'])); ?></td>
-                    
+                    <td class="judul-keg"><a href="/home/detevent/<?php echo $data['slug']?>"><?php echo $data['judul']?></a></td>
+                    <td class="penulis-keg"><?php echo $data['penulis']?></td>
+                    <td class="penulis-keg"><?php echo $data['kategori']?></td>
+                    <td class="tgl-keg"><?php echo strftime('%e %b %Y', strtotime($data['created_at'])); ?></td>
                 </tr>
                 <?php endforeach?>
             </tbody>

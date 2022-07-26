@@ -94,7 +94,7 @@ class ArtikelController extends BaseController
         
         $slug = url_title($this->request->getVar('judul'), '-', true);
         //Simpan
-        if($this->request->getVar('kategori') === 'kegiatan'){
+        if($this->request->getVar('kategori') == 'kegiatan'){
             $this->kegiatan->save([
                 'judul' => $this->request->getVar('judul'),
                 'slug' => $slug,

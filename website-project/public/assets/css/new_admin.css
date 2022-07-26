@@ -13,7 +13,6 @@
     --color-primary-variant: #111e88;
     --color-dark-variant: #677483;
     --color-background: #f6f6f9;
---bg-color: #fe6464;
     --card-border-radius: 2rem;
     --border-radius-1: .4rem;
     --border-radius-2: .8rem;
@@ -25,12 +24,6 @@
     --box-shadow: 0 2rem 3rem var(--color-light);
     --bg-color: #FFFFFF;
 }
-
-/* Dark Color */
-  html[data-theme="dark"] {
-    --bg-color: #1a252f;
-}
-
 
 .dark-theme-variables{
     --color-background: #181a1e;
@@ -61,8 +54,7 @@ body{
     height: 100vh;
     font-family: poppins, sans-serif;
     font-size: .88rem;
-    background-color: var(--bg-color);
-    /* background-color:#fe6464; */
+    background-color: var(--color-background);
     user-select: none;
     overflow-x: hidden;
     color: var(--color-dark);
@@ -70,10 +62,9 @@ body{
 
 .container{
     display: grid;
-    width: 96%;
     margin: 0 auto;
     gap: 1.8rem;
-    grid-template-columns: 14rem auto 23rem;
+    grid-template-columns: 14rem auto 15rem;
 
 }
 
@@ -203,11 +194,11 @@ aside .sidebar a span{
     transition: all 300ms ease;
 }
 
-aside .sidebar a:last-child{
+/* aside .sidebar a:last-child{
     position: absolute;
     bottom: 2rem;
     width: 100%;
-}
+} */
 
 aside .sidebar a.active{
     background: var(--color-light);
@@ -363,12 +354,15 @@ main .recent-post{
 main .recent-post h2{
     margin-bottom: .8rem;
 }
+main .recent-post th{
+    text-align: center;
+}
 main .recent-post table{
     background: var(--color-white);
     width: 100%;
     border-radius: var(--card-border-radius);
     padding: var(--card-padding);
-    text-align: center;
+    text-align: left;
     box-shadow: var(--box-shadow);
     transition: all 300ms ease;
 }
@@ -377,25 +371,35 @@ main .recent-post table:hover{
     box-shadow: none;
 }
 
+main table th{
+    padding: 1rem 1rem 0 1rem;
+}
+
 main table tbody td{
-    height: 2.8rem;
     border-bottom: 1px solid var(--color-light);
     color: var(--color-dark-variant);
+    padding: 0 1rem;
 }
 
 main table tbody tr:last-child td{
     border: none;
+    padding: 0 1rem 1rem 1rem;
 }
 
-main table tbody tr td:first-child{
-    max-width: 150px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
+.judul{
+    max-width: 40%;
+}
+.kategori{
+    max-width: 20%;
+}
+.penulis{
+    max-width: 20%;
+}
+.tgl{
+    max-width: 20%;
 }
 
 main a{
-    text-align: center;
     display: block;
     margin: 1rem auto;
     color: var(--color-primary);
@@ -404,6 +408,8 @@ main a{
 /* Right */
 .right{
     margin-top: 1.4rem;
+    width: fit-content;
+    margin-left: auto;
 }
 
 .right .top{
@@ -441,51 +447,6 @@ main a{
     color: white;
     border-radius: var(--border-radius-1);
 }
-
-
-/* Dark Mode Toggle */
-.label{
-    width: 39px;
-    height: 19px;
-    background-color: #111;
-    display: flex;
-    border-radius: 50px;
-    padding: 5px;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-  }
-  .bxs-moon, .bxs-sun{
-    color: #EAA900;
-  }
-  .checkbox{
-    opacity: 0;
-    position: absolute;
-  }
-  .slider {
-    bottom: 0;
-    cursor: pointer;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: 0.4s;
-  }
-  .slider::before {
-    height: 19px;
-    width: 19px;
-    position: absolute;
-    left: -0.3px;
-    border-radius: 50%;
-    background-color: #FFFFFF;
-    content: "";
-    transition: 0.4s;
-  }
-  input:checked + .slider::before {
-    transform: translateX(21px);
-  }
-
-
 
 .right .top .profile{
     display: flex;
@@ -542,12 +503,15 @@ main a{
 }
 
 .right .analytics .add{
+    float: right;
     background: transparent;
     border: 2px dashed var(--color-primary);
     color: var(--color-primary);
     display: flex;
     align-items: center;
     justify-content: center;
+    /* padding: 0; */
+    width: 100%;
 }
 
 .right .analytics .add div {
@@ -618,9 +582,16 @@ main a{
     cursor: pointer;
 }
 
-.bg-modal .modal-content form,
-.edit-container form{
+.bg-modal .modal-content form{
     width: calc(100% - 3rem);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+
+.edit-container form{
+    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -652,10 +623,21 @@ main a{
     justify-items: center;
 }
 
-.bg-modal .modal-content form div:last-child button,
-.edit-container form div:last-child button{
+.bg-modal .modal-content form div:last-child button
+{
     height: 50px;
     width: 300px;
+    background: var(--color-primary);
+    color: var(--color-dark);
+    font-weight: 800;
+    cursor: pointer;
+    border-radius: var(--border-radius-1);
+    box-shadow: var(--box-shadow);
+}
+
+.edit-container form div:last-child button{
+    height: 50px;
+    width: 100%;
     background: var(--color-primary);
     color: var(--color-dark);
     font-weight: 800;
@@ -720,8 +702,7 @@ main a{
 }
 
 .button-action{
-    display: flex;
-    gap: .3rem;
+    display: relative;
     justify-content: center;
     align-items: center;
     height: 3.8rem;
@@ -729,6 +710,7 @@ main a{
 
 .button{    
     width: 70px;
+    margin: 0.3rem 0;
     background: var(--color-primary);
     color: var(--color-dark);
     font-weight: 800;
@@ -753,10 +735,9 @@ main a{
     display: grid;
     grid-template-columns: .5fr 1fr;
 }
-/* Media QUERIES */
+
 @media screen and (max-width: 1200px){
     .container{
-        width: 94%;
         grid-template-columns: 7rem auto 23rem;
     }
 
@@ -785,23 +766,11 @@ main a{
         gap: 0;
     }
 
-    main .recent-post{
-        width: 94%;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        margin: 2rem 0 0 8.8rem;
-    }
-
-    main .recent-post table{
-        width: calc(100% - 30rem);
-    }
-
-    main table thead tr th:nth-child(2), main table thead tr th:nth-child(3){
+    main table thead tr th:nth-child(2), main table thead tr th:nth-child(3), main table thead tr th:nth-child(4){
         display: none;
     }
 
-    main table tbody tr td:nth-child(2), main table tbody tr td:nth-child(3){
+    main table tbody tr td:nth-child(2), main table tbody tr td:nth-child(3), main table tbody tr td:nth-child(4){
         display: none;
     }
 
@@ -921,9 +890,5 @@ main a{
 
     .right .top button span{
         font-size: 2rem;
-    }
-
-    .right .analytics{
-        display: none;
     }
 }

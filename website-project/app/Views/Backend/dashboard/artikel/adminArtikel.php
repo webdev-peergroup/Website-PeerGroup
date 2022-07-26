@@ -2,6 +2,10 @@
 <?= $this->section('content'); ?>
   <main>
       <h1><?=$title?></h1>
+      <!-- <h5 class="label-date-filter">Filter tanggal</h5>
+        <div class="date">
+            <input type="date" name="date-filter" id="date-filter">
+        </div> -->
     <!-- Recent Post -->
       <div class="recent-post" id="recent-post">
           <h2>Recent Post</h2>
@@ -12,7 +16,6 @@
                       <th>Kategori</th>
                       <th>Penulis</th>
                       <th>Tanggal Post</th>
-                      <th>Tanggal Update</th>
                       <th></th>
                   </tr>
               </thead>
@@ -29,7 +32,6 @@
                       <td><?php echo $data['kategori']?></td>
                       <td><?php echo $data['penulis']?></td>
                       <td><?php echo strftime('%e %b %Y', strtotime($data['created_at'])); ?></td>
-                      <td><?php echo strftime('%e %b %Y', strtotime($data['updated_at'])); ?></td>
                       <td class="button-action">
                           <form action="/artikel-admin/edit/<?=$data['slug']?>" method="post">
                               <?csrf_field();?>

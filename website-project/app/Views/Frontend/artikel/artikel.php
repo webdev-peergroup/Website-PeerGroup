@@ -20,8 +20,7 @@
                                 <div class="text-list">
                                     <a href="/detail-artikel/<?php echo $data['slug']?>" class="title-thumbnail"><?php echo $data['judul']?></a>
                                     <div class="penulis">
-                                        <p class="penulis-artikel-home"><?php echo $data['penulis']  ?></p> 
-                                        <span class="tanggal-artikel-home"><?php echo strftime('%e %B %G', strtotime($data['created_at']));?></span>
+                                        <p class="penulis-artikel-home"><?php echo $data['penulis']  ?></p>
                                     </div>
                                     <div class="thumbnail-description">
                                         <p><?php echo $data['deskripsi']?></p>

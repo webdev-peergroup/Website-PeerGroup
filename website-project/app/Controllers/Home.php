@@ -107,7 +107,7 @@ class Home extends BaseController
     //About
     public function about(){
         $data = [
-            'title' => 'Siapa Kita ?',
+            'title' => 'About Us',
             'deskripsi' => 'Peer Group ID merupakan platform paling tepat bagi para pemuda yang ingin mengembangkan diri lewat potensi yang dimiliki dengan berbagai kegiatan menarik...',
             'css' => 'about.css'
         ];
@@ -118,7 +118,7 @@ class Home extends BaseController
     //Landing
     public function landing(){
         $data = [
-            'title' => 'Landing',
+            'title' => 'Welcome to Peer Group ID',
             'deskripsi' => 'Landing Page',
             'css' => 'landing.css'
         ];
@@ -129,12 +129,6 @@ class Home extends BaseController
     //kegiatan kami
     public function kegiatan_kami(){
         $random = $this->getkegiatan->getrandomkegiatan();
-        $data = [
-            'title' => 'Artikel Kegiatan',
-            'deskripsi' => 'Artikel kegiatan ada disini.',
-            'css' => 'artikel.css',
-            
-        ];
         $data = [
             'title' => 'Kegiatan Kami',
             'deskripsi' => 'Kegiatan Kami',
