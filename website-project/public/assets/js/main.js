@@ -7,10 +7,17 @@ const navMenu = document.getElementById('nav-menu'),
     dropicon = document.getElementById('drop-icon'),
     dropdown1 = document.getElementById('dropdown1'),
     dropdownMenu1 = document.getElementById('dropdown-menu1'),
-    dropicon1 = document.getElementById('drop-icon1')
+    dropicon1 = document.getElementById('drop-icon1'),
+    darkToggle = document.querySelector('#darkToggle');
+
 
 // SHOW
-toggleMenu.addEventListener('click', ()=>{
+
+darkToggle.addEventListener('click', ()=> {
+  document.body.classList.toggle('dark');
+});
+
+toggleMenu.addEventListener("click", ()=>{
     navMenu.classList.toggle('show')
 })
 
