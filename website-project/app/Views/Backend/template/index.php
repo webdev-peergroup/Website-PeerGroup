@@ -55,6 +55,10 @@
                     <span class="material-icons-sharp">person_outline</span>
                     <h3>Quiz</h3>
                 </a> -->
+                <a href="/home" class="nav-link <?php if(uri_string() === 'home') echo "active"; ?>">
+                    <span class="material-icons-sharp">home</span>
+                    <h3>Go to home</h3>
+                </a>
                 <a href="<?php echo base_url('logout')?>">
                     <span class="material-icons-sharp">logout</span>
                     <h3>Logout</h3>
@@ -68,10 +72,8 @@
                     <span class="material-icons-sharp">menu</span>
                 </button>
                 <div class="theme-toggler" id="darkToggle">
-                    <!-- <input type="checkbox"> -->
-                    <!-- <label for="darkToggle"> -->
-                    <span class="material-icons-sharp active">light_mode</span>
-                    <span class="material-icons-sharp">dark_mode</span>
+                    <span class="material-icons-sharp light-mode">light_mode</span>
+                    <span class="material-icons-sharp dark-mode">dark_mode</span>
                 </div>
                 <div class="profile">
                     <div class="info">

@@ -48,7 +48,7 @@
                             echo "<div class='kategori'>
                                         <h3 class='text-artikel'>Self Development</h3>
                                     <div class='artikel-content'>
-                                        <img src='images/artikel/$scover' alt='Cover postingan self development'>
+                                        <img src='assets/images/artikel/$scover' alt='Cover postingan self development'>
                                         <p class='home-artikel-judul'>$stitle</p>
                                         <p class='text-isi-artikel'>$sdeskripsi</p>
                                     </div id='self'>
@@ -58,7 +58,7 @@
                             echo "<div class='kategori'>
                                         <h3 class='text-artikel'>Self Development</h3>
                                     <div class='artikel-content'>
-                                        <img src='images/artikel/default.svg' alt='Cover postingan self development'>
+                                        <img src='assets/images/artikel/default.svg' alt='Cover postingan self development'>
                                         <p class='home-artikel-judul'>$stitle</p>
                                         <p class='text-isi-artikel'>$sdeskripsi</p>
                                     </div id='self'>
@@ -78,7 +78,7 @@
                             echo "<div class='kategori'>
                                         <h3 class='text-artikel' id='jurusan'>Jurusan</h3>
                                     <div class='artikel-content'>
-                                        <img src='images/artikel/$jcover' alt='Cover postingan Jurusan'>
+                                        <img src='assets/images/artikel/$jcover' alt='Cover postingan Jurusan'>
                                         <p class='home-artikel-judul'>$jtitle</p>
                                         <p class='text-isi-artikel'>$jdeskripsi</p>
                                     </div>
@@ -88,7 +88,7 @@
                             echo "<div class='kategori'>
                                         <h3 class='text-artikel' id='jurusan'>Jurusan</h3>
                                     <div class='artikel-content'>
-                                        <img src='images/artikel/default.svg' alt='Cover postingan Jurusan'>
+                                        <img src='assets/images/artikel/default.svg' alt='Cover postingan Jurusan'>
                                         <p class='home-artikel-judul'>$jtitle</p>
                                         <p class='text-isi-artikel'>$jdeskripsi</p>
                                     </div>
@@ -108,7 +108,7 @@
                             echo "<div class='kategori'>
                                     <h3 class='text-artikel' id='karir'>Karir</h3>
                                 <div class='artikel-content'>
-                                    <img src='images/artikel/$kcover' alt='Cover postingan Karir'>
+                                    <img src='assets/images/artikel/$kcover' alt='Cover postingan Karir'>
                                     <p class='home-artikel-judul'>$ktitle</p>
                                     <p class='text-isi-artikel'>$kdeskripsi</p>
                                 </div>
@@ -118,7 +118,7 @@
                             echo "<div class='kategori'>
                                     <h3 class='text-artikel' id='karir'>Karir</h3>
                                 <div class='artikel-content'>
-                                    <img src='images/artikel/default.svg' alt='Cover postingan Karir'>
+                                    <img src='assets/images/artikel/default.svg' alt='Cover postingan Karir'>
                                     <p class='home-artikel-judul'>$ktitle</p>
                                     <p class='text-isi-artikel'>$kdeskripsi</p>
                                 </div>

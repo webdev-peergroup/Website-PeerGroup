@@ -23,8 +23,8 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $baseURL = 'https://peergroup.id/';
-    // public $baseURL = 'http://webpeergroup.test/';
+    // public $baseURL = 'https://peergroup.id/';
+    public $baseURL = 'http://localhost:8080/';
 
     /**
      * --------------------------------------------------------------------------

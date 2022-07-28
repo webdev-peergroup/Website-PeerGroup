@@ -6,9 +6,7 @@
             <!--Area artikel-->
             <article>
                 <div class="artikel">
-                    <?php foreach ($event->getResultArray() as $data) : 
-                        dd($data);
-                        ?>
+                    <?php foreach ($event->getResultArray() as $data) : ?>
                         <div class="header-artikel">
                             <h1 class="title-artikel"><?= $data['judul'] ?></h1>
                             <div class="author">

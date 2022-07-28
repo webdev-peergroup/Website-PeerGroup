@@ -16,13 +16,13 @@ class KegiatanModel extends Model
 
     //Get Kegiatan for index
     public function getdatakegiatan(){
-        $query = $this->db->query("SELECT * FROM kegiatan Limit 4");
+        $query = $this->db->query("SELECT * FROM kegiatan");
         return $query;
     }
     
     //get admin kegiatan
     public function getadminkegiatan(){
-        $query = $this->db->query("SELECT * FROM kegiatan ORDER BY updated_at DESC LIMIT 5");
+        $query = $this->db->query("SELECT * FROM kegiatan ORDER BY created_at DESC");
         return $query;
     }
 
