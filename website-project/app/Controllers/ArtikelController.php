@@ -47,16 +47,6 @@ class ArtikelController extends BaseController
         $this->get->delete($id);
 		return redirect()->back();
     }
-    // public function tambah_data(){
-    //     $penulis = $this->user->penulis();
-    //     $data = [
-    //         'title' => 'Tambah Artikel',
-    //         'penulis' => $penulis,
-    //         'validation' => \Config\Services::validation()
-    //     ];
-
-    //     return view('Apps/form_artikel', $data);
-    // }
     public function simpan(){
         // dd($this->request->getVar());
         //Validation

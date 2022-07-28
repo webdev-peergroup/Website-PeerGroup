@@ -61,7 +61,9 @@ $routes->delete('/kegiatan-admin/hapus/(:num)', 'KegiatanController::hapus_kegia
 $routes->put('/kegiatan-admin/edit/(:any)', 'KegiatanController::edit_kegiatan/$1');
 
 //Bagian Admin Tambah Data
-$routes->get('/tambah-data', 'ArtikelController::tambah_data');
+$routes->get('/tambah-data', 'ArtikelController::simpan');
+$routes->get('/tambah-data', 'KegiatanController::simpan');
+
 
 //Bagian Admin Profile Data
 $routes->get('/profile', 'ProfileAdminController::profile');

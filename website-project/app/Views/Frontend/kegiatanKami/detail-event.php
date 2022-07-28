@@ -6,7 +6,9 @@
             <!--Area artikel-->
             <article>
                 <div class="artikel">
-                    <?php foreach ($event->getResultArray() as $data) : ?>
+                    <?php foreach ($event->getResultArray() as $data) : 
+                        dd($data);
+                        ?>
                         <div class="header-artikel">
                             <h1 class="title-artikel"><?= $data['judul'] ?></h1>
                             <div class="author">
@@ -23,10 +25,10 @@
                                 }
                             ?>
                         </div>
-                    <?php endforeach; ?>
-                    <div class="text">
-                        <?= $data['text'] ?>
-                    </div>
+                        <?php endforeach; ?>
+                        <div class="text">
+                            <?= $data['text'] ?>
+                        </div>
                 </div>
             </article>
             <aside>

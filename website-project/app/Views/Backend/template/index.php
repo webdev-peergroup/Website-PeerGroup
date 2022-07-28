@@ -133,7 +133,7 @@
                 </div>
                 <div>
                     <label for="deskripsi">Deskripsi</label>
-                    <textarea name="deskripsi" id="deskripsi" rows="3" required><?= old('judul')?></textarea>
+                    <textarea name="deskripsi" id="deskripsi" rows="3" required><?= old('deskripsi')?></textarea>
                 </div>
                 <div>
                     <label for="name">Nama Penulis</label>
@@ -142,7 +142,7 @@
                 </div>
                 <div>
                     <label for="content">Isi Konten</label>
-                    <textarea name="content" id="content" rows="8" required><?= old('judul')?></textarea>
+                    <textarea name="content" id="content" rows="8" required><?= old('text')?></textarea>
                 </div>
                 <div class="button-group">
                     <button type="reset">Reset</button>

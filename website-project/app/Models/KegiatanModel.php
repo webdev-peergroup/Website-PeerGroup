@@ -8,7 +8,7 @@ class KegiatanModel extends Model
 {
     protected $table = 'kegiatan';
     // protected $primaryKey = 'id_kegiatan';
-    protected $allowedFields = ['judul', 'slug','penulis', 'deskripsi', 'isi', 'cover', 'sumber_cover', 'time'];
+    protected $allowedFields = ['judul', 'slug','penulis', 'deskripsi', 'text', 'cover', 'sumber_cover', 'time'];
     protected $db;
     public function __construct(){
         $this->db = db_connect();

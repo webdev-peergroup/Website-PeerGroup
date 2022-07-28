@@ -53,6 +53,69 @@ class KegiatanController extends BaseController
 
         return view('Apps/form_artikel', $data);
     }
+    public function simpan(){
+        // dd($this->request->getVar());
+        //Validation
+        if (!$this->validate([
+            'judul' => [
+                'rules'=>'required|is_unique[artikel.judul]',
+                'rules'=>'required|is_unique[kegiatan.judul]',
+                'errors' =>[
+                    'is_unique' => 'Judul sudah ada'
+                ]
+            ],
+            'cover' => [
+                'rules' => 'max_size[cover,5120]|is_image[cover]|mime_in[cover,image/jpg,image/jpeg,image/png,image/svg+xml]',
+                'errors' => [
+                    'max_size' => 'Upload maksimal 5 MB',
+                    'is_image' => 'Yang anda upload bukan gambar',
+                    'mime_in' => 'Yang anda upload bukan gambar'
+                ]
+            ]    
+                    
+        ])) {
+            // $validation = \Config\Services::validation();   
+            return redirect()->to(base_url('admin-panel'))->withInput();
+        }
+        //Ambil gambar
+        $fileCover = $this->request->getFile('cover');
+        // dd($fileCover);
+        if ($fileCover->getError() == 4) {
+            $coverName = 'default.svg';
+        }
+        else{
+            $coverName = $fileCover->getRandomName();
+            $fileCover->move('assets/images/artikel',$coverName);
+        }
+        
+        $slug = url_title($this->request->getVar('judul'), '-', true);
+        //Simpan
+        if($this->request->getVar('kategori') == 'kegiatan'){
+            $this->kegiatan->save([
+                'judul' => $this->request->getVar('judul'),
+                'slug' => $slug,
+                'cover' => $coverName,
+                'sumber_cover' => $this->request->getVar('sumber_cover'),
+                'deskripsi' => $this->request->getVar('deskripsi'),
+                'penulis' => $this->request->getVar('name'),
+                'kategori' => $this->request->getVar('kategori'),
+                'text' => $this->request->getVar('content')
+            ]);
+            return redirect()->to(base_url('kegiatan-admin'));
+        }else{
+            $this->get->save([
+                'judul' => $this->request->getVar('judul'),
+                'slug' => $slug,
+                'cover' => $coverName,
+                'sumber_cover' => $this->request->getVar('sumber_cover'),
+                'deskripsi' => $this->request->getVar('deskripsi'),
+                'penulis' => $this->request->getVar('name'),
+                'kategori' => $this->request->getVar('kategori'),
+                'text' => $this->request->getVar('content')
+            ]);
+            return redirect()->to(base_url('admin-panel'));
+        }
+	}
     public function edit_kegiatan($id) {
         $edit = $this->kegiatan->getkegiatan($id);
         
