@@ -165,10 +165,6 @@ body {
   .event .container .card .body h2 {
     font-size: 1.3em;
   }
-  .event .container .card .body p {
-    font-size: 1em;
-    color: #A9A9A9;
-  }
 
   /* .dokumentasi {
     max-height: fit-content;

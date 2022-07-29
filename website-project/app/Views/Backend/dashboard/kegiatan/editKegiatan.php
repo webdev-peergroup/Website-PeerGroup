@@ -7,7 +7,6 @@
         $deskripsi = $data->deskripsi;
         $text = $data->text;
         $cover = $data->cover;
-        $sumber_cover = $data->sumber_cover;
     }
 ?>
 <?= $this->extend('Backend/template/index') ?>
@@ -51,13 +50,6 @@
                     <div class="input-group">
                         <input type="file" name="cover" id="cover" value="<?php echo $cover; old('cover')?>">
                         <p class="error"><?= $validation->getError('cover')?></p>
-                    </div>
-                </div>
-                <div>
-                    <label for="sumber_cover">Sumber Cover</label>
-                    <div class="input-group">
-                        <input type="text" name="sumber_cover" id="sumber_cover" placeholder="Masukkan sumber cover" required value="<?php echo $sumber_cover; old('sumber_cover')?>">
-                        <p class="error"><?= $validation->getError('sumber_cover')?></p>
                     </div>
                 </div>
                 <div>

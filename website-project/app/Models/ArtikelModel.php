@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 class ArtikelModel extends Model
 {
     protected $table = 'artikel';
-    protected $allowedFields = ['judul', 'slug','kategori','penulis', 'deskripsi', 'text', 'cover', 'sumber_cover', 'created_at', 'updated_at'];
+    protected $allowedFields = ['judul', 'slug','kategori','penulis', 'deskripsi', 'text', 'cover', 'created_at'];
     protected $db;
     public function __construct(){
         $this->db = db_connect();
@@ -46,12 +46,12 @@ class ArtikelModel extends Model
     }
 
     public function getallpost(){
-        $query = $this->db->query("SELECT * FROM artikel ORDER BY updated_at DESC Limit 5");
+        $query = $this->db->query("SELECT * FROM artikel ORDER BY created_at DESC Limit 5");
         return $query;
     }
 
     public function getpostajax($date){
-        $query = $this->db->query("SELECT * FROM artikel Where updated_at LIKE '%$date%'");
+        $query = $this->db->query("SELECT * FROM artikel Where created_at LIKE '%$date%'");
         return $query;
     }
 

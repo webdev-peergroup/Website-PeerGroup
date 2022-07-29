@@ -129,13 +129,6 @@
                     </div>
                 </div>
                 <div>
-                    <label for="sumber_cover">Sumber Cover</label>
-                    <div class="input-group">
-                        <input type="text" name="sumber_cover" id="sumber_cover" placeholder="Masukkan sumber cover" required value="<?= old('sumber_cover')?>">
-                        <p class="error"><?= $validation->getError('sumber_cover')?></p>
-                    </div>
-                </div>
-                <div>
                     <label for="deskripsi">Deskripsi</label>
                     <textarea name="deskripsi" id="deskripsi" rows="3" required><?= old('deskripsi')?></textarea>
                 </div>

@@ -19,11 +19,7 @@
                                 if ( $data['cover'] != NULL) {
                                     echo "<div class='arti-image'>
                                         <img src=".base_url('assets/images/artikel/'.$data['cover'])." alt=''>
-                                        </div>
-                                        <div class='sumber'>
-                                            <p>Sumber: ".$data['sumber_cover']." </p>
-                                        </div>"
-                                    ;
+                                        </div>";
                                 }
                             ?>
                         </div>

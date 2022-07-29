@@ -7,8 +7,7 @@ use CodeIgniter\Model;
 class KegiatanModel extends Model
 {
     protected $table = 'kegiatan';
-    // protected $primaryKey = 'id_kegiatan';
-    protected $allowedFields = ['judul', 'slug','penulis', 'deskripsi', 'text', 'cover', 'sumber_cover', 'time'];
+    protected $allowedFields = ['judul', 'slug','penulis', 'deskripsi', 'text', 'cover', 'time'];
     protected $db;
     public function __construct(){
         $this->db = db_connect();
@@ -32,7 +31,7 @@ class KegiatanModel extends Model
     }
 
     public function getkegiatanwhere($date){
-        $query = $this->db->query("SELECT * FROM kegiatan Where updated_at LIKE '%$date%'");
+        $query = $this->db->query("SELECT * FROM kegiatan Where created_at LIKE '%$date%'");
         return $query;
     }
 

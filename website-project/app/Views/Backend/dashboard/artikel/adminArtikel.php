@@ -48,7 +48,6 @@
                   <?php endforeach?>
               </tbody>
           </table>
-          <!-- <a href="#">Show All</a> -->
       </div>
   </main>
 <?= $this->endsection(); ?>
