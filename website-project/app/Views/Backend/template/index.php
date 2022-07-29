@@ -71,10 +71,10 @@
                 <button id="menu-btn">
                     <span class="material-icons-sharp">menu</span>
                 </button>
-                <div class="theme-toggler" id="darkToggle">
+                <!-- <div class="theme-toggler" id="darkToggle">
                     <span class="material-icons-sharp light-mode">light_mode</span>
                     <span class="material-icons-sharp dark-mode">dark_mode</span>
-                </div>
+                </div> -->
                 <div class="profile">
                     <div class="info">
                         <p>Hey, <b><?= session('username'); ?></b></p>

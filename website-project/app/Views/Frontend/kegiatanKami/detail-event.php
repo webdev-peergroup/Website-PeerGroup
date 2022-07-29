@@ -25,7 +25,7 @@
                         </div>
                         <?php endforeach; ?>
                         <div class="text">
-                            <?= $data['text'] ?>
+                            <span><?= $data['text'] ?></span>
                         </div>
                 </div>
             </article>

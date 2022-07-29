@@ -96,9 +96,9 @@
                             if ($session->logged_in == true) {
                                 $logout = base_url('logout');
                                 $admin_page = base_url('admin-panel');
-                                echo "<li class='nav__item dropdown' >
-                                        <a href='#' class='nav__link dropdown__link' id='dropdown'>$session->username <i class='bx bx-chevron-down dropdown__icon' id='drop-icon'></i></a>
-                                        <ul class='dropdown__menu' id='dropdown-menu'>
+                                echo "<li class='nav__item dropdown'  id='dropdown2'>
+                                        <a href='#' class='nav__link dropdown__link' id='dropdown'>$session->username <i class='bx bx-chevron-down dropdown__icon' id='drop-icon2'></i></a>
+                                        <ul class='dropdown__menu' id='dropdown-menu2'>
                                             <li class='dropdown__item'><a href='$admin_page' class='nav__link'>Admin</a></li>
                                             <li class='dropdown__item'><a href='$logout' class='nav__link'>Logout</a></li>
                                         </ul>

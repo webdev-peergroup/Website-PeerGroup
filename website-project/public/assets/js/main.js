@@ -8,14 +8,12 @@ const navMenu = document.getElementById('nav-menu'),
     dropdown1 = document.getElementById('dropdown1'),
     dropdownMenu1 = document.getElementById('dropdown-menu1'),
     dropicon1 = document.getElementById('drop-icon1'),
-    darkToggle = document.querySelector('#darkToggle');
+    dropdown2 = document.getElementById('dropdown2'),
+    dropdownMenu2 = document.getElementById('dropdown-menu2'),
+    dropicon2 = document.getElementById('drop-icon2');
 
 
 // SHOW
-
-darkToggle.addEventListener('click', ()=> {
-  document.body.classList.toggle('dark');
-});
 
 toggleMenu.addEventListener("click", ()=>{
     navMenu.classList.toggle('show')
@@ -29,6 +27,11 @@ dropdown.addEventListener('click', ()=>{
 dropdown1.addEventListener('click', ()=>{
     dropdownMenu1.classList.toggle('drop-show');
     dropicon1.classList.toggle('icon-rotate');
+})
+
+dropdown2.addEventListener('click', ()=>{
+    dropdownMenu2.classList.toggle('drop-show');
+    dropicon2.classList.toggle('icon-rotate');
 })
 
 // HIDDEN

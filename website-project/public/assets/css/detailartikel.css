@@ -49,9 +49,6 @@ a:hover{
 }
   
 .arti-image{
-    /* max-width: 720px; */
-    /* max-width: 100%; */
-    /* height: 385px; */
     margin-bottom: 1rem;
     margin-left: auto;
     margin-right: auto;
@@ -73,6 +70,7 @@ a:hover{
     margin-top: 1rem;
     line-height: 1.5rem;
     color: var(--desc);
+    text-align: justify;
 }
 
 .text p{
